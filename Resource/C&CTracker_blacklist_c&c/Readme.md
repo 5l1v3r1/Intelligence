@@ -3,6 +3,7 @@
 * A command and control server blacklist(C&C server)
 * Belli aralikla devamli güncelleniyor
 * Devamli Güncel komuta merkezleri var,bu bir avantantaj 10 dk güncelleniyor
+* http://danger.rulez.sk/projects/bruteforceblocker/
 
 
 This feed is merely an aggregate of the other feeds which list
@@ -20,7 +21,6 @@ these feeds are:
 See the respecitve manual pages for how each indicator is
 generated.
 
-This feed is generated every 10 minutes.
 
 
 
