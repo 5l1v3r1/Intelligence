@@ -1,4 +1,4 @@
-## BruteForceBlocker
+## C&C Tracker
 * A feed of known, active and non-sinkholed C&C IP addresses, from Bambenek Consulting.
 * A command and control server blacklist(C&C server)
 * Belli aralikla devamli güncelleniyor
