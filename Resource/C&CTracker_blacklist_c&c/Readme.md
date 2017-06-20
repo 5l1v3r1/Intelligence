@@ -3,7 +3,7 @@
 * A command and control server blacklist(C&C server)
 * Belli aralikla devamli güncelleniyor
 * Devamli Güncel komuta merkezleri var,bu bir avantantaj 10 dk güncelleniyor
-* http://danger.rulez.sk/projects/bruteforceblocker/
+* http://osint.bambenekconsulting.com/feeds/c2-ipmasterlist.txt
 
 
 This feed is merely an aggregate of the other feeds which list
