@@ -1,0 +1,56 @@
+2017-06-21 12:37:55,369 [dbmanagment.py  __init__ 22] [INFO ]  Connected Database
+2017-06-21 12:38:30,580 [dbmanagment.py  __init__ 22] [INFO ]  Connected Database
+2017-06-21 12:38:30,580 [dbmanagment.py  __init__ 22] [INFO ]  Connected Database
+2017-06-21 12:38:59,874 [dbmanagment.py  __init__ 22] [INFO ]  Connected Database
+2017-06-21 12:38:59,877 [dbmanagment.py  __init__ 22] [INFO ]  Connected Database
+2017-06-21 12:38:59,877 [dbmanagment.py  __init__ 22] [INFO ]  Connected Database
+2017-06-21 12:39:12,309 [dbmanagment.py  __init__ 22] [INFO ]  Connected Database
+2017-06-21 12:39:12,313 [dbmanagment.py  __init__ 22] [INFO ]  Connected Database
+2017-06-21 12:39:12,313 [dbmanagment.py  __init__ 22] [INFO ]  Connected Database
+2017-06-21 12:41:30,652 [dbmanagment.py  __init__ 23] [INFO ]  Connected Database
+2017-06-21 12:41:30,654 [dbmanagment.py  __init__ 23] [INFO ]  Connected Database
+2017-06-21 12:41:30,654 [dbmanagment.py  __init__ 23] [INFO ]  Connected Database
+2017-06-21 12:42:11,121 [dbmanagment.py  __init__ 23] [INFO ]  Connected Database
+2017-06-21 12:57:41,045 [dbmanagment.py  __init__ 22] [INFO ]  Connected Database
+2017-06-21 12:57:41,048 [dbmanagment.py  __init__ 22] [INFO ]  Connected Database
+2017-06-21 12:58:15,714 [dbmanagment.py  __init__ 22] [INFO ]  Connected Database
+2017-06-21 13:03:41,623 [dbmanagment.py  __init__ 23] [INFO ]  Connected MongoDB 
+2017-06-21 13:04:05,935 [dbmanagment.py  __init__ 23] [INFO ]  Connected MongoDB 
+2017-06-21 13:04:20,260 [dbmanagment.py  __init__ 23] [INFO ]  Connected MongoDB 
+2017-06-21 13:04:20,260 [dbmanagment.py  collections 48] [ERROR]  please chose databasename,by calling setdatabase
+2017-06-21 13:04:43,819 [dbmanagment.py  __init__ 23] [INFO ]  Connected MongoDB 
+2017-06-21 13:14:38,206 [dbmanagment.py  __init__ 23] [INFO ]  Connected MongoDB 
+2017-06-21 13:14:56,120 [dbmanagment.py  __init__ 23] [INFO ]  Connected MongoDB 
+2017-06-21 13:14:56,122 [dbmanagment.py  collections 48] [ERROR]  please choose databasename,by calling setdatabase
+2017-06-21 13:15:18,050 [dbmanagment.py  __init__ 23] [INFO ]  Connected MongoDB 
+2017-06-21 13:15:18,051 [dbmanagment.py  collections 48] [ERROR]  please choose databasename,by calling setdatabase
+2017-06-21 13:15:50,127 [dbmanagment.py  __init__ 23] [INFO ]  Connected MongoDB 
+2017-06-21 13:24:55,185 [dbmanagment.py  __init__ 24] [INFO ]  Connected MongoDB 
+2017-06-21 13:25:04,688 [dbmanagment.py  __init__ 24] [INFO ]  Connected MongoDB 
+2017-06-21 13:25:04,689 [dbmanagment.py  checkField 49] [ERROR]  please choose databasename or collection,by calling setdatabase orsetcollection 
+2017-06-21 13:25:41,429 [dbmanagment.py  __init__ 24] [INFO ]  Connected MongoDB 
+2017-06-21 13:25:41,431 [dbmanagment.py  checkField 49] [ERROR]  please choose databasename or collection,by calling setdatabase orsetcollection 
+2017-06-21 13:26:36,241 [dbmanagment.py  __init__ 24] [INFO ]  Connected MongoDB 
+2017-06-21 13:27:02,723 [dbmanagment.py  __init__ 24] [INFO ]  Connected MongoDB 
+2017-06-21 13:27:22,621 [dbmanagment.py  __init__ 24] [INFO ]  Connected MongoDB 
+2017-06-21 13:37:47,081 [dbmanagment.py  __init__ 24] [INFO ]  Connected MongoDB 
+2017-06-21 13:38:55,351 [dbmanagment.py  __init__ 24] [INFO ]  Connected MongoDB 
+2017-06-21 14:03:56,406 [dbmanagment.py  __init__ 24] [INFO ]  Connected MongoDB 
+2017-06-21 14:03:56,410 [dbmanagment.py  insert 95] [ERROR]  DuplicateKeyError('E11000 duplicate key error collection: EmployeeData.Employees index: _id_ dup key: { : 2 }',)
+2017-06-21 14:04:23,575 [dbmanagment.py  __init__ 24] [INFO ]  Connected MongoDB 
+2017-06-21 14:04:23,577 [dbmanagment.py  insert 95] [ERROR]  DuplicateKeyError('E11000 duplicate key error collection: EmployeeData.Employees index: _id_ dup key: { : 25 }',)
+2017-06-21 14:05:47,523 [dbmanagment.py  __init__ 24] [INFO ]  Connected MongoDB 
+2017-06-21 14:06:19,927 [dbmanagment.py  __init__ 24] [INFO ]  Connected MongoDB 
+2017-06-21 14:06:19,929 [dbmanagment.py  insert 95] [ERROR]  TypeError('must be str, not InsertOneResult',)
+2017-06-21 14:07:04,973 [dbmanagment.py  __init__ 24] [INFO ]  Connected MongoDB 
+2017-06-21 14:07:04,976 [dbmanagment.py  insert 96] [ERROR]  DuplicateKeyError('E11000 duplicate key error collection: EmployeeData.Employees index: _id_ dup key: { : 27 }',)
+2017-06-21 14:09:00,014 [dbmanagment.py  __init__ 24] [INFO ]  Connected MongoDB 
+2017-06-21 14:09:00,016 [dbmanagment.py  insert 95] [ERROR]  DuplicateKeyError('E11000 duplicate key error collection: EmployeeData.Employees index: _id_ dup key: { : 27 }',)
+2017-06-21 14:46:39,997 [dbmanagment.py  __init__ 25] [INFO ]  Connected MongoDB 
+2017-06-21 14:46:40,000 [dbmanagment.py  insert 96] [ERROR]  DuplicateKeyError('E11000 duplicate key error collection: EmployeeData.Employees index: _id_ dup key: { : "192.168.2.25" }',)
+2017-06-21 15:01:35,063 [dbmanagment.py  __init__ 25] [INFO ]  Connected MongoDB 
+2017-06-21 15:01:35,065 [dbmanagment.py  insert 95] [ERROR]  DuplicateKeyError('E11000 duplicate key error collection: EmployeeData.Employees index: _id_ dup key: { : "192.168.2.25" }',)
+2017-06-21 15:04:47,200 [dbmanagment.py  __init__ 25] [INFO ]  Connected MongoDB 
+2017-06-21 15:05:04,791 [dbmanagment.py  insert 95] [ERROR]  DuplicateKeyError('E11000 duplicate key error collection: EmployeeData.Employees index: _id_ dup key: { : "192.168.2.25" }',)
+2017-06-21 15:05:16,710 [dbmanagment.py  __init__ 25] [INFO ]  Connected MongoDB 
+2017-06-21 15:05:20,820 [dbmanagment.py  insert 95] [ERROR]  DuplicateKeyError('E11000 duplicate key error collection: EmployeeData.Employees index: _id_ dup key: { : "192.168.2.25" }',)
