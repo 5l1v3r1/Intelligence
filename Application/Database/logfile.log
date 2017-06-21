@@ -1,0 +1,2 @@
+2017-06-21 17:44:52,610 [dbmanagment.py  __init__ 28] [INFO ]  Connected MongoDB 
+2017-06-21 17:44:52,880 [dbmanagment.py  delete 110] [INFO ]  Unsuccesfully on deleted : {'n': 0, 'ok': 1.0}

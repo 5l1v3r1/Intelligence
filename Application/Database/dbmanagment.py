@@ -7,6 +7,8 @@ description = """
     MongoDb database managment
     it serves for crud operation on database
     In addition information about collection and database
+    'mongodb://arquanum:qPuDqX2e@138.68.92.9:27017/admin'
+    mongo -u arquanum  138.68.92.9/admin -p secret
 """
 
 
@@ -20,7 +22,8 @@ class DbClient(object):
         self.collection=collection
         self.port = port
         try:
-            self.client = mongo.MongoClient(ip +':'+ port)
+            #self.client = mongo.MongoClient(ip +':'+ port)
+            self.client = mongo.MongoClient('mongodb://arquanum:secret@138.68.92.9:27017/admin')
             info=self.client.server_info()
             self.log.info("Connected MongoDB ")
         except  mongo.errors.ServerSelectionTimeoutError as err:
@@ -71,8 +74,8 @@ class DbClient(object):
     def getdocuments(self,filter={}):
         collection = self.getCollection()
         cursor=collection.find(filter)
-       #for document in cursor:
-       #    print(document)
+        for document in cursor:
+           print(document)
         return cursor
 
 
@@ -97,7 +100,16 @@ class DbClient(object):
         except Exception as  e:
             self.log.error(repr(e))
 
-
+    def delete(self,id):
+        try:
+            collection = self.getCollection()
+            output=collection.delete_one({'name': 'fatih'})
+            if output.deleted_count!=0:
+                self.log.info("Deleted Succesfully: ")
+            else:
+                self.log.info("Unsuccesfully on deleted : " + str(output.raw_result))
+        except Exception as  e:
+            self.log.error(repr(e))
 
     def update(self,item):
         try:
@@ -121,23 +133,24 @@ class DbClient(object):
 
 
 
-client=DbClient()
+client=DbClient(ip='138.68.92.9')
 print(client.databases())
-client.setdatabase('EmployeeData')
+client.setdatabase('intelligence')
 print(client.collections())
-client.setcollection('Employees')
-print(client.getdocuments())
+client.setcollection('ip')
+client.getdocuments()
+client.delete('594a740fde163924ae0cd1d9')
 
-
+"""
 client.insert({
                 "_id": '192.168.2.25',
                 "lastDate": datetime.datetime.utcnow(),
-                "type": 'aaaa',#c&c
+                "type": 'aaaa'
                 "description": "bbbb",
                 "by":'Konya',
                 "Intelligence":[{
                     "lastDate": datetime.datetime.utcnow(),
-                    "type": 'aaaa',  # c&c
+                    "type": 'aaaa',
                     "description": "bbbb",
                     "by": "Konya",
                     "sepep":"Sanane tirt",
@@ -147,3 +160,4 @@ client.insert({
 
 
 
+"""
