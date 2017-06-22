@@ -132,7 +132,7 @@ class DbClient(object):
 
 
 
-
+"""
 client=DbClient(ip='138.68.92.9')
 print(client.databases())
 client.setdatabase('intelligence')
@@ -141,7 +141,7 @@ client.setcollection('ip')
 client.getdocuments()
 client.delete('594a740fde163924ae0cd1d9')
 
-"""
+
 client.insert({
                 "_id": '192.168.2.25',
                 "lastDate": datetime.datetime.utcnow(),
