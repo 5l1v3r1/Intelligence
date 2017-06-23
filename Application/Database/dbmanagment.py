@@ -21,13 +21,24 @@ class DbClient(object):
         self.database=database
         self.collection=collection
         self.port = port
+        self.client=None
+        self.conectdb()
+
+    def conectdb(self):
+
         try:
             #self.client = mongo.MongoClient(ip +':'+ port)
-            self.client = mongo.MongoClient('mongodb://arquanum:secret@138.68.92.9:27017/admin')
+            self.client = mongo.MongoClient("mongodb://arquanum:qPuDqX2e@138.68.92.9:27017/admin")
             info=self.client.server_info()
             self.log.info("Connected MongoDB ")
+            return True
         except  mongo.errors.ServerSelectionTimeoutError as err:
             self.log.error(repr(err))
+            return False
+        except  Exception as err:
+            self.log.error(repr(err))
+            return False
+
 
 
     def getlog(self):
@@ -92,8 +103,9 @@ class DbClient(object):
 
         try:
             collection=self.getCollection()
-            output=collection.insert_one(item)
-            self.log.info("Inserted Succesfully: "+output)
+            r=collection.insert_one(item)
+
+            self.log.info("Inserted Succesfully:"+str(r.inserted_id))
         except mongo.errors.DuplicateKeyError as  e:
             self.log.error(repr(e))
             self.update(item)
@@ -119,7 +131,7 @@ class DbClient(object):
              {
                   "$addToSet": { "Intelligence": { "$each": item['Intelligence'] } },
                     "$set": {
-                        "lastDate": datetime.datetime.utcnow(),
+                        "lastDate": item['lastDate'],
                         "type": item['type'],  # c&c
                         "description": item['description'],
                         "by": item['by'],
