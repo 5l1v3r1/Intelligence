@@ -30,3 +30,7 @@
 2017-06-24 13:39:21,852 [autoshun.py  getIntelligent 62] [INFO ]  source link is available
 2017-06-24 13:39:23,580 [dbmanagment.py  conectdb 32] [INFO ]  Connected MongoDB 
 2017-06-24 13:39:24,339 [dbmanagment.py  insertmany 104] [INFO ]  500 number items duplicated,so trying update  theses
+2017-06-24 14:11:38,686 [autoshun.py  getIntelligent 44] [INFO ]  source link is available
+2017-06-24 14:12:06,154 [autoshun.py  getIntelligent 57] [ERROR]  TypeError('initial_value must be str or None, not bytes',)
+2017-06-24 14:15:44,089 [autoshun.py  getIntelligent 44] [INFO ]  source link is available
+2017-06-24 14:16:50,854 [autoshun.py  getIntelligent 44] [INFO ]  source link is available

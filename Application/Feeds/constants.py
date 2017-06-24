@@ -9,8 +9,8 @@ class Type(Enum):
 
 class Const:
     class autoshun:
-        s_link = 'https://www.autoshun.org/download/?api_key=d4066260862da9118d84717e17c0fc&format=csv'
-        u_interval=10 #minute interval
+        s_link = 'https://www.autoshun.org/download/?api_key=eb4c31917acb6afb8838ceab70a8309&format=csv'
+        u_interval=30 #minute interval
     class dbmanagment:
         db_path = 'mongodb://arquanum:qPuDqX2e@138.68.92.9:27017/admin'
 

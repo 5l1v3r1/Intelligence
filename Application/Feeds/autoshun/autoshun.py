@@ -2,7 +2,7 @@ import  Database.dbmanagment as Dbmanage
 import csv
 import requests
 
-from abc import ABC, abstractmethod
+from Feeds.feeder import Feeder
 import Feeds.constants as C
 from io import StringIO
 
@@ -14,24 +14,6 @@ description = """
 
 
 """
-
-
-
-
-
-class Feeder(ABC):
-
-
-    def __init__(self, type, name,by):
-        self.name = name
-        self.type=type
-        self.by=by
-
-
-    @abstractmethod
-    def checkstatus(self):
-        pass
-
 
 
 class Feederautoshun(Feeder):
@@ -109,7 +91,7 @@ class Feederautoshun(Feeder):
                         self.intelligence.append(item)
                 #print(self.intelligence)
         else:
-            buffer = StringIO(data)
+            buffer = StringIO(str(data,'utf-8'))
             readCSV = csv.reader(buffer, delimiter=',')
             for item in readCSV:
                 if item[0][0] == "#":
@@ -117,9 +99,6 @@ class Feederautoshun(Feeder):
                 else:
                     self.intelligence.append(item)
             #print(self.intelligence)
-
-
-
 
 
 
@@ -161,7 +140,7 @@ class Feederautoshun(Feeder):
 a=Feederautoshun(C.Type.Ip,"Autoshun","Autshun","adad")
 print(a.checkstatus())
 a.getIntelligent()
-a.insertmanydb()
+#a.insertmanydb()
 
 
 
