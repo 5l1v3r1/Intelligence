@@ -6,11 +6,32 @@ class Type(Enum):
     Domain=2
     Mail=3
     Malware=4
+    Phisingurl=5
+
+
+def getType(type):
+    if Type.Ip==type:
+        return "Black_Ip"
+    elif Type.Domain==type:
+        return "Black_Domain"
+    elif Type.Mail == type:
+        return "Mail"
+    elif Type.Malware == type:
+        return "Malware"
+    elif Type.Phisingurl == type:
+        return "Phisingurl"
+    else:
+        return "Type not defined"
 
 class Const:
     class autoshun:
         s_link = 'https://www.autoshun.org/download/?api_key=eb4c31917acb6afb8838ceab70a8309&format=csv'
         u_interval=30 #minute interval
+
+    class phistank:
+        s_link= 'http://data.phishtank.com/data/online-valid.csv'
+        u_interval = 90 #minute interval
+
     class dbmanagment:
         db_path = 'mongodb://arquanum:qPuDqX2e@138.68.92.9:27017/admin'
 

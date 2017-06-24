@@ -63,13 +63,13 @@ class Feederautoshun(Feeder):
             temp = {
                 "_id": i[0],
                 "lastDate": i[1],
-                "type": "BlackIP",
+                "type": C.getType(self.type),
                 "description": i[2],
                 "by": self.by,
                 "Intelligence":
                     [{
                         "lastDate": i[1],
-                        "type": "BlackIP",
+                        "type": C.getType(self.type),
                         "description": i[2],
                         "by": self.by,
                         "confidence": "alahaemanet"
@@ -117,13 +117,13 @@ class Feederautoshun(Feeder):
             {
                 "_id": item[0],
                 "lastDate": item[1],
-                "type": "BlackIP",
+                "type": C.getType(self.type),
                 "description": item[2],
                 "by": self.by,
                 "Intelligence":
                     [{
                         "lastDate": item[1],
-                        "type": "BlackIP",
+                        "type":C.getType(self.type),
                         "description": item[2],
                         "by": self.by,
                         "confidence": "alahaemanet"
@@ -133,7 +133,6 @@ class Feederautoshun(Feeder):
 
     def __str__(self):
         return "%s  %s  %s " % (self.name, self.type, self.by)
-
 
 
 
