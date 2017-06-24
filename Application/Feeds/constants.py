@@ -1,6 +1,6 @@
 from enum import Enum
 import logging
-
+import os
 class Type(Enum):
     Ip=1
     Domain=2
@@ -30,12 +30,12 @@ class Const:
 
     class phistank:
         s_link= 'http://data.phishtank.com/data/online-valid.csv'
+        app_key='9c6f6c909a9df44bae577bcdf35d97ff87a4d07ef4243db534c8775be81cdc31'
+        api_link='http://checkurl.phishtank.com/checkurl/'
         u_interval = 90 #minute interval
 
     class dbmanagment:
         db_path = 'mongodb://arquanum:qPuDqX2e@138.68.92.9:27017/admin'
-
-
 
 
 
@@ -47,7 +47,7 @@ def getlog():
     if (len(rootLogger.handlers) > 0):
         return rootLogger
     rootLogger.setLevel(logging.INFO)
-    fileHandler = logging.FileHandler('logfile.log')
+    fileHandler = logging.FileHandler(os.getcwd()+'/logfile.log')
     fileHandler.setFormatter(logFormatter)
     rootLogger.addHandler(fileHandler)
     consoleHandler = logging.StreamHandler()

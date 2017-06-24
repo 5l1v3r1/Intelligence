@@ -1,6 +1,7 @@
 import  Database.dbmanagment as Dbmanage
 import csv
 import requests
+import json
 
 from Feeds.feeder import Feeder
 import Feeds.constants as C
@@ -79,11 +80,21 @@ class Feederphistank(Feeder):
 
 
     def extract(self,data):
-            buffer = StringIO(str(data,'utf-8'))
-            readCSV = csv.reader(buffer, delimiter=',')
-            for item in readCSV:
-                    self.intelligence.append(item)
-            #print(self.intelligence)
+
+        buffer = StringIO(str(data,'utf-8'))
+        readCSV = csv.reader(buffer, delimiter=',')
+        for item in readCSV:
+                self.intelligence.append(item)
+        #print(self.intelligence)
+
+    def validateUrl(self,url):
+        payload = {'url': url, 'format': 'json','app_key':C.Const.phistank.app_key}
+        response = requests.post(C.Const.phistank.api_link, data=payload)
+        d = json.loads(response.text)
+        return d
+
+
+
 
 
 
@@ -128,15 +139,15 @@ class Feederphistank(Feeder):
 
 
 a=Feederphistank(C.Type.Phisingurl,"Phishing  Url","PhishTank",)
-print(a.checkstatus())
-a.getIntelligent()
-a.insertmanydb()
+a.validateUrl('http://checkfb-login404inc.esy.es/recovery-chekpoint-login.html')
+#print(a.checkstatus())
+#a.getIntelligent()
+#a.insertmanydb()
 
 
 
 
-
-
+#curl -d "url=http://checkfb-login404inc.esy.es/recovery-chekpoint-login.html&format=json&app_key=9c6f6c909a9df44bae577bcdf35d97ff87a4d07ef4243db534c8775be81cdc31" http://checkurl.phishtank.com/checkurl/
 
 
 
