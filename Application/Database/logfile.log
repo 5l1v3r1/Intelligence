@@ -1,2 +1,69 @@
 2017-06-21 17:44:52,610 [dbmanagment.py  __init__ 28] [INFO ]  Connected MongoDB 
 2017-06-21 17:44:52,880 [dbmanagment.py  delete 110] [INFO ]  Unsuccesfully on deleted : {'n': 0, 'ok': 1.0}
+2017-06-23 12:50:09,553 [dbmanagment.py  conectdb 33] [INFO ]  Connected MongoDB 
+2017-06-23 12:50:43,456 [dbmanagment.py  insertMany 125] [ERROR]  TypeError('documents must be a non-empty list',)
+2017-06-23 12:51:37,809 [dbmanagment.py  conectdb 33] [INFO ]  Connected MongoDB 
+2017-06-23 12:57:51,065 [dbmanagment.py  conectdb 33] [INFO ]  Connected MongoDB 
+2017-06-23 12:58:05,703 [dbmanagment.py  insertMany 125] [ERROR]  TypeError('documents must be a non-empty list',)
+2017-06-23 13:05:52,129 [dbmanagment.py  conectdb 33] [INFO ]  Connected MongoDB 
+2017-06-23 13:05:56,754 [dbmanagment.py  insertMany 125] [ERROR]  TypeError('documents must be a non-empty list',)
+2017-06-23 13:05:58,005 [dbmanagment.py  insert 113] [ERROR]  TypeError('document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping',)
+2017-06-23 13:09:03,120 [dbmanagment.py  conectdb 33] [INFO ]  Connected MongoDB 
+2017-06-23 13:09:20,471 [dbmanagment.py  conectdb 33] [INFO ]  Connected MongoDB 
+2017-06-23 13:09:48,612 [dbmanagment.py  conectdb 33] [INFO ]  Connected MongoDB 
+2017-06-23 13:10:23,254 [dbmanagment.py  conectdb 33] [INFO ]  Connected MongoDB 
+2017-06-23 13:11:15,062 [dbmanagment.py  conectdb 33] [INFO ]  Connected MongoDB 
+2017-06-23 13:11:52,314 [dbmanagment.py  conectdb 33] [INFO ]  Connected MongoDB 
+2017-06-23 13:12:13,166 [dbmanagment.py  insertMany 125] [ERROR]  AttributeError("'InsertManyResult' object has no attribute 'inserted_id'",)
+2017-06-23 13:19:17,600 [dbmanagment.py  conectdb 33] [INFO ]  Connected MongoDB 
+2017-06-23 13:19:17,913 [dbmanagment.py  insertMany 125] [ERROR]  AttributeError("'InsertManyResult' object has no attribute 'inserted_id'",)
+2017-06-23 13:20:00,705 [dbmanagment.py  conectdb 33] [INFO ]  Connected MongoDB 
+2017-06-23 13:20:00,956 [dbmanagment.py  insertMany 125] [ERROR]  BulkWriteError('batch op errors occurred',)
+2017-06-23 13:20:35,647 [dbmanagment.py  conectdb 33] [INFO ]  Connected MongoDB 
+2017-06-23 13:21:03,558 [dbmanagment.py  conectdb 33] [INFO ]  Connected MongoDB 
+2017-06-23 13:21:03,817 [dbmanagment.py  insertMany 120] [INFO ]  Inserted Succesfully:['186.248.147.235', '1.246.101.246']
+2017-06-23 13:21:45,545 [dbmanagment.py  conectdb 33] [INFO ]  Connected MongoDB 
+2017-06-23 13:21:45,835 [dbmanagment.py  insertMany 125] [ERROR]  BulkWriteError('batch op errors occurred',)
+2017-06-23 13:22:32,718 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 13:23:16,886 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 13:23:17,144 [dbmanagment.py  insertMany 121] [INFO ]  Inserted Succesfully:['186.248.147.235', '1.246.101.246']
+2017-06-23 13:23:21,755 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 13:23:58,477 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 13:24:31,157 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 13:24:55,455 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 13:25:15,366 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 13:37:03,282 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 13:37:34,519 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 13:38:08,280 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 13:38:31,427 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 13:38:31,671 [dbmanagment.py  insertMany 121] [INFO ]  Inserted Succesfully:['186.248.147.235', '1.246.101.246']
+2017-06-23 13:38:49,650 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 13:39:21,820 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 13:39:51,986 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 13:40:53,983 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 13:42:24,239 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 14:15:54,407 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 14:16:08,621 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 14:21:41,049 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 14:21:49,556 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 14:26:26,331 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 14:26:26,678 [dbmanagment.py  insertMany 121] [INFO ]  Inserted Succesfully:['187.248.147.235', '1.246.101.246', '5.8.48.21']
+2017-06-23 14:44:41,785 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 14:44:57,281 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 14:50:43,575 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 14:53:00,230 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 14:53:14,154 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 14:53:21,947 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 14:53:36,849 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 14:53:53,093 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 14:55:42,372 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 14:55:42,563 [dbmanagment.py  insertMany 129] [INFO ]  3 number items duplicated,so try update 
+2017-06-23 14:56:25,637 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 14:56:25,851 [dbmanagment.py  insertMany 129] [INFO ]  3 number items duplicated,so trying update  theses
+2017-06-23 17:13:15,365 [dbmanagment.py  conectdb 40] [ERROR]  AutoReconnect('138.68.92.9:27017: [Errno 60] Operation timed out',)
+2017-06-23 17:13:52,785 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 17:13:52,994 [dbmanagment.py  insertmany 125] [INFO ]  3 number items duplicated,so trying update  theses
+2017-06-23 17:14:43,635 [dbmanagment.py  conectdb 34] [INFO ]  Connected MongoDB 
+2017-06-23 17:14:43,899 [dbmanagment.py  insertmany 108] [INFO ]  3 number items duplicated,so trying update  theses
+2017-06-23 17:22:59,245 [dbmanagment.py  conectdb 32] [INFO ]  Connected MongoDB 
+2017-06-23 17:22:59,436 [dbmanagment.py  insertmany 104] [INFO ]  3 number items duplicated,so trying update  theses

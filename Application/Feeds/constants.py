@@ -11,6 +11,9 @@ class Const:
     class autoshun:
         s_link = 'https://www.autoshun.org/download/?api_key=d4066260862da9118d84717e17c0fc&format=csv'
         u_interval=10 #minute interval
+    class dbmanagment:
+        db_path = 'mongodb://arquanum:qPuDqX2e@138.68.92.9:27017/admin'
+
 
 
 
