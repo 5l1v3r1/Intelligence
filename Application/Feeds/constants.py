@@ -27,6 +27,9 @@ class Const:
     class autoshun:
         s_link = 'https://www.autoshun.org/download/?api_key=eb4c31917acb6afb8838ceab70a8309&format=csv'
         u_interval=30 #minute interval
+    class openphish:
+        s_link = 'https://openphish.com/feed.txt'
+        u_interval = 20  # minute interval
 
     class phistank:
         s_link= 'http://data.phishtank.com/data/online-valid.csv'
