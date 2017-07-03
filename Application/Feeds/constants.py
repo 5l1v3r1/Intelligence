@@ -4,9 +4,14 @@ import os
 class Type(Enum):
     Ip=1
     Domain=2
-    Mail=3
-    Malware=4
-    Phisingurl=5
+    Url=3
+    Mail=4
+    Malware_url=5
+    Malware_ip = 6
+    Malware_domain = 7
+    Phisingurl=8
+    Ransomware = 9
+
 
 
 def getType(type):
@@ -16,19 +21,40 @@ def getType(type):
         return "Black_Domain"
     elif Type.Mail == type:
         return "Mail"
-    elif Type.Malware == type:
-        return "Malware"
     elif Type.Phisingurl == type:
         return "Phisingurl"
+    elif Type.Ransomware == type:
+        return "Ransomware"
+    elif Type.Malware_url==type:
+        return "Malware_Url_Blocklist"
+    elif Type.Malware_ip == type:
+        return "Malware_Ip_Blocklist"
+    elif Type.Malware_domain == type:
+        return "Malware_Domain_Blocklist"
     else:
         return "Type not defined"
 
+def getCollectName(type):
+      if type.value in (5,3):
+          return "url"
+      elif type.value in (1,6):
+          return "ip"
+      elif type.value in (2,7):
+          return "domain"
+
+
 class Const:
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'}
+
     class autoshun:
         s_link = 'https://www.autoshun.org/download/?api_key=eb4c31917acb6afb8838ceab70a8309&format=csv'
         u_interval=30 #minute interval
     class openphish:
         s_link = 'https://openphish.com/feed.txt'
+        u_interval = 20  # minute interval
+    class ransomware:
+        s_link = 'http://ransomwaretracker.abuse.ch/blocklist/'
         u_interval = 20  # minute interval
 
     class phistank:
@@ -50,7 +76,7 @@ def getlog():
     if (len(rootLogger.handlers) > 0):
         return rootLogger
     rootLogger.setLevel(logging.INFO)
-    fileHandler = logging.FileHandler(os.getcwd()+'/logfile.log')
+    fileHandler = logging.FileHandler(os.getcwd()+'/../logfile.log')
     fileHandler.setFormatter(logFormatter)
     rootLogger.addHandler(fileHandler)
     consoleHandler = logging.StreamHandler()
