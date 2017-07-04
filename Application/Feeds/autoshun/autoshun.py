@@ -1,9 +1,10 @@
-import  Database.dbmanagment as Dbmanage
+from  dbmanagment.dbmanagment import DbClient
 import csv
 import requests
 
-from Feeds.feeder import Feeder
-import Feeds.constants as C
+from feeds.feeder import Feeder
+from constants.values import *
+
 from io import StringIO
 
 description = """
@@ -18,13 +19,13 @@ description = """
 
 class Feederautoshun(Feeder):
 
-    def __init__(self, type, name,by,description,sourcelink=C.Const.autoshun.s_link,updateinterval=C.Const.autoshun.u_interval):
+    def __init__(self, type, name,by,description,sourcelink=Const.autoshun.s_link,updateinterval=Const.autoshun.u_interval):
         Feeder.__init__(self,type,name,by)
         self.description=description
         self.intelligence=[]
         self.sourcelink=sourcelink
         self.updateinterval=updateinterval
-        self.log=C.getlog()
+        self.log=getlog()
 
     def checkstatus(self):
         try:
@@ -45,14 +46,10 @@ class Feederautoshun(Feeder):
             try:
                 r = requests.get(self.sourcelink)
                 if r.status_code == 200:
-                    with open('autoshun.csv', 'wb') as f:
-                        f.write(r.content)                           # Fixme: THis operation that save file  then read it, most probablity is unneccessariy,Check again
-                    self.extract(r.content,False)
-                elif r.status_code == 304:                          # TODO this will be change,it is temprorariy for now
-                    print("Geç Bu adimi")
-                    self.extract('autoshun.csv',True)
+                    self.extract(r.content)
                 else:
                     self.log.error('Eror on dowloading intelligent http:'+str(r.status_code))
+
             except Exception as e:
                 self.log.error(repr(e))
                 return False
@@ -63,13 +60,13 @@ class Feederautoshun(Feeder):
             temp = {
                 "_id": i[0],
                 "lastDate": i[1],
-                "type": C.getType(self.type),
+                "type": getType(self.type),
                 "description": i[2],
                 "by": self.by,
                 "Intelligence":
                     [{
                         "lastDate": i[1],
-                        "type": C.getType(self.type),
+                        "type": getType(self.type),
                         "description": i[2],
                         "by": self.by,
                         "confidence": "alahaemanet"
@@ -79,37 +76,31 @@ class Feederautoshun(Feeder):
         return listdict
 
 
-    def extract(self,data,flag):                                             #Fixme  check again,there is  unneccesiary operations
+    def extract(self,data):
+        buffer = StringIO(str(data, 'utf-8'))
+        readCSV = csv.reader(buffer, delimiter=',')
+        for item in readCSV:
+            if item[0][0] == "#":
+                pass
+            else:
+                self.intelligence.append(item)
+                # print(self.intelligence)
 
-        if flag:
-            with open('autoshun.csv') as csvfile:
-                readCSV = csv.reader(csvfile, delimiter=',')
-                for item in readCSV:
-                    if item[0][0] == "#":
-                        pass
-                    else:
-                        self.intelligence.append(item)
-                #print(self.intelligence)
-        else:
-            buffer = StringIO(str(data,'utf-8'))
-            readCSV = csv.reader(buffer, delimiter=',')
-            for item in readCSV:
-                if item[0][0] == "#":
-                    pass
-                else:
-                    self.intelligence.append(item)
-            #print(self.intelligence)
+
 
 
 
     def insertmanydb(self):
-        client = Dbmanage.DbClient()
+        if len(self.intelligence)==0:
+            self.log.error("Intelligent data is empty")
+            return False;
+        client = DbClient()
         client.setdatabase('intelligence')
         client.setcollection('ip')
         client.insertmany(self.getitemsindict())
 
     def insertonedb(self,item):
-        client = Dbmanage.DbClient()
+        client = DbClient()
         client.setdatabase('intelligence')
         client.setcollection('ip')
         client.getdocuments()
@@ -117,13 +108,13 @@ class Feederautoshun(Feeder):
             {
                 "_id": item[0],
                 "lastDate": item[1],
-                "type": C.getType(self.type),
+                "type": getType(self.type),
                 "description": item[2],
                 "by": self.by,
                 "Intelligence":
                     [{
                         "lastDate": item[1],
-                        "type":C.getType(self.type),
+                        "type":getType(self.type),
                         "description": item[2],
                         "by": self.by,
                         "confidence": "alahaemanet"
@@ -136,10 +127,10 @@ class Feederautoshun(Feeder):
 
 
 
-a=Feederautoshun(C.Type.Ip,"Autoshun","Autshun","adad")
+a=Feederautoshun(Type.Ip,"Autoshun","Autshun","adad")
 print(a.checkstatus())
 a.getIntelligent()
-#a.insertmanydb()
+a.insertmanydb()
 
 
 

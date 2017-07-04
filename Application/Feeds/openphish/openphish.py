@@ -1,13 +1,12 @@
-import  Database.dbmanagment as Dbmanage
-
+from  dbmanagment.dbmanagment import DbClient
 import requests
 import urllib
 import datetime
 import  bs4
 
+from feeds.feeder import Feeder
+from constants.values import *
 
-from Feeds.feeder import Feeder
-import Feeds.constants as C
 from io import StringIO
 
 description = """
@@ -21,13 +20,13 @@ description = """
 
 class Feederopenphish(Feeder):
 
-    def __init__(self, type, name,by,description=description,sourcelink=C.Const.openphish.s_link,updateinterval=C.Const.openphish.u_interval):
+    def __init__(self, type, name,by,description=description,sourcelink=Const.openphish.s_link,updateinterval=Const.openphish.u_interval):
         Feeder.__init__(self,type,name,by)
         self.description=description
         self.intelligence=[]
         self.sourcelink=sourcelink
         self.updateinterval=updateinterval
-        self.log=C.getlog()
+        self.log=getlog()
 
     def checkstatus(self):
         try:
@@ -60,14 +59,14 @@ class Feederopenphish(Feeder):
             temp = {
                 "_id": i[0],
                 "lastDate":  datetime.datetime.utcnow(),
-                "type": C.getType(self.type),
+                "type": getType(self.type),
                 "description": 'Not avvailable',
                 "by": self.by,
                 "Intelligence":
                     [{
                         "phish_id":i[0],
                         "lastDate": datetime.datetime.utcnow(),
-                         "type": C.getType(self.type),
+                         "type": getType(self.type),
                          "description": i[1],
                          "by": self.by,
                          "online":i[2],
@@ -98,7 +97,7 @@ class Feederopenphish(Feeder):
         result=[]         #[title,availeble]
         try:
             page = urllib.request.urlopen(url,timeout=3)
-            title = bs4.BeautifulSoup(page.read(), 'html.parser').title.text         # TODO Create final http header  for all feeders to use parser web page
+            title = bs4.BeautifulSoup(page.read(), 'html.parser').title.text
             result=[title,'yes']
         except urllib.error.HTTPError as e:
             result = ['eriselemiyor', 'no' ]
@@ -113,13 +112,13 @@ class Feederopenphish(Feeder):
 
 
     def insertmanydb(self):
-        client = Dbmanage.DbClient()
+        client = DbClient()
         client.setdatabase('intelligence')
         client.setcollection('url')
         client.insertmany(self.getitemsindict(self.intelligence))
 
     def insertonedb(self,item):
-        client = Dbmanage.DbClient()
+        client = DbClient()
         client.setdatabase('intelligence')
         client.setcollection('url')
         client.getdocuments()
@@ -127,14 +126,14 @@ class Feederopenphish(Feeder):
             {
                 "_id": item[0],
                 "lastDate": datetime.datetime.utcnow(),
-                "type": C.getType(self.type),
+                "type": getType(self.type),
                 "description": 'Not avvailable',
                 "by": self.by,
                 "Intelligence":
                     [{
                         "phish_id": item[0],
                         "lastDate": datetime.datetime.utcnow(),
-                        "type": C.getType(self.type),
+                        "type": getType(self.type),
                         "description": item[1],
                         "by": self.by,
                         "online": item[2],
@@ -150,9 +149,9 @@ class Feederopenphish(Feeder):
 
 
 
-a=Feederopenphish(C.Type.Phisingurl,"Phishing  Url","OpenPhish",)
+a=Feederopenphish(Type.Phisingurl,"Phishing  Url","OpenPhish",)
 
-#print(a.checkstatus())
+print(a.checkstatus())
 a.getIntelligent()
 a.insertmanydb()
 

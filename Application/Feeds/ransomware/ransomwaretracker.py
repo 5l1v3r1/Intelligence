@@ -1,10 +1,12 @@
-import  Database.dbmanagment as Dbmanage
+from  dbmanagment.dbmanagment import DbClient
 
-import requests
 import traceback
+import requests
+from feeds.feeder import Feeder
+from constants.values import *
 
-from Feeds.feeder import Feeder
-import Feeds.constants as C
+
+
 from io import StringIO
 from bs4 import  BeautifulSoup
 description = """
@@ -18,13 +20,13 @@ description = """
 
 class Feederransomwre(Feeder):
 
-    def __init__(self, type, name,by,description=description,sourcelink=C.Const.ransomware.s_link,updateinterval=C.Const.ransomware.u_interval):
+    def __init__(self, type, name,by,description=description,sourcelink=Const.ransomware.s_link,updateinterval=Const.ransomware.u_interval):
         Feeder.__init__(self,type,name,by)
         self.description=description
         self.intelligence=[]
         self.sourcelink=sourcelink
         self.updateinterval=updateinterval
-        self.log=C.getlog()
+        self.log=getlog()
 
     def checkstatus(self,url):
         try:
@@ -44,7 +46,7 @@ class Feederransomwre(Feeder):
         if self.checkstatus(self.sourcelink):
             self.log.info("source link is available")
             try:
-                r = requests.get(self.sourcelink,headers=C.Const.headers)
+                r = requests.get(self.sourcelink,headers=Const.headers)
                 if r.status_code == 200:
                     self.parsePage(r.content)
                 else:
@@ -57,11 +59,11 @@ class Feederransomwre(Feeder):
 
     def getType(self,name):
         if "ip" in name.lower():
-            return C.Type.Malware_ip
+            return Type.Malware_ip
         elif "domain" in name.lower():
-            return C.Type.Malware_domain
+            return Type.Malware_domain
         elif "url" in name.lower():
-            return C.Type.Malware_url
+            return Type.Malware_url
     def parsePage(self,data):
 
         soup = BeautifulSoup(data, 'html.parser')
@@ -99,7 +101,7 @@ class Feederransomwre(Feeder):
                 '_id': item,
                 "lastDate": date,
                 'scope': data[2],
-                'type': C.getType(self.getType(data[3])),
+                'type': getType(self.getType(data[3])),
                 'description': data[2],
                 'by': self.by,
                 'risk': data[4],
@@ -108,7 +110,7 @@ class Feederransomwre(Feeder):
                         "malware_name": data[1],
                         "lastDate": date,
                         'scope': data[2],
-                        'type': C.getType(self.getType(data[3])),
+                        'type': getType(self.getType(data[3])),
                         'description': data[2],
                         "by": self.by,
                         'risk': data[4]
@@ -124,7 +126,7 @@ class Feederransomwre(Feeder):
         url='http://ransomwaretracker.abuse.ch'+url
         if self.checkstatus(url):
             try:
-                r = requests.get(url, headers=C.Const.headers)
+                r = requests.get(url, headers=Const.headers)
                 if r.status_code == 200:
 
                     buffer = StringIO(str(r.content, 'utf-8'))
@@ -158,46 +160,19 @@ class Feederransomwre(Feeder):
 
 
     def insertmanydb(self):
-        client = Dbmanage.DbClient()
+        client = DbClient()
         client.setdatabase('intelligence')
         for intel in self.intelligence:
-            client.setcollection(C.getCollectName(self.getType(intel['collection'])))
+            client.setcollection(getCollectName(self.getType(intel['collection'])))
             client.insertmany(intel['doc'])
 
-    def insertonedb(self,item):
-        client = Dbmanage.DbClient()
-        client.setdatabase('intelligence')
-        client.setcollection('url')
-        client.getdocuments()
-        client.insert(
-            {
-                "_id": item[1],
-                "lastDate": item[3],
-                "type": C.getType(self.type),
-                "description": item[2],
-                "by": self.by,
-                "Intelligence":
-                    [{
-                        "phish_id":item[0],
-                        "lastDate": item[3],
-                         "type": C.getType(self.type),
-                         "description": item[2],
-                         "by": self.by,
-                         "online":item[6],
-                         "target":item[7],
-                         "verified":item[4],
-                         "verification_time": item[5],
-                         "levelofrisk":"Hight"
-                    }]
-            }
-        )
 
     def __str__(self):
         return "%s  %s  %s " % (self.name, self.type, self.by)
 
 
 
-a=Feederransomwre(C.Type.Ransomware,"Ransomware  Malware","RamsomwareTracker",)
+a=Feederransomwre(Type.Ransomware,"Ransomware  Malware","RamsomwareTracker",)
 print(a.checkstatus(a.sourcelink))
 a.getIntelligent()
 a.insertmanydb()
@@ -205,7 +180,6 @@ a.insertmanydb()
 
 
 
-#curl -d "url=http://checkfb-login404inc.esy.es/recovery-chekpoint-login.html&format=json&app_key=9c6f6c909a9df44bae577bcdf35d97ff87a4d07ef4243db534c8775be81cdc31" http://checkurl.phishtank.com/checkurl/
 
 
 

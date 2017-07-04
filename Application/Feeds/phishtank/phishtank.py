@@ -1,10 +1,12 @@
-import  Database.dbmanagment as Dbmanage
+from  dbmanagment.dbmanagment import DbClient
 
 import requests
 import json
+import csv
 
-from Feeds.feeder import Feeder
-import Feeds.constants as C
+from feeds.feeder import Feeder
+from constants.values import *
+
 from io import StringIO
 
 description = """
@@ -18,13 +20,13 @@ description = """
 
 class Feederphistank(Feeder):
 
-    def __init__(self, type, name,by,description=description,sourcelink=C.Const.phistank.s_link,updateinterval=C.Const.phistank.u_interval):
+    def __init__(self, type, name,by,description=description,sourcelink=Const.phistank.s_link,updateinterval=Const.phistank.u_interval):
         Feeder.__init__(self,type,name,by)
         self.description=description
         self.intelligence=[]
         self.sourcelink=sourcelink
         self.updateinterval=updateinterval
-        self.log=C.getlog()
+        self.log=getlog()
 
     def checkstatus(self):
         try:
@@ -58,14 +60,14 @@ class Feederphistank(Feeder):
             temp = {
                 "_id": i[1],
                 "lastDate": i[3],
-                "type": C.getType(self.type),
+                "type": getType(self.type),
                 "description": i[2],
                 "by": self.by,
                 "Intelligence":
                     [{
                         "phish_id":i[0],
                         "lastDate": i[3],
-                         "type": C.getType(self.type),
+                         "type": getType(self.type),
                          "description": i[2],
                          "by": self.by,
                          "online":i[6],
@@ -85,11 +87,11 @@ class Feederphistank(Feeder):
         readCSV = csv.reader(buffer, delimiter=',')
         for item in readCSV:
                 self.intelligence.append(item)
-        #print(self.intelligence)
+
 
     def validateUrl(self,url):
-        payload = {'url': url, 'format': 'json','app_key':C.Const.phistank.app_key}
-        response = requests.post(C.Const.phistank.api_link, data=payload)
+        payload = {'url': url, 'format': 'json','app_key':Const.phistank.app_key}
+        response = requests.post(Const.phistank.api_link, data=payload)
         d = json.loads(response.text)
         return d
 
@@ -100,13 +102,13 @@ class Feederphistank(Feeder):
 
 
     def insertmanydb(self):
-        client = Dbmanage.DbClient()
+        client = DbClient()
         client.setdatabase('intelligence')
         client.setcollection('url')
         client.insertmany(self.getitemsindict())
 
     def insertonedb(self,item):
-        client = Dbmanage.DbClient()
+        client = DbClient()
         client.setdatabase('intelligence')
         client.setcollection('url')
         client.getdocuments()
@@ -114,14 +116,14 @@ class Feederphistank(Feeder):
             {
                 "_id": item[1],
                 "lastDate": item[3],
-                "type": C.getType(self.type),
+                "type": getType(self.type),
                 "description": item[2],
                 "by": self.by,
                 "Intelligence":
                     [{
                         "phish_id":item[0],
                         "lastDate": item[3],
-                         "type": C.getType(self.type),
+                         "type": getType(self.type),
                          "description": item[2],
                          "by": self.by,
                          "online":item[6],
@@ -138,7 +140,7 @@ class Feederphistank(Feeder):
 
 
 
-a=Feederphistank(C.Type.Phisingurl,"Phishing  Url","PhishTank",)
+a=Feederphistank(Type.Phisingurl,"Phishing  Url","PhishTank",)
 a.validateUrl('http://checkfb-login404inc.esy.es/recovery-chekpoint-login.html')
 #print(a.checkstatus())
 #a.getIntelligent()

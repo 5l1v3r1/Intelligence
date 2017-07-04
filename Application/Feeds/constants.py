@@ -48,19 +48,26 @@ class Const:
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'}
 
     class autoshun:
-        s_link = 'https://www.autoshun.org/download/?api_key=eb4c31917acb6afb8838ceab70a8309&format=csv'
+        s_link   = 'https://www.autoshun.org/download/?api_key=eb4c31917acb6afb8838ceab70a8309&format=csv'
         u_interval=30 #minute interval
+
+    class malwr:
+        s_link   = 'https://malwr.com'
+    class virustotal:
+        s_link   = 'https://www.virustotal.com/vtapi/v2/'
+        api_key  = "51d9c4723d084b9270bda8897d8f697b005ce939d67013915af92f721e0a8634"
+
     class openphish:
-        s_link = 'https://openphish.com/feed.txt'
+        s_link   = 'https://openphish.com/feed.txt'
         u_interval = 20  # minute interval
     class ransomware:
-        s_link = 'http://ransomwaretracker.abuse.ch/blocklist/'
+        s_link   = 'http://ransomwaretracker.abuse.ch/blocklist/'
         u_interval = 20  # minute interval
 
     class phistank:
-        s_link= 'http://data.phishtank.com/data/online-valid.csv'
-        app_key='9c6f6c909a9df44bae577bcdf35d97ff87a4d07ef4243db534c8775be81cdc31'
-        api_link='http://checkurl.phishtank.com/checkurl/'
+        s_link   = 'http://data.phishtank.com/data/online-valid.csv'
+        app_key  ='9c6f6c909a9df44bae577bcdf35d97ff87a4d07ef4243db534c8775be81cdc31'
+        api_link ='http://checkurl.phishtank.com/checkurl/'
         u_interval = 90 #minute interval
 
     class dbmanagment:
