@@ -10,12 +10,12 @@ from constants.values import *
 __url__ = "http://danger.rulez.sk/projects/bruteforceblocker/blist.php"
 __name__ = "BruteForceBlocker"
 __by__ = "BruteForceBlocker"
-__info__ = "Its main purpose is to block SSH bruteforce attacks via firewall."
+__info__ = "Its main purpose is to block SSH bruteforce attacks via firewall.count show number of atttemps "
 __collection__="ip"
 __reference__ = "rulez.sk"
 class bruteforcelocker(Feeder):
     __type__ = Type.Ip
-    def __init__(self, type=__type__, name=__name__,by=__by__,sourcelink=Const.bru.s_ip_link,updateinterval=12*60):
+    def __init__(self, type=__type__, name=__name__,by=__by__,sourcelink=Const.bruteforclocker.s_link,updateinterval=30):
         Feeder.__init__(self,type,name,by)
         self.intelligence=[]
         self.sourcelink=sourcelink
@@ -31,23 +31,25 @@ class bruteforcelocker(Feeder):
             self.extract(content)
 
     def createDocuments(self):
+        #([a[0]], a[2][1:], a[4])  # ip,date,count
         documents = []
-        date=self.intelligence[0]['date']
-        categorty=self.intelligence[0]['category']
-        for item in self.intelligence[1:]:
+
+        for item in self.intelligence:
             intelligence = {
-                '_id': item,
-                "lastDate": date,
-                'type':categorty,
+                '_id': item[0],
+                "lastDate": item[1],
+                'type':getType(self.type),
                 'description': __info__,
                 'by': self.by,
                 'risk': "No info",
                 "Intelligence":
                     [{
-                         'type':categorty,
-                         'description': __info__,
-                         'by': self.by,
-                         'risk': "No info"
+                          "count":item[2],
+                          "lastDate": item[1],
+                          'type':getType(self.type),
+                          'description': __info__,
+                          'by': self.by,
+                         'risk': "No info",
                     }]
 
             }
@@ -61,15 +63,10 @@ class bruteforcelocker(Feeder):
         for line in content:
 
             if not line or line.startswith('#'):
-                if line.startswith('# This File Date'):
-                    date = line.split(':')[1]
-                    self.intelligence[0]["date"] = date
-                    continue
-                elif line.startswith('# Category'):
-                    self.intelligence[0]["category"] = line.split(':')[1]
-                    continue
+               continue
             else:
-                self.intelligence.append(line)
+                a=line.split('\t')
+                self.intelligence.append([a[0],a[2][1:],a[4]]) #ip,date,count
 
     def insertdb(self):
         if len(self.intelligence)>1:
