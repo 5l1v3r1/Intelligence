@@ -1,6 +1,12 @@
 from enum import Enum
 import logging
 import os
+
+
+
+TIMEOUT = 30
+
+
 class Type(Enum):
     Ip=1
     Domain=2
@@ -64,6 +70,11 @@ class Const:
         s_link   = 'http://ransomwaretracker.abuse.ch/blocklist/'
         u_interval = 20  # minute interval
 
+    class malwaredomains:
+        s_do_link = "http://malwaredomains.lehigh.edu/files/domains.txt"
+        s_ip_link = "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/malwaredomainlist.ipset"
+        s_dns_link = "https://www.malwaredomainlist.com/hostslist/hosts.txt"
+        
     class phistank:
         s_link   = 'http://data.phishtank.com/data/online-valid.csv'
         app_key  ='9c6f6c909a9df44bae577bcdf35d97ff87a4d07ef4243db534c8775be81cdc31'
