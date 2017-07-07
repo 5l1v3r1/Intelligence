@@ -66,6 +66,9 @@ class Const:
     class openphish:
         s_link   = 'https://openphish.com/feed.txt'
         u_interval = 20  # minute interval
+    class bruteforclocker:
+        s_link   = 'http://danger.rulez.sk/projects/bruteforceblocker/blist.php'
+        u_interval = 20  # minute interval
     class ransomware:
         s_link   = 'http://ransomwaretracker.abuse.ch/blocklist/'
         u_interval = 20  # minute interval

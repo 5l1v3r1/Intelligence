@@ -1,6 +1,6 @@
 import pymongo as mongo
 from constants.values import  *
-
+import traceback
 from pymongo.errors import BulkWriteError
 
 description = """
