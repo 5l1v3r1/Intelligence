@@ -1,11 +1,11 @@
 from  dbmanagment.dbmanagment import DbClient
 
 import traceback
-import requests
-from feeds.feeder import Feeder
+
 from constants.values import *
-
-
+from constants.settings import *
+import requests
+import core.common as request
 
 from io import StringIO
 from bs4 import  BeautifulSoup
@@ -17,10 +17,16 @@ description = """
 
 """
 
+__url__ = "http://ransomwaretracker.abuse.ch/blocklist/"
+__name__ = "RamsomwareTracker"
+__by__ = "RamsomwareTracker"
+__info__ = "RamsomwareTracker ensure  url,domain and ip of  various malwares"
+
+
 
 class Feederransomwre(Feeder):
-
-    def __init__(self, type, name,by,description=description,sourcelink=Const.ransomware.s_link,updateinterval=Const.ransomware.u_interval):
+    __type__ = Type.Ransomware
+    def __init__(self, type=__type__, name=__name__,by=__by__,description=__info__,sourcelink=Feeders.ransomware.s_link,updateinterval=Feeders.ransomware.u_interval):
         Feeder.__init__(self,type,name,by)
         self.description=description
         self.intelligence=[]
@@ -28,25 +34,17 @@ class Feederransomwre(Feeder):
         self.updateinterval=updateinterval
         self.log=getlog()
 
-    def checkstatus(self,url):
-        try:
-            return self.url_ok(url)  #link is available
-        except Exception as e:
-            self.log.error(repr(e))
-
-            return False
+    def checkstatus(self, url=__url__):
+        return request.checkstatus(url)  # link is available
 
 
-    def url_ok(self,url):
-        r = requests.head(url)
-        return r.status_code == 200
 
     def getIntelligent(self):
 
         if self.checkstatus(self.sourcelink):
             self.log.info("source link is available")
             try:
-                r = requests.get(self.sourcelink,headers=Const.headers)
+                r = requests.get(self.sourcelink,headers=HEADERS)
                 if r.status_code == 200:
                     self.parsePage(r.content)
                 else:
@@ -126,7 +124,7 @@ class Feederransomwre(Feeder):
         url='http://ransomwaretracker.abuse.ch'+url
         if self.checkstatus(url):
             try:
-                r = requests.get(url, headers=Const.headers)
+                r = requests.get(url, headers=HEADERS)
                 if r.status_code == 200:
 
                     buffer = StringIO(str(r.content, 'utf-8'))
@@ -153,13 +151,7 @@ class Feederransomwre(Feeder):
 
 
 
-
-
-
-
-
-
-    def insertmanydb(self):
+    def insertdb(self):
         client = DbClient()
         client.setdatabase('intelligence')
         for intel in self.intelligence:
@@ -175,7 +167,7 @@ class Feederransomwre(Feeder):
 a=Feederransomwre(Type.Ransomware,"Ransomware  Malware","RamsomwareTracker",)
 print(a.checkstatus(a.sourcelink))
 a.getIntelligent()
-a.insertmanydb()
+a.insertdb()
 
 
 

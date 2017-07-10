@@ -1,0 +1,4 @@
+2017-07-10 20:06:57,378 [common.py  getPage 26] [INFO ]  Trying  to  connect page 
+2017-07-10 20:06:58,512 [common.py  getPage 32] [ERROR]  Eror on dowloading intelligent http:304
+2017-07-10 20:06:58,513 [autoshun.py  getIntelligent 46] [INFO ]  Content is empty.Failed retriveing intelligent
+2017-07-10 20:06:58,513 [autoshun.py  insertdb 85] [ERROR]  Intelligent data is empty

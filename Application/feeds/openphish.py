@@ -1,13 +1,12 @@
 from  dbmanagment.dbmanagment import DbClient
-import requests
 import urllib
 import datetime
 import  bs4
 
-from feeds.feeder import Feeder
+import core.common as request
 from constants.values import *
 
-from io import StringIO
+
 
 description = """
     openphish feeds,
@@ -16,11 +15,16 @@ description = """
 
 
 """
+__url__ = "https://openphish.com/feed.txt"
+__name__ = "Openphish feeds"
+__by__ = "Openphish"
+__info__ = "openphish delivers a list of suspected phishing URLs. Their data comes from affrical intelligent"
+__collection__="url"
 
 
-class Feederopenphish(Feeder):
-
-    def __init__(self, type, name,by,description=description,sourcelink=Const.openphish.s_link,updateinterval=Const.openphish.u_interval):
+class Feederopenphish(Feeder):              #todo this run very slowly therefore modify this feeder,it will be multhiread
+    __type__ = Type.Phisingurl
+    def __init__(self,type=__type__, name=__name__,by=__by__,description=__info__,sourcelink=Feeders.openphish.s_link,updateinterval=Feeders.openphish.u_interval):
         Feeder.__init__(self,type,name,by)
         self.description=description
         self.intelligence=[]
@@ -28,30 +32,17 @@ class Feederopenphish(Feeder):
         self.updateinterval=updateinterval
         self.log=getlog()
 
-    def checkstatus(self):
-        try:
-            return self.url_ok(self.sourcelink)  #link is available
-        except Exception as e:
-            self.log.error(repr(e))
-            return False
 
 
-    def url_ok(self,url):
-        r = requests.head(url)
-        return r.status_code == 200
+    def checkstatus(self,url=__url__):
+        return request.checkstatus(url)  #link is available
 
     def getIntelligent(self):
-        if self.checkstatus():
-            self.log.info("source link is available")
-            try:
-                r = requests.get(self.sourcelink)
-                if r.status_code == 200:
-                    self.extract(r.content)
-                else:
-                    self.log.error('Eror on dowloading intelligent http:'+str(r.status_code))
-            except Exception as e:
-                self.log.error(repr(e))
-                return False
+        content=request.getPage(self.sourcelink)
+        if content!=False:
+            self.extract(content)
+
+
 
     def getitemsindict(self,item):
         listdict = []
@@ -80,8 +71,7 @@ class Feederopenphish(Feeder):
 
 
     def extract(self,data,flag=True):
-        buffer = StringIO(str(data,'utf-8'))
-        for item in buffer:
+        for item in data:
             temp=None
             if flag:
                 r1 = self.getTitleUrl(item)

@@ -1,5 +1,6 @@
 import pymongo as mongo
 from constants.values import  *
+from constants.settings import  DBPATH
 import traceback
 from pymongo.errors import BulkWriteError
 
@@ -26,7 +27,7 @@ class DbClient(object):
 
     def conectdb(self):
         try:
-            self.client = mongo.MongoClient(Const.dbmanagment.db_path)
+            self.client = mongo.MongoClient(DBPATH)
             info=self.client.server_info()
             self.log.info("Connected MongoDB ")
             return True

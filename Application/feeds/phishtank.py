@@ -4,10 +4,10 @@ import requests
 import json
 import csv
 
-from feeds.feeder import Feeder
-from constants.values import *
 
-from io import StringIO
+from constants.values import *
+import core.common as request
+
 
 description = """
     phishTank feeds,
@@ -16,11 +16,17 @@ description = """
 
 
 """
+__url__ = "http://data.phishtank.com/data/online-valid.csv"
+__name__ = "PhishTank"
+__by__ = "phishTank"
+__info__ = "PhishTank delivers a list of suspected phishing URLs. Their data comes from human reports "
+__collection__="url"
+
 
 
 class Feederphistank(Feeder):
-
-    def __init__(self, type, name,by,description=description,sourcelink=Const.phistank.s_link,updateinterval=Const.phistank.u_interval):
+    __type__ = Type.Phisingurl
+    def __init__(self, type=__type__, name=__name__, by=__by__, description=__info__,sourcelink=Feeders.phistank.s_link,updateinterval=Feeders.phistank.u_interval):
         Feeder.__init__(self,type,name,by)
         self.description=description
         self.intelligence=[]
@@ -28,31 +34,16 @@ class Feederphistank(Feeder):
         self.updateinterval=updateinterval
         self.log=getlog()
 
-    def checkstatus(self):
-        try:
-            return self.url_ok(self.sourcelink)  #link is available
-        except Exception as e:
-            self.log.error(repr(e))
-            return False
 
+    def checkstatus(self, url=__url__):
+        return request.checkstatus(url)  # link is available
 
-    def url_ok(self,url):
-        r = requests.head(url)
-        return r.status_code == 200
 
     def getIntelligent(self):
+        content=request.getPage(self.sourcelink)
+        if content!=False:
+            self.extract(content)
 
-        if self.checkstatus():
-            self.log.info("source link is available")
-            try:
-                r = requests.get(self.sourcelink)
-                if r.status_code == 200:
-                    self.extract(r.content)
-                else:
-                    self.log.error('Eror on dowloading intelligent http:'+str(r.status_code))
-            except Exception as e:
-                self.log.error(repr(e))
-                return False
 
     def getitemsindict(self,):
         listdict = []
@@ -83,15 +74,14 @@ class Feederphistank(Feeder):
 
     def extract(self,data):
 
-        buffer = StringIO(str(data,'utf-8'))
-        readCSV = csv.reader(buffer, delimiter=',')
+        readCSV = csv.reader(data, delimiter=',')
         for item in readCSV:
                 self.intelligence.append(item)
 
 
     def validateUrl(self,url):
-        payload = {'url': url, 'format': 'json','app_key':Const.phistank.app_key}
-        response = requests.post(Const.phistank.api_link, data=payload)
+        payload = {'url': url, 'format': 'json','app_key':Feeders.phistank.app_key}
+        response = requests.post(Feeders.phistank.api_link, data=payload)
         d = json.loads(response.text)
         return d
 
@@ -101,10 +91,10 @@ class Feederphistank(Feeder):
 
 
 
-    def insertmanydb(self):
+    def insertdb(self):
         client = DbClient()
         client.setdatabase('intelligence')
-        client.setcollection('url')
+        client.setcollection(__collection__)
         client.insertmany(self.getitemsindict())
 
     def insertonedb(self,item):
@@ -141,10 +131,10 @@ class Feederphistank(Feeder):
 
 
 a=Feederphistank(Type.Phisingurl,"Phishing  Url","PhishTank",)
-a.validateUrl('http://checkfb-login404inc.esy.es/recovery-chekpoint-login.html')
-#print(a.checkstatus())
-#a.getIntelligent()
-#a.insertmanydb()
+#a.validateUrl('http://checkfb-login404inc.esy.es/recovery-chekpoint-login.html')
+print(a.checkstatus())
+a.getIntelligent()
+a.insertdb()
 
 
 

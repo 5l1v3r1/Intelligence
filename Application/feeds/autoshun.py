@@ -1,11 +1,10 @@
 from  dbmanagment.dbmanagment import DbClient
-import csv
-import requests
 
-from feeds.feeder import Feeder
+import core.common as request
+import csv
 from constants.values import *
 
-from io import StringIO
+from feeds.feeder import Feeder
 
 description = """
     autoshun feeds,
@@ -17,9 +16,17 @@ description = """
 """
 
 
-class Feederautoshun(Feeder):
+__url__ ='https://www.autoshun.org/download/?api_key=eb4c31917acb6afb8838ceab70a8309&format=csv'
+__name__ = "autoshun_feeds"
+__by__ = "autoshun"
+__info__ = "it gets all Intelligent from autoshon list,then insert database "
+__collection__="ip"
 
-    def __init__(self, type, name,by,description,sourcelink=Const.autoshun.s_link,updateinterval=Const.autoshun.u_interval):
+
+
+class Feederautoshun(Feeder):
+    __type__ = Type.Ip
+    def __init__(self, type=__type__, name=__name__,by=__by__,description=__info__,sourcelink=Feeders.autoshun.s_link,updateinterval=Feeders.autoshun.u_interval):
         Feeder.__init__(self,type,name,by)
         self.description=description
         self.intelligence=[]
@@ -27,32 +34,16 @@ class Feederautoshun(Feeder):
         self.updateinterval=updateinterval
         self.log=getlog()
 
-    def checkstatus(self):
-        try:
-            return self.url_ok(self.sourcelink)  #link is available
-        except Exception as e:
-            self.log.error(repr(e))
-            return False
+    def checkstatus(self, url=Feeders.autoshun.s_link):
+        return request.checkstatus(url)  # link is available
 
-
-    def url_ok(self,url):
-        r = requests.head(url)
-        return r.status_code == 200
 
     def getIntelligent(self):
-
-        if self.checkstatus():
-            self.log.info("source link is available")
-            try:
-                r = requests.get(self.sourcelink)
-                if r.status_code == 200:
-                    self.extract(r.content)
-                else:
-                    self.log.error('Eror on dowloading intelligent http:'+str(r.status_code))
-
-            except Exception as e:
-                self.log.error(repr(e))
-                return False
+        content = request.getPage(self.sourcelink)
+        if content != False:
+            self.extract(content)
+        else:
+            self.log.info("Content is empty.Failed retriveing intelligent")
 
     def getitemsindict(self,):
         listdict = []
@@ -77,8 +68,7 @@ class Feederautoshun(Feeder):
 
 
     def extract(self,data):
-        buffer = StringIO(str(data, 'utf-8'))
-        readCSV = csv.reader(buffer, delimiter=',')
+        readCSV = csv.reader(data, delimiter=',')
         for item in readCSV:
             if item[0][0] == "#":
                 pass
@@ -90,19 +80,19 @@ class Feederautoshun(Feeder):
 
 
 
-    def insertmanydb(self):
+    def insertdb(self):
         if len(self.intelligence)==0:
             self.log.error("Intelligent data is empty")
             return False;
         client = DbClient()
         client.setdatabase('intelligence')
-        client.setcollection('ip')
+        client.setcollection(__collection__)
         client.insertmany(self.getitemsindict())
 
     def insertonedb(self,item):
         client = DbClient()
         client.setdatabase('intelligence')
-        client.setcollection('ip')
+        client.setcollection(__collection__)
         client.getdocuments()
         client.insert(
             {
@@ -127,10 +117,10 @@ class Feederautoshun(Feeder):
 
 
 
-a=Feederautoshun(Type.Ip,"Autoshun","Autshun","adad")
-print(a.checkstatus())
-a.getIntelligent()
-a.insertmanydb()
+#a=Feederautoshun(Type.Ip,"Autoshun","Autshun","adad")
+#print(a.checkstatus(a.sourcelink))
+#a.getIntelligent()
+#a.insertdb()
 
 
 
