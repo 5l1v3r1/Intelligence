@@ -4,7 +4,7 @@ import core.common as request
 import csv
 from constants.values import *
 
-from feeds.feeder import Feeder
+from feeds.feedparent import FeederParent
 
 description = """
     autoshun feeds,
@@ -16,18 +16,17 @@ description = """
 """
 
 
-__url__ ='https://www.autoshun.org/download/?api_key=eb4c31917acb6afb8838ceab70a8309&format=csv'
-__name__ = "autoshun_feeds"
+_name_ = "autoshun_feeds"
 __by__ = "autoshun"
 __info__ = "it gets all Intelligent from autoshon list,then insert database "
 __collection__="ip"
 
 
 
-class Feederautoshun(Feeder):
+class Autoshun(FeederParent):
     __type__ = Type.Ip
-    def __init__(self, type=__type__, name=__name__,by=__by__,description=__info__,sourcelink=Feeders.autoshun.s_link,updateinterval=Feeders.autoshun.u_interval):
-        Feeder.__init__(self,type,name,by)
+    def __init__(self, type=__type__, name=_name_,by=__by__,description=__info__,sourcelink=Feeders.autoshun.s_link,updateinterval=Feeders.autoshun.u_interval):
+        FeederParent.__init__(self,type,name,by)
         self.description=description
         self.intelligence=[]
         self.sourcelink=sourcelink
@@ -115,9 +114,10 @@ class Feederautoshun(Feeder):
     def __str__(self):
         return "%s  %s  %s " % (self.name, self.type, self.by)
 
-
-
-#a=Feederautoshun(Type.Ip,"Autoshun","Autshun","adad")
+if __name__ == '__main__':
+    # This won't work!
+    print("here")
+#a=Autoshun(Type.Ip,"Autoshun","Autshun","adad")
 #print(a.checkstatus(a.sourcelink))
 #a.getIntelligent()
 #a.insertdb()

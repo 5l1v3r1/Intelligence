@@ -6,7 +6,7 @@ description = """
 
 """
 
-class Feeder(ABC):
+class FeederParent(ABC):
 
 
     def __init__(self, type, name,by):

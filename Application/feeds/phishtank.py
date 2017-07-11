@@ -7,6 +7,7 @@ import csv
 
 from constants.values import *
 import core.common as request
+from feeds.feedparent import FeederParent
 
 
 description = """
@@ -16,18 +17,17 @@ description = """
 
 
 """
-__url__ = "http://data.phishtank.com/data/online-valid.csv"
-__name__ = "PhishTank"
+_name_ = "PhishTank"
 __by__ = "phishTank"
 __info__ = "PhishTank delivers a list of suspected phishing URLs. Their data comes from human reports "
 __collection__="url"
 
 
 
-class Feederphistank(Feeder):
+class Phistank(FeederParent):
     __type__ = Type.Phisingurl
-    def __init__(self, type=__type__, name=__name__, by=__by__, description=__info__,sourcelink=Feeders.phistank.s_link,updateinterval=Feeders.phistank.u_interval):
-        Feeder.__init__(self,type,name,by)
+    def __init__(self, type=__type__, name=_name_, by=__by__, description=__info__,sourcelink=Feeders.phistank.s_link,updateinterval=Feeders.phistank.u_interval):
+        FeederParent.__init__(self,type,name,by)
         self.description=description
         self.intelligence=[]
         self.sourcelink=sourcelink
@@ -35,7 +35,7 @@ class Feederphistank(Feeder):
         self.log=getlog()
 
 
-    def checkstatus(self, url=__url__):
+    def checkstatus(self, url=Feeders.phistank.s_link):
         return request.checkstatus(url)  # link is available
 
 
@@ -130,11 +130,11 @@ class Feederphistank(Feeder):
 
 
 
-a=Feederphistank(Type.Phisingurl,"Phishing  Url","PhishTank",)
+#a=Phistank(Type.Phisingurl,"Phishing  Url","PhishTank",)
 #a.validateUrl('http://checkfb-login404inc.esy.es/recovery-chekpoint-login.html')
-print(a.checkstatus())
-a.getIntelligent()
-a.insertdb()
+#print(a.checkstatus())
+#a.getIntelligent()
+#a.insertdb()
 
 
 

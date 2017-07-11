@@ -18,6 +18,7 @@ class Type(Enum):
     Mail=4
     Malware_url=5
     Malware_ip = 6
+
     Malware_domain = 7
     Phisingurl=8
     Ransomware = 9
@@ -41,6 +42,8 @@ def getType(type):
         return "Malware_Ip_Blocklist"
     elif Type.Malware_domain == type:
         return "Malware_Domain_Blocklist"
+    elif Type.Malware_ip_c_c == type:
+        return "Malware C&C"
     else:
         return "Type not defined"
 
@@ -53,13 +56,21 @@ def getCollectName(type):
           return "domain"
 
 
+class Apis:
+    class virustotal:
+        s_link   = 'https://www.virustotal.com/vtapi/v2/'
+        api_key  = "51d9c4723d084b9270bda8897d8f697b005ce939d67013915af92f721e0a8634"
+        def returnObject(self):
+            return None
+
+
 class Feeders:
-    config=import_module
+
     class autoshun:
         s_link   = 'https://www.autoshun.org/download/?api_key=eb4c31917acb6afb8838ceab70a8309&format=csv'
         u_interval=30        #minute interval
         def returnObject(self):
-            return  import_module("feeds.autoshun").Feederautoshun()
+            return  import_module("feeds.autoshun").Autoshun()
 
 
     class malwr:
@@ -67,9 +78,11 @@ class Feeders:
         def returnObject(self):
             return None
 
-    class virustotal:
-        s_link   = 'https://www.virustotal.com/vtapi/v2/'
-        api_key  = "51d9c4723d084b9270bda8897d8f697b005ce939d67013915af92f721e0a8634"
+    class datapalane:
+        u_interval = 120  # minute interval
+        s_link   = ["https://dataplane.org/dnsrd.txt", "https://dataplane.org/dnsrdany.txt", "https://dataplane.org/dnsversion.txt",
+                    "https://dataplane.org/sipinvitation.txt", "https://dataplane.org/sipquery.txt", "https://dataplane.org/sipregistration.txt",
+                    "https://dataplane.org/sshclient.txt", "https://dataplane.org/sshpwauth.txt", "https://dataplane.org/vncrfb.txt"]
         def returnObject(self):
             return None
 
@@ -77,36 +90,44 @@ class Feeders:
         s_link   = 'https://openphish.com/feed.txt'
         u_interval = 20  # minute interval
         def returnObject(self):
-            return import_module("feeds.openphish").Feederopenphish()
+            return import_module("feeds.openphish").Openphish()
 
     class bruteforclocker:
         s_link   = 'http://danger.rulez.sk/projects/bruteforceblocker/blist.php'
         u_interval = 20  # minute interval
         def returnObject(self):
-            return import_module("feeds.bruteforcelocker").bruteforcelocker()
+            return import_module("feeds.sslbl").Sslbl()
+
+    class sslbl:
+        s_link = 'https://sslbl.abuse.ch/blacklist/sslipblacklist.csv'
+        u_interval = 60  # minute interval
+
+        def returnObject(self):
+            return import_module("feeds.bruteforcelocker").Bruteforcelocker()
+
     class ransomware:
         s_link   = 'http://ransomwaretracker.abuse.ch/blocklist/'
         u_interval = 20  # minute interval
         def returnObject(self):
-            return import_module("feeds.ransomwaretracker").Feederransomwre()
+            return import_module("feeds.ransomwaretracker").Ransomware()
 
     class malwaredomains_dns:
         s_link = "https://www.malwaredomainlist.com/hostslist/hosts.txt"
         u_interval = 10  # minute interval
         def returnObject(self):
-            return import_module("feeds.malwaredomains_dns").md_dns()
+            return import_module("feeds.malwaredomains_dns").Md_dns()
 
     class malwaredomains_ip:
         u_interval = 12 * 60
         s_link = "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/malwaredomainlist.ipset"
         def returnObject(self):
-            return import_module("feeds.malwaredomains_ip").md_ip()
+            return import_module("feeds.malwaredomains_ip").Md_ip()
 
     class malwaredomains_domain:
         u_interval = 60
         s_link = "http://malwaredomains.lehigh.edu/files/domains.txt"
         def returnObject(self):
-            return import_module("feeds.malwaredomains_domains").md_domains()
+            return import_module("feeds.malwaredomains_domains").Md_domains()
 
     class phistank:
         s_link   = 'http://data.phishtank.com/data/online-valid.csv'
@@ -114,7 +135,7 @@ class Feeders:
         api_link ='http://checkurl.phishtank.com/checkurl/'
         u_interval = 90 #minute interval
         def returnObject(self):
-            return import_module("feeds.phishtank").Feederphistank()
+            return import_module("feeds.phishtank").Phistank()
 
 
 

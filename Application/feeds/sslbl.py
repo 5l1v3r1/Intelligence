@@ -9,18 +9,19 @@ from dateutil import parser
 
 
 
-_name_ = "BruteForceBlocker"
-__by__ = "BruteForceBlocker"
-__info__ = "Its main purpose is to block SSH bruteforce attacks via firewall.count show number of atttemps "
+_name_ = "SSL Blacklist"
+__by__ = "sslbl"
+__info__ = "The goal is to provide a list of 'bad' SSL certificates identified by abuse.ch to be associated with malware or botnet activities."
 __collection__="ip"
-__reference__ = "rulez.sk"
+__reference__ = "abuse.ch"
 
-class Bruteforcelocker(FeederParent):
+class Sslbl(FeederParent):
     __type__ = Type.Ip
-    def __init__(self, type=__type__, name=_name_,by=__by__,sourcelink=Feeders.bruteforclocker.s_link,updateinterval=30):
+    def __init__(self, type=__type__, name=_name_,by=__by__,sourcelink=Feeders.sslbl.s_link,updateinterval=Feeders.sslbl.u_interval):
         FeederParent.__init__(self,type,name,by)
         self.intelligence=[]
         self.sourcelink=sourcelink
+        self.info=__info__
         self.updateinterval=updateinterval
         self.log=getlog()                           #this comming from constans
 
@@ -33,25 +34,27 @@ class Bruteforcelocker(FeederParent):
             self.extract(content)
 
     def createDocuments(self):
-        #([a[0]], a[2][1:], a[4])  # ip,date,count
+        # DstIP,DstPort,count
         documents = []
-
-        for item in self.intelligence:
+        date=self.intelligence[0][:-5]
+        date=parser.parse(date)
+        for item in self.intelligence[1:]:
             intelligence = {
                 '_id': item[0],
-                "lastDate": parser.parse(item[1]),
+                "lastDate": date,
                 'type':getType(self.type),
+                'scope': item[2],
                 'description': __info__,
                 'by': self.by,
-                'risk': "No info",
+                'risk': 8,
                 "Intelligence":
                     [{
-                          "count":item[2],
-                          "lastDate": item[1],
+                          "port":item[1],
+                          "scope": item[1],
                           'type':getType(self.type),
                           'description': __info__,
                           'by': self.by,
-                         'risk': "No info",
+                         'risk': 8,
                     }]
 
             }
@@ -59,16 +62,16 @@ class Bruteforcelocker(FeederParent):
         return documents
 
     def extract(self,content):
-
-
-
         for line in content:
 
-            if not line or line.startswith('#'):
-               continue
+            if line.startswith('#') or not line:
+                if line.startswith('# Last'):
+                    date=line.split('updated:')[1][:-2]
+                    date=date.strip()
+                    self.intelligence.append(date)
             else:
-                a=line.split('\t')
-                self.intelligence.append([a[0],a[2][1:],a[4]]) #ip,date,count
+                a=line.split(',')
+                self.intelligence.append([a[0],a[1],a[2]]) #DstIP,DstPort,count
 
     def insertdb(self):
         if len(self.intelligence)>1:
@@ -84,10 +87,10 @@ class Bruteforcelocker(FeederParent):
 
 
 
-#a=Bruteforcelocker()
-#print(a.checkstatus(a.sourcelink))
-#a.getIntelligent()
-#a.insertdb()
+a=Sslbl()
+print(a.checkstatus(a.sourcelink))
+a.getIntelligent()
+a.insertdb()
 
 
 

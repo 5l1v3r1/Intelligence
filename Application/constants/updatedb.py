@@ -2,32 +2,33 @@
 import pkgutil
 
 import sys
-from .values import Feeders
-from .settings import *
 
 
 
+from constants.values import Feeders
+from constants.settings import ROOTPATH
+
+
+
+_allfeeders_=[]
 
 def loadfeeders():
 
     method_list = [func for func in dir(Feeders) if callable(getattr(Feeders, func)) and not func.startswith("__")]
-    allfeeds=[]
     for item in method_list:
-        feed=getattr(Feeders,item)
-        feedobje=feed().returnObject()
-        if feedobje is None:
+        temp=getattr(Feeders,item)
+        obje=temp().returnObject()
+        if obje is None:
             continue
-        allfeeds.append([feed.u_interval,feed().returnObject()])
-        print(feedobje.checkstatus())
-        print(allfeeds)
+        _allfeeders_.append([temp.u_interval,temp().returnObject()])
+        print(obje.checkstatus())
 
 
 
-__all__ = []
 
 
 print(ROOTPATH)
 
 
-
 loadfeeders()
+print(_allfeeders_)

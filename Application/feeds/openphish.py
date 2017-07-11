@@ -5,27 +5,21 @@ import  bs4
 
 import core.common as request
 from constants.values import *
+from feeds.feedparent import FeederParent
 
 
 
-description = """
-    openphish feeds,
-    openphish delivers a list of suspected phishing URLs. Their data comes from affrical intelligent
-    this module dowloand feed from openphish,then insertDb
 
-
-"""
-__url__ = "https://openphish.com/feed.txt"
-__name__ = "Openphish feeds"
+_name_ = "Openphish feeds"
 __by__ = "Openphish"
 __info__ = "openphish delivers a list of suspected phishing URLs. Their data comes from affrical intelligent"
 __collection__="url"
 
 
-class Feederopenphish(Feeder):              #todo this run very slowly therefore modify this feeder,it will be multhiread
+class Openphish(FeederParent):              #todo this run very slowly therefore modify this feeder,it will be multhiread
     __type__ = Type.Phisingurl
-    def __init__(self,type=__type__, name=__name__,by=__by__,description=__info__,sourcelink=Feeders.openphish.s_link,updateinterval=Feeders.openphish.u_interval):
-        Feeder.__init__(self,type,name,by)
+    def __init__(self,type=__type__, name=_name_,by=__by__,description=__info__,sourcelink=Feeders.openphish.s_link,updateinterval=Feeders.openphish.u_interval):
+        FeederParent.__init__(self,type,name,by)
         self.description=description
         self.intelligence=[]
         self.sourcelink=sourcelink
@@ -34,7 +28,7 @@ class Feederopenphish(Feeder):              #todo this run very slowly therefore
 
 
 
-    def checkstatus(self,url=__url__):
+    def checkstatus(self,url=Feeders.openphish.s_link):
         return request.checkstatus(url)  #link is available
 
     def getIntelligent(self):
@@ -139,11 +133,11 @@ class Feederopenphish(Feeder):              #todo this run very slowly therefore
 
 
 
-a=Feederopenphish(Type.Phisingurl,"Phishing  Url","OpenPhish",)
+#a=Openphish(Type.Phisingurl,"Phishing  Url","OpenPhish",)
 
-print(a.checkstatus())
-a.getIntelligent()
-a.insertmanydb()
+#print(a.checkstatus())
+#a.getIntelligent()
+#a.insertmanydb()
 
 
 

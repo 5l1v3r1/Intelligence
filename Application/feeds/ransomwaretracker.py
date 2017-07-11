@@ -6,38 +6,31 @@ from constants.values import *
 from constants.settings import *
 import requests
 import core.common as request
+from feeds.feedparent import FeederParent
 
 from io import StringIO
 from bs4 import  BeautifulSoup
-description = """
-    RamsomwareTracker feeds,
-    RamsomwareTracker ensure  url,domain and ip of  various malwares .
 
 
 
-"""
-
-__url__ = "http://ransomwaretracker.abuse.ch/blocklist/"
-__name__ = "RamsomwareTracker"
+_name_ = "RamsomwareTracker"
 __by__ = "RamsomwareTracker"
 __info__ = "RamsomwareTracker ensure  url,domain and ip of  various malwares"
 
 
 
-class Feederransomwre(Feeder):
+class Ransomware(FeederParent):
     __type__ = Type.Ransomware
-    def __init__(self, type=__type__, name=__name__,by=__by__,description=__info__,sourcelink=Feeders.ransomware.s_link,updateinterval=Feeders.ransomware.u_interval):
-        Feeder.__init__(self,type,name,by)
+    def __init__(self, type=__type__, name=_name_,by=__by__,description=__info__,sourcelink=Feeders.ransomware.s_link,updateinterval=Feeders.ransomware.u_interval):
+        FeederParent.__init__(self,type,name,by)
         self.description=description
         self.intelligence=[]
         self.sourcelink=sourcelink
         self.updateinterval=updateinterval
         self.log=getlog()
 
-    def checkstatus(self, url=__url__):
+    def checkstatus(self, url=Feeders.ransomware.s_link):
         return request.checkstatus(url)  # link is available
-
-
 
     def getIntelligent(self):
 
@@ -164,10 +157,10 @@ class Feederransomwre(Feeder):
 
 
 
-a=Feederransomwre(Type.Ransomware,"Ransomware  Malware","RamsomwareTracker",)
-print(a.checkstatus(a.sourcelink))
-a.getIntelligent()
-a.insertdb()
+#a=Ransomware(Type.Ransomware,"Ransomware  Malware","RamsomwareTracker",)
+#print(a.checkstatus(a.sourcelink))
+#a.getIntelligent()
+#a.insertdb()
 
 
 
