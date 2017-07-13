@@ -4,6 +4,7 @@ except:
     import settings
 import core.common as common
 import threading
+import time
 from datetime import datetime
 
 _log_=common.getlog()
@@ -19,15 +20,15 @@ class FeederThread(threading.Thread):
         self.obje = feed
 
     def run(self):
-        _log_.info("Thread started:"+self.obje.name)
-        print(self.obje.checkstatus)
-        self.obje.getIntelligent()
-        self.obje.insertdb()
-        _log_.info("Thred exited:" + self.obje.name)
-
-
-
-
+        repeating=0
+        while(True):
+            _log_.info("Thread started {tim} times : {name} ".format(tim=str(repeating), name=self.obje.name))
+            print(self.obje.checkstatus)
+            self.obje.getIntelligent()
+            self.obje.insertdb()
+            _log_.info("Thread exited {tim} times : {name} ".format(tim=str(repeating), name=self.obje.name))
+            time.sleep(self.obje.updateinterval*60)
+            repeating+=1
 
 
 _log_.info("Started thread feeders")

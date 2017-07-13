@@ -64,7 +64,7 @@ class Openphish(FeederParent):              #todo this run very slowly therefore
         return listdict
 
 
-    def extract(self,data,flag=True):
+    def extract(self,data,flag=False):
         for item in data:
             temp=None
             if flag:
@@ -73,9 +73,9 @@ class Openphish(FeederParent):              #todo this run very slowly therefore
             else:
                 temp = [item, 'No info','No info']
 
-            print(temp)
+            #print(temp)
             self.intelligence.append(temp)
-        print(self.intelligence)
+        print("Total intelligence %d"%len(self.intelligence))
 
     def getTitleUrl(self,url):
         result=[]         #[title,availeble]
@@ -95,7 +95,7 @@ class Openphish(FeederParent):              #todo this run very slowly therefore
 
 
 
-    def insertmanydb(self):
+    def insertdb(self):
         client = DbClient()
         client.setdatabase('intelligence')
         client.setcollection('url')

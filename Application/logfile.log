@@ -1,385 +1,119 @@
-2017-07-13 15:55:07,908 [updatedb.py  <module> 28] [INFO ]  Started thread feeders
-2017-07-13 15:55:09,871 [common.py  getPage 34] [INFO ]  Trying  to  connect page  [  getIntelligent 26 line cc_tracker.py ] 
-2017-07-13 15:55:10,079 [common.py  getPage 38] [INFO ]  Page retrieved   [  getIntelligent 26 line cc_tracker.py ] 
-2017-07-13 15:55:10,601 [dbmanagment.py  conectdb 32] [INFO ]  Connected MongoDB 
-2017-07-13 15:55:11,441 [dbmanagment.py  insertmany 104] [INFO ]  415 number items duplicated,so trying update  theses
-2017-07-13 15:55:39,257 [dataplane.py  checkstatus 43] [INFO ]  Source Available-> https://dataplane.org/dnsrd.txt :True
-2017-07-13 15:55:39,879 [dataplane.py  checkstatus 43] [INFO ]  Source Available-> https://dataplane.org/dnsrdany.txt :True
-2017-07-13 15:55:40,503 [dataplane.py  checkstatus 43] [INFO ]  Source Available-> https://dataplane.org/dnsversion.txt :True
-2017-07-13 15:55:41,130 [dataplane.py  checkstatus 43] [INFO ]  Source Available-> https://dataplane.org/sipinvitation.txt :True
-2017-07-13 15:55:41,763 [dataplane.py  checkstatus 43] [INFO ]  Source Available-> https://dataplane.org/sipquery.txt :True
-2017-07-13 15:55:42,391 [dataplane.py  checkstatus 43] [INFO ]  Source Available-> https://dataplane.org/sipregistration.txt :True
-2017-07-13 15:55:43,346 [dataplane.py  checkstatus 43] [INFO ]  Source Available-> https://dataplane.org/sshclient.txt :True
-2017-07-13 15:55:44,259 [dataplane.py  checkstatus 43] [INFO ]  Source Available-> https://dataplane.org/sshpwauth.txt :True
-2017-07-13 15:55:44,905 [dataplane.py  checkstatus 43] [INFO ]  Source Available-> https://dataplane.org/vncrfb.txt :True
-2017-07-13 15:55:45,546 [dataplane.py  checkstatus 43] [INFO ]  Source Available-> https://dataplane.org/dnsrd.txt :True
-2017-07-13 15:55:46,175 [dataplane.py  checkstatus 43] [INFO ]  Source Available-> https://dataplane.org/dnsrdany.txt :True
-2017-07-13 15:55:46,815 [dataplane.py  checkstatus 43] [INFO ]  Source Available-> https://dataplane.org/dnsversion.txt :True
-2017-07-13 15:55:47,466 [dataplane.py  checkstatus 43] [INFO ]  Source Available-> https://dataplane.org/sipinvitation.txt :True
-2017-07-13 15:55:48,102 [dataplane.py  checkstatus 43] [INFO ]  Source Available-> https://dataplane.org/sipquery.txt :True
-2017-07-13 15:55:48,727 [dataplane.py  checkstatus 43] [INFO ]  Source Available-> https://dataplane.org/sipregistration.txt :True
-2017-07-13 15:55:49,735 [dataplane.py  checkstatus 43] [INFO ]  Source Available-> https://dataplane.org/sshclient.txt :True
-2017-07-13 15:55:50,628 [dataplane.py  checkstatus 43] [INFO ]  Source Available-> https://dataplane.org/sshpwauth.txt :True
-2017-07-13 15:55:51,284 [dataplane.py  checkstatus 43] [INFO ]  Source Available-> https://dataplane.org/vncrfb.txt :True
-2017-07-13 15:55:55,183 [updatedb.py  run 17] [INFO ]  Thread started:cc_tracker
-2017-07-13 15:55:55,183 [updatedb.py  run 17] [INFO ]  Thread started:malwaredomainlist
-2017-07-13 15:55:55,186 [updatedb.py  run 17] [INFO ]  Thread started:SSL Blacklist
-2017-07-13 15:55:55,187 [updatedb.py  run 17] [INFO ]  Thread started:Openphish feeds
-2017-07-13 15:55:55,187 [common.py  getPage 34] [INFO ]  Trying  to  connect page  [  getIntelligent 26 line cc_tracker.py ] 
-2017-07-13 15:55:55,188 [updatedb.py  run 17] [INFO ]  Thread started:RamsomwareTracker
-2017-07-13 15:55:55,189 [updatedb.py  run 17] [INFO ]  Thread started:autoshun_feeds
-2017-07-13 15:55:55,191 [updatedb.py  run 17] [INFO ]  Thread started:malwaredomainlist
-2017-07-13 15:55:55,193 [updatedb.py  run 17] [INFO ]  Thread started:BruteForceBlocker
-2017-07-13 15:55:55,193 [common.py  getPage 34] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sslbl.py ] 
-2017-07-13 15:55:55,193 [updatedb.py  run 17] [INFO ]  Thread started:PhishTank
-2017-07-13 15:55:55,195 [updatedb.py  run 17] [INFO ]  Thread started:DataPlane
-2017-07-13 15:55:55,196 [updatedb.py  run 17] [INFO ]  Thread started:malwaredomainlist
-2017-07-13 15:55:55,200 [common.py  getPage 34] [INFO ]  Trying  to  connect page  [  getIntelligent 41 line autoshun.py ] 
-2017-07-13 15:55:55,202 [common.py  getPage 34] [INFO ]  Trying  to  connect page  [  getIntelligent 29 line malwaredomains_domains.py ] 
-2017-07-13 15:55:55,203 [common.py  getPage 34] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 15:55:55,208 [common.py  getPage 34] [INFO ]  Trying  to  connect page  [  getIntelligent 27 line malwaredomains_ip.py ] 
-2017-07-13 15:55:55,211 [common.py  getPage 34] [INFO ]  Trying  to  connect page  [  getIntelligent 35 line openphish.py ] 
-2017-07-13 15:55:55,214 [common.py  getPage 34] [INFO ]  Trying  to  connect page  [  getIntelligent 30 line malwaredomains_dns.py ] 
-2017-07-13 15:55:55,217 [common.py  getPage 34] [INFO ]  Trying  to  connect page  [  getIntelligent 43 line phishtank.py ] 
-2017-07-13 15:55:55,220 [common.py  getPage 34] [INFO ]  Trying  to  connect page  [  getIntelligent 31 line bruteforcelocker.py ] 
-2017-07-13 15:55:55,459 [common.py  getPage 38] [INFO ]  Page retrieved   [  getIntelligent 27 line malwaredomains_ip.py ] 
-2017-07-13 15:55:55,467 [common.py  getPage 38] [INFO ]  Page retrieved   [  getIntelligent 26 line cc_tracker.py ] 
-2017-07-13 15:55:55,536 [common.py  getPage 38] [INFO ]  Page retrieved   [  getIntelligent 31 line bruteforcelocker.py ] 
-2017-07-13 15:55:55,801 [common.py  getPage 38] [INFO ]  Page retrieved   [  getIntelligent 35 line openphish.py ] 
-2017-07-13 15:55:55,848 [common.py  getPage 38] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 15:55:55,850 [common.py  getPage 34] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 15:55:55,932 [dbmanagment.py  conectdb 32] [INFO ]  Connected MongoDB 
-2017-07-13 15:55:55,942 [dbmanagment.py  conectdb 32] [INFO ]  Connected MongoDB 
-2017-07-13 15:55:55,966 [common.py  getPage 38] [INFO ]  Page retrieved   [  getIntelligent 32 line sslbl.py ] 
-2017-07-13 15:55:56,015 [ransomwaretracker.py  getIntelligent 38] [INFO ]  source link is available
-2017-07-13 15:55:56,033 [dbmanagment.py  conectdb 32] [INFO ]  Connected MongoDB 
-2017-07-13 15:55:56,194 [common.py  getPage 38] [INFO ]  Page retrieved   [  getIntelligent 30 line malwaredomains_dns.py ] 
-2017-07-13 15:55:56,321 [common.py  getPage 41] [ERROR]  Eror on dowloading intelligent http:304 [  getIntelligent 41 line autoshun.py ] 
-2017-07-13 15:55:56,321 [autoshun.py  getIntelligent 45] [INFO ]  Content is empty.Failed retriveing intelligent
-2017-07-13 15:55:56,321 [autoshun.py  insertdb 84] [ERROR]  Intelligent data is empty
-2017-07-13 15:55:56,321 [updatedb.py  run 21] [INFO ]  Thred exited:autoshun_feeds
-2017-07-13 15:55:56,668 [common.py  getPage 38] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 15:55:56,669 [common.py  getPage 34] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 15:55:57,279 [dbmanagment.py  conectdb 32] [INFO ]  Connected MongoDB 
-2017-07-13 15:55:57,541 [dbmanagment.py  conectdb 32] [INFO ]  Connected MongoDB 
-2017-07-13 15:55:57,555 [dbmanagment.py  insertmany 104] [INFO ]  415 number items duplicated,so trying update  theses
-2017-07-13 15:55:57,727 [common.py  getPage 38] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 15:55:57,728 [common.py  getPage 34] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 15:55:57,745 [dbmanagment.py  insertmany 97] [INFO ]  Inserted Succesfully 56 items
-2017-07-13 15:55:57,746 [updatedb.py  run 21] [INFO ]  Thred exited:SSL Blacklist
-2017-07-13 15:55:57,843 [dbmanagment.py  insertmany 104] [INFO ]  3 number items duplicated,so trying update  theses
-2017-07-13 15:55:57,880 [common.py  getPage 38] [INFO ]  Page retrieved   [  getIntelligent 29 line malwaredomains_domains.py ] 
-2017-07-13 15:55:58,082 [updatedb.py  run 21] [INFO ]  Thred exited:malwaredomainlist
-2017-07-13 15:55:58,430 [common.py  getPage 38] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 15:55:58,430 [common.py  getPage 34] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 15:55:58,470 [dbmanagment.py  conectdb 32] [INFO ]  Connected MongoDB 
-2017-07-13 15:55:59,115 [common.py  getPage 38] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 15:55:59,116 [common.py  getPage 34] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 15:55:59,772 [common.py  getPage 38] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 15:55:59,773 [common.py  getPage 34] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 15:56:02,171 [ransomwaretracker.py  parsePage 78] [ERROR]  Eror on gathering intelligent from:/downloads/CW_PS_DOMBL.txt
-2017-07-13 15:56:02,461 [common.py  getPage 38] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 15:56:02,518 [common.py  getPage 34] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 15:56:02,636 [dbmanagment.py  insertmany 97] [INFO ]  Inserted Succesfully 1173 items
-2017-07-13 15:56:02,637 [updatedb.py  run 21] [INFO ]  Thred exited:BruteForceBlocker
-2017-07-13 15:56:03,306 [ransomwaretracker.py  parsePage 78] [ERROR]  Eror on gathering intelligent from:/downloads/CW_PS_IPBL.txt
-2017-07-13 15:56:04,429 [common.py  getPage 38] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 15:56:04,535 [common.py  getPage 34] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 15:56:05,186 [common.py  getPage 38] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 15:56:05,473 [dbmanagment.py  insertmany 104] [INFO ]  5 number items duplicated,so trying update  theses
-2017-07-13 15:56:05,756 [dbmanagment.py  conectdb 32] [INFO ]  Connected MongoDB 
-2017-07-13 15:56:05,859 [updatedb.py  run 21] [INFO ]  Thred exited:malwaredomainlist
-2017-07-13 15:56:09,403 [ransomwaretracker.py  parsePage 78] [ERROR]  Eror on gathering intelligent from:/downloads/TC_PS_IPBL.txt
-2017-07-13 15:56:12,209 [common.py  getPage 38] [INFO ]  Page retrieved   [  getIntelligent 43 line phishtank.py ] 
-2017-07-13 15:56:13,444 [dbmanagment.py  conectdb 32] [INFO ]  Connected MongoDB 
-2017-07-13 15:56:16,342 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 15:56:25,027 [ransomwaretracker.py  parsePage 78] [ERROR]  Eror on gathering intelligent from:/downloads/TL_PS_IPBL.txt
-2017-07-13 15:56:25,772 [dbmanagment.py  conectdb 32] [INFO ]  Connected MongoDB 
-2017-07-13 15:56:26,484 [dbmanagment.py  insertmany 97] [INFO ]  Inserted Succesfully 112 items
-2017-07-13 15:56:27,040 [dbmanagment.py  insertmany 104] [INFO ]  5 number items duplicated,so trying update  theses
-2017-07-13 15:56:28,024 [dbmanagment.py  insertmany 97] [INFO ]  Inserted Succesfully 145 items
-2017-07-13 15:56:28,977 [dbmanagment.py  insertmany 104] [INFO ]  7 number items duplicated,so trying update  theses
-2017-07-13 15:56:29,682 [dbmanagment.py  insertmany 97] [INFO ]  Inserted Succesfully 66 items
-2017-07-13 15:56:31,000 [updatedb.py  run 21] [INFO ]  Thred exited:cc_tracker
-2017-07-13 15:56:31,571 [dbmanagment.py  insertmany 97] [INFO ]  Inserted Succesfully 271 items
-2017-07-13 15:56:32,161 [dbmanagment.py  insertmany 97] [INFO ]  Inserted Succesfully 163 items
-2017-07-13 15:56:33,266 [dbmanagment.py  insertmany 104] [INFO ]  2 number items duplicated,so trying update  theses
-2017-07-13 15:56:33,692 [dbmanagment.py  insertmany 104] [INFO ]  1 number items duplicated,so trying update  theses
-2017-07-13 15:56:33,821 [dbmanagment.py  insertmany 97] [INFO ]  Inserted Succesfully 3 items
-2017-07-13 15:56:48,302 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 15:57:33,548 [dbmanagment.py  insertmany 104] [INFO ]  390 number items duplicated,so trying update  theses
-2017-07-13 15:58:05,907 [dbmanagment.py  insertmany 97] [INFO ]  Inserted Succesfully 33 items
-2017-07-13 15:58:06,038 [dbmanagment.py  insertmany 104] [INFO ]  1 number items duplicated,so trying update  theses
-2017-07-13 15:58:06,635 [dbmanagment.py  insertmany 104] [INFO ]  6 number items duplicated,so trying update  theses
-2017-07-13 15:58:07,048 [updatedb.py  run 21] [INFO ]  Thred exited:RamsomwareTracker
-2017-07-13 15:58:34,020 [dbmanagment.py  insertmany 104] [INFO ]  57 number items duplicated,so trying update  theses
-2017-07-13 15:58:37,785 [updatedb.py  run 21] [INFO ]  Thred exited:malwaredomainlist
-2017-07-13 15:58:58,880 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 15:59:01,318 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 15:59:35,709 [dbmanagment.py  insertmany 104] [INFO ]  114 number items duplicated,so trying update  theses
-2017-07-13 15:59:45,125 [updatedb.py  run 21] [INFO ]  Thred exited:PhishTank
-2017-07-13 15:59:57,668 [dbmanagment.py  insertmany 104] [INFO ]  23129 number items duplicated,so trying update  theses
-2017-07-13 16:00:17,514 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:01:05,547 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:01:26,093 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:01:47,487 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:01:53,146 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:02:21,981 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:02:28,690 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:02:30,944 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:02:40,654 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:02:45,334 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:02:49,153 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:02:54,690 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:03:10,921 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:03:12,651 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:03:24,654 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:03:36,870 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:03:37,306 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:03:39,224 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:03:46,856 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:03:49,915 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:04:24,490 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:04:43,113 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:06:07,910 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:06:12,387 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:06:17,880 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:06:25,667 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:06:38,950 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:06:46,881 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:07:39,075 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:07:59,787 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:08:05,995 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:08:44,590 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:09:50,871 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:09:51,723 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:09:55,062 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:09:55,951 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:09:56,297 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:09:57,428 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:10:09,711 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:10:33,888 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:10:40,219 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:10:41,292 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:10:53,376 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:13:11,148 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:13:46,235 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:13:49,912 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:14:47,214 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:15:20,062 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:15:53,299 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:15:54,921 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:16:57,060 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:17:03,018 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:17:19,641 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:17:42,871 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:18:19,696 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:18:52,660 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:18:56,202 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:18:58,703 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:19:00,307 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:20:56,399 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:21:36,666 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:21:39,993 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:21:52,133 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:23:20,096 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:23:25,116 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:23:26,958 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:23:31,049 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:23:33,903 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:23:43,143 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:23:44,779 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:23:44,940 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:24:07,080 [updatedb.py  run 21] [INFO ]  Thred exited:DataPlane
-2017-07-13 16:24:41,593 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:25:36,699 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:25:40,238 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:26:01,182 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:26:24,082 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:26:25,502 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:26:44,269 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:26:48,987 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:26:52,323 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:27:55,838 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:28:01,388 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:28:06,707 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:28:07,026 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:28:36,363 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:28:45,878 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:28:59,301 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:29:18,211 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:29:19,041 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:29:32,206 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:29:37,418 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:29:46,944 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:29:50,025 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:29:51,385 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:30:19,111 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:30:20,813 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:30:38,881 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:31:05,970 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:32:13,256 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:32:27,269 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:33:00,045 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:33:23,060 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:33:34,054 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:34:01,514 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:35:12,975 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:35:26,277 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:36:04,817 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:36:08,228 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:36:11,708 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:36:23,256 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:36:44,974 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:36:51,241 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:36:54,227 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:37:00,362 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:37:13,388 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:37:58,981 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:38:14,526 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:38:17,483 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:38:19,939 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:38:20,451 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:38:30,636 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:38:48,395 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:39:27,499 [openphish.py  getTitleUrl 91] [ERROR]  timeout('The read operation timed out',)
-2017-07-13 16:39:30,766 [openphish.py  getTitleUrl 91] [ERROR]  timeout('The read operation timed out',)
-2017-07-13 16:39:59,359 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:40:03,249 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:40:15,667 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:40:58,817 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:41:02,735 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:41:05,655 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:41:10,023 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:41:17,533 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:41:31,027 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:41:34,235 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:41:37,440 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:41:40,648 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:41:43,857 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:41:59,827 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:42:03,308 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:42:09,855 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:42:10,678 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:42:26,107 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:42:38,322 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:42:48,546 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:42:49,632 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:42:51,846 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:42:56,257 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:43:04,710 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:43:47,447 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:43:56,176 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:43:59,375 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:44:02,574 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:44:08,566 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:45:09,840 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:45:13,246 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:45:38,046 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:45:54,731 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:46:09,348 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:46:25,763 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:46:41,304 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:46:56,032 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:47:00,869 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:47:21,885 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:48:23,346 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:48:37,719 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:49:07,380 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:50:18,388 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:50:28,949 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:50:33,037 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:50:43,931 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:50:51,129 [openphish.py  getTitleUrl 91] [ERROR]  timeout('The read operation timed out',)
-2017-07-13 16:51:09,944 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:51:10,575 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:51:11,504 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:51:55,741 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:52:23,620 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:52:26,257 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:52:43,309 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:52:48,208 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:52:49,130 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:53:14,131 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:53:18,476 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:53:32,447 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:53:36,127 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:54:08,930 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:54:09,628 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:55:14,288 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:55:14,726 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:55:29,817 [openphish.py  getTitleUrl 91] [ERROR]  timeout('The read operation timed out',)
-2017-07-13 16:55:40,463 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:55:50,377 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:55:52,370 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:55:52,626 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:55:52,787 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:55:58,367 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:56:00,005 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:56:08,819 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 16:56:18,563 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:56:25,612 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:56:55,085 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:57:01,648 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:57:11,621 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:57:19,251 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:57:19,790 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:57:23,251 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:57:29,515 [openphish.py  getTitleUrl 91] [ERROR]  CertificateError("hostname 'klghaith.com' doesn't match either of 'www.binaaacademy.com', 'www.klghaith.com', 'www.view4u.us'",)
-2017-07-13 16:58:18,927 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:58:22,122 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:59:28,753 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:59:31,983 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:59:37,681 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 16:59:42,676 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 16:59:56,989 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 17:00:39,972 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:00:42,795 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 17:00:49,472 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:00:55,132 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:00:56,658 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:01:07,216 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 17:01:16,741 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 17:01:54,593 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 17:02:13,816 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:02:14,315 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:02:57,531 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 17:03:08,128 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 17:03:11,663 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 17:03:21,513 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:03:21,669 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:04:15,457 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:04:20,452 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:04:36,051 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:04:48,939 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:04:49,544 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:05:07,401 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 17:05:13,192 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:05:34,751 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 17:05:49,954 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 17:06:57,622 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:07:29,758 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:07:34,492 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:07:54,060 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 17:08:37,332 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 17:08:42,598 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 17:09:29,536 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 17:09:51,468 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:10:15,680 [dammit.py  __init__ 381] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
-2017-07-13 17:10:18,509 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:10:24,147 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:10:50,123 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:12:19,651 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:12:50,817 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:12:52,497 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:12:53,706 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:13:40,702 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:13:56,279 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:14:03,814 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:14:09,207 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:14:22,977 [openphish.py  getTitleUrl 91] [ERROR]  timeout('timed out',)
-2017-07-13 17:14:29,294 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:14:29,585 [openphish.py  getTitleUrl 91] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
-2017-07-13 17:15:10,151 [updatedb.py  <module> 48] [INFO ]  Finish thread feeders
-2017-07-13 18:41:36,515 [updatedb.py  <module> 30] [INFO ]  Started thread feeders
-2017-07-13 18:43:58,740 [updatedb.py  <module> 33] [INFO ]  Started thread feeders
+2017-07-13 19:38:44,068 [updatedb.py  <module> 34  MainThread ] [INFO ]  Started thread feeders
+2017-07-13 19:38:46,323 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsrd.txt :True
+2017-07-13 19:38:46,965 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsrdany.txt :True
+2017-07-13 19:38:47,601 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsversion.txt :True
+2017-07-13 19:38:48,244 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipinvitation.txt :True
+2017-07-13 19:38:48,875 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipquery.txt :True
+2017-07-13 19:38:49,512 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipregistration.txt :True
+2017-07-13 19:38:50,501 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sshclient.txt :True
+2017-07-13 19:38:51,738 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sshpwauth.txt :True
+2017-07-13 19:38:52,397 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/vncrfb.txt :True
+2017-07-13 19:38:55,732 [updatedb.py  run 25  cc_tracker ] [INFO ]  Thread started 0 times : cc_tracker 
+2017-07-13 19:38:55,733 [updatedb.py  run 25  malwaredomainlist_dns ] [INFO ]  Thread started 0 times : malwaredomainlist_dns 
+2017-07-13 19:38:55,734 [updatedb.py  run 25  SSL Blacklist ] [INFO ]  Thread started 0 times : SSL Blacklist 
+2017-07-13 19:38:55,735 [updatedb.py  run 25  Openphish feeds ] [INFO ]  Thread started 0 times : Openphish feeds 
+2017-07-13 19:38:55,736 [updatedb.py  run 25  RamsomwareTracker ] [INFO ]  Thread started 0 times : RamsomwareTracker 
+2017-07-13 19:38:55,736 [updatedb.py  run 25  autoshun_feeds ] [INFO ]  Thread started 0 times : autoshun_feeds 
+2017-07-13 19:38:55,737 [updatedb.py  run 25  malwaredomainlist_domains ] [INFO ]  Thread started 0 times : malwaredomainlist_domains 
+2017-07-13 19:38:55,737 [updatedb.py  run 25  BruteForceBlocker ] [INFO ]  Thread started 0 times : BruteForceBlocker 
+2017-07-13 19:38:55,738 [updatedb.py  run 25  PhishTank ] [INFO ]  Thread started 0 times : PhishTank 
+2017-07-13 19:38:55,740 [updatedb.py  run 25  DataPlane ] [INFO ]  Thread started 0 times : DataPlane 
+2017-07-13 19:38:55,742 [updatedb.py  run 25  malwaredomainlist_ip ] [INFO ]  Thread started 0 times : malwaredomainlist_ip 
+2017-07-13 19:38:55,786 [common.py  getPage 34  cc_tracker ] [INFO ]  Trying  to  connect page  [  getIntelligent 26 line cc_tracker.py ] 
+2017-07-13 19:38:55,786 [common.py  getPage 34  malwaredomainlist_dns ] [INFO ]  Trying  to  connect page  [  getIntelligent 30 line malwaredomains_dns.py ] 
+2017-07-13 19:38:55,786 [common.py  getPage 34  malwaredomainlist_domains ] [INFO ]  Trying  to  connect page  [  getIntelligent 29 line malwaredomains_domains.py ] 
+2017-07-13 19:38:55,788 [common.py  getPage 34  BruteForceBlocker ] [INFO ]  Trying  to  connect page  [  getIntelligent 31 line bruteforcelocker.py ] 
+2017-07-13 19:38:55,788 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-13 19:38:55,788 [common.py  getPage 34  PhishTank ] [INFO ]  Trying  to  connect page  [  getIntelligent 43 line phishtank.py ] 
+2017-07-13 19:38:55,788 [common.py  getPage 34  SSL Blacklist ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sslbl.py ] 
+2017-07-13 19:38:55,789 [common.py  getPage 34  autoshun_feeds ] [INFO ]  Trying  to  connect page  [  getIntelligent 41 line autoshun.py ] 
+2017-07-13 19:38:55,790 [common.py  getPage 34  Openphish feeds ] [INFO ]  Trying  to  connect page  [  getIntelligent 35 line openphish.py ] 
+2017-07-13 19:38:55,805 [common.py  getPage 34  malwaredomainlist_ip ] [INFO ]  Trying  to  connect page  [  getIntelligent 27 line malwaredomains_ip.py ] 
+2017-07-13 19:38:56,063 [common.py  getPage 38  malwaredomainlist_ip ] [INFO ]  Page retrieved   [  getIntelligent 27 line malwaredomains_ip.py ] 
+2017-07-13 19:38:56,080 [common.py  getPage 38  cc_tracker ] [INFO ]  Page retrieved   [  getIntelligent 26 line cc_tracker.py ] 
+2017-07-13 19:38:56,114 [common.py  getPage 38  BruteForceBlocker ] [INFO ]  Page retrieved   [  getIntelligent 31 line bruteforcelocker.py ] 
+2017-07-13 19:38:56,386 [common.py  getPage 38  SSL Blacklist ] [INFO ]  Page retrieved   [  getIntelligent 32 line sslbl.py ] 
+2017-07-13 19:38:56,454 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-13 19:38:56,457 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-13 19:38:56,489 [common.py  getPage 38  Openphish feeds ] [INFO ]  Page retrieved   [  getIntelligent 35 line openphish.py ] 
+2017-07-13 19:38:56,575 [dbmanagment.py  conectdb 32  malwaredomainlist_ip ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-13 19:38:56,606 [dbmanagment.py  conectdb 32  BruteForceBlocker ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-13 19:38:56,626 [dbmanagment.py  conectdb 32  cc_tracker ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-13 19:38:56,637 [ransomwaretracker.py  getIntelligent 38  RamsomwareTracker ] [INFO ]  source link is available
+2017-07-13 19:38:56,777 [common.py  getPage 38  malwaredomainlist_dns ] [INFO ]  Page retrieved   [  getIntelligent 30 line malwaredomains_dns.py ] 
+2017-07-13 19:38:56,876 [common.py  getPage 41  autoshun_feeds ] [ERROR]  Eror on dowloading intelligent http:304 [  getIntelligent 41 line autoshun.py ] 
+2017-07-13 19:38:56,877 [autoshun.py  getIntelligent 45  autoshun_feeds ] [INFO ]  Content is empty.Failed retriveing intelligent
+2017-07-13 19:38:56,877 [autoshun.py  insertdb 84  autoshun_feeds ] [ERROR]  Intelligent data is empty
+2017-07-13 19:38:56,877 [updatedb.py  run 29  autoshun_feeds ] [INFO ]  Thread exited 0 times : autoshun_feeds 
+2017-07-13 19:38:57,242 [dbmanagment.py  conectdb 32  SSL Blacklist ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-13 19:38:57,357 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-13 19:38:57,358 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-13 19:38:57,599 [dbmanagment.py  conectdb 32  Openphish feeds ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-13 19:38:58,034 [dbmanagment.py  insertmany 104  cc_tracker ] [INFO ]  35 number items duplicated,so trying update  theses [  insertdb 71 line cc_tracker.py ] 
+2017-07-13 19:38:58,152 [dbmanagment.py  conectdb 32  malwaredomainlist_dns ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-13 19:38:58,327 [dbmanagment.py  insertmany 97  SSL Blacklist ] [INFO ]  Inserted Succesfully 55 items from [  insertdb 81 line sslbl.py ] 
+2017-07-13 19:38:58,327 [updatedb.py  run 29  SSL Blacklist ] [INFO ]  Thread exited 0 times : SSL Blacklist 
+2017-07-13 19:38:58,670 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-13 19:38:58,674 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-13 19:38:58,915 [common.py  getPage 38  malwaredomainlist_domains ] [INFO ]  Page retrieved   [  getIntelligent 29 line malwaredomains_domains.py ] 
+2017-07-13 19:38:59,293 [dbmanagment.py  insertmany 104  malwaredomainlist_ip ] [INFO ]  3 number items duplicated,so trying update  theses [  insertdb 85 line malwaredomains_ip.py ] 
+2017-07-13 19:38:59,473 [updatedb.py  run 29  malwaredomainlist_ip ] [INFO ]  Thread exited 0 times : malwaredomainlist_ip 
+2017-07-13 19:38:59,541 [dbmanagment.py  conectdb 32  malwaredomainlist_domains ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-13 19:39:00,146 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-13 19:39:00,147 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-13 19:39:00,785 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-13 19:39:00,788 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-13 19:39:01,437 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-13 19:39:01,438 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-13 19:39:01,927 [updatedb.py  run 29  cc_tracker ] [INFO ]  Thread exited 0 times : cc_tracker 
+2017-07-13 19:39:03,334 [ransomwaretracker.py  parsePage 78  RamsomwareTracker ] [ERROR]  Eror on gathering intelligent from:/downloads/CW_PS_DOMBL.txt
+2017-07-13 19:39:04,546 [ransomwaretracker.py  parsePage 78  RamsomwareTracker ] [ERROR]  Eror on gathering intelligent from:/downloads/CW_PS_IPBL.txt
+2017-07-13 19:39:04,793 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-13 19:39:04,858 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-13 19:39:06,168 [dbmanagment.py  insertmany 97  BruteForceBlocker ] [INFO ]  Inserted Succesfully 1178 items from [  insertdb 78 line bruteforcelocker.py ] 
+2017-07-13 19:39:06,169 [updatedb.py  run 29  BruteForceBlocker ] [INFO ]  Thread exited 0 times : BruteForceBlocker 
+2017-07-13 19:39:06,430 [common.py  getPage 38  PhishTank ] [INFO ]  Page retrieved   [  getIntelligent 43 line phishtank.py ] 
+2017-07-13 19:39:07,296 [dbmanagment.py  conectdb 32  PhishTank ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-13 19:39:07,880 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-13 19:39:07,949 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-13 19:39:08,043 [dbmanagment.py  insertmany 104  malwaredomainlist_dns ] [INFO ]  5 number items duplicated,so trying update  theses [  insertdb 90 line malwaredomains_dns.py ] 
+2017-07-13 19:39:08,522 [updatedb.py  run 29  malwaredomainlist_dns ] [INFO ]  Thread exited 0 times : malwaredomainlist_dns 
+2017-07-13 19:39:09,296 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-13 19:39:09,367 [ransomwaretracker.py  parsePage 78  RamsomwareTracker ] [ERROR]  Eror on gathering intelligent from:/downloads/TC_PS_IPBL.txt
+2017-07-13 19:39:09,801 [dbmanagment.py  conectdb 32  DataPlane ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-13 19:39:23,236 [ransomwaretracker.py  parsePage 78  RamsomwareTracker ] [ERROR]  Eror on gathering intelligent from:/downloads/TL_PS_IPBL.txt
+2017-07-13 19:39:23,848 [dbmanagment.py  conectdb 32  RamsomwareTracker ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-13 19:39:24,159 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 112 items from [  insertdb 152 line ransomwaretracker.py ] 
+2017-07-13 19:39:24,490 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  3 number items duplicated,so trying update  theses [  insertdb 152 line ransomwaretracker.py ] 
+2017-07-13 19:39:26,177 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 145 items from [  insertdb 152 line ransomwaretracker.py ] 
+2017-07-13 19:39:27,329 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  4 number items duplicated,so trying update  theses [  insertdb 152 line ransomwaretracker.py ] 
+2017-07-13 19:39:28,072 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 66 items from [  insertdb 152 line ransomwaretracker.py ] 
+2017-07-13 19:39:28,078 [dbmanagment.py  insertmany 104  Openphish feeds ] [INFO ]  100 number items duplicated,so trying update  theses [  insertdb 102 line openphish.py ] 
+2017-07-13 19:39:29,276 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 271 items from [  insertdb 152 line ransomwaretracker.py ] 
+2017-07-13 19:39:29,964 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 163 items from [  insertdb 152 line ransomwaretracker.py ] 
+2017-07-13 19:39:31,630 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  2 number items duplicated,so trying update  theses [  insertdb 152 line ransomwaretracker.py ] 
+2017-07-13 19:39:31,989 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  1 number items duplicated,so trying update  theses [  insertdb 152 line ransomwaretracker.py ] 
+2017-07-13 19:39:32,116 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 3 items from [  insertdb 152 line ransomwaretracker.py ] 
+2017-07-13 19:39:37,276 [updatedb.py  run 29  Openphish feeds ] [INFO ]  Thread exited 0 times : Openphish feeds 
+2017-07-13 19:41:09,870 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  390 number items duplicated,so trying update  theses [  insertdb 152 line ransomwaretracker.py ] 
+2017-07-13 19:41:40,362 [dbmanagment.py  insertmany 104  malwaredomainlist_domains ] [INFO ]  62 number items duplicated,so trying update  theses [  insertdb 89 line malwaredomains_domains.py ] 
+2017-07-13 19:41:43,841 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 33 items from [  insertdb 152 line ransomwaretracker.py ] 
+2017-07-13 19:41:43,990 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  1 number items duplicated,so trying update  theses [  insertdb 152 line ransomwaretracker.py ] 
+2017-07-13 19:41:44,407 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  6 number items duplicated,so trying update  theses [  insertdb 152 line ransomwaretracker.py ] 
+2017-07-13 19:41:44,885 [updatedb.py  run 29  RamsomwareTracker ] [INFO ]  Thread exited 0 times : RamsomwareTracker 
+2017-07-13 19:41:45,655 [updatedb.py  run 29  malwaredomainlist_domains ] [INFO ]  Thread exited 0 times : malwaredomainlist_domains 
+2017-07-13 19:42:35,668 [dbmanagment.py  insertmany 104  PhishTank ] [INFO ]  114 number items duplicated,so trying update  theses [  insertdb 92 line phishtank.py ] 
+2017-07-13 19:42:44,608 [updatedb.py  run 29  PhishTank ] [INFO ]  Thread exited 0 times : PhishTank 
+2017-07-13 19:43:07,216 [dbmanagment.py  insertmany 104  DataPlane ] [INFO ]  23202 number items duplicated,so trying update  theses [  insertdb 100 line dataplane.py ] 
+2017-07-13 19:49:01,959 [updatedb.py  run 25  cc_tracker ] [INFO ]  Thread started 1 times : cc_tracker 
+2017-07-13 19:49:01,960 [common.py  getPage 34  cc_tracker ] [INFO ]  Trying  to  connect page  [  getIntelligent 26 line cc_tracker.py ] 
+2017-07-13 19:49:02,525 [common.py  getPage 38  cc_tracker ] [INFO ]  Page retrieved   [  getIntelligent 26 line cc_tracker.py ] 
+2017-07-13 19:49:03,073 [dbmanagment.py  conectdb 32  cc_tracker ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-13 19:49:04,521 [dbmanagment.py  insertmany 104  cc_tracker ] [INFO ]  812 number items duplicated,so trying update  theses [  insertdb 71 line cc_tracker.py ] 
+2017-07-13 19:49:08,549 [updatedb.py  run 25  malwaredomainlist_dns ] [INFO ]  Thread started 1 times : malwaredomainlist_dns 
+2017-07-13 19:49:08,551 [common.py  getPage 34  malwaredomainlist_dns ] [INFO ]  Trying  to  connect page  [  getIntelligent 30 line malwaredomains_dns.py ] 
+2017-07-13 19:49:09,896 [common.py  getPage 38  malwaredomainlist_dns ] [INFO ]  Page retrieved   [  getIntelligent 30 line malwaredomains_dns.py ] 
+2017-07-13 19:49:10,426 [dbmanagment.py  conectdb 32  malwaredomainlist_dns ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-13 19:49:14,071 [dbmanagment.py  insertmany 104  malwaredomainlist_dns ] [INFO ]  2306 number items duplicated,so trying update  theses [  insertdb 90 line malwaredomains_dns.py ] 
+2017-07-13 19:49:56,844 [updatedb.py  run 29  cc_tracker ] [INFO ]  Thread exited 1 times : cc_tracker 
+2017-07-13 19:51:39,698 [updatedb.py  run 29  malwaredomainlist_dns ] [INFO ]  Thread exited 1 times : malwaredomainlist_dns 

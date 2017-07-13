@@ -106,8 +106,8 @@ class Dataplane(FeederParent):
 
 
 
-a=Dataplane()
-a.checkstatus(a.sourcelink)
+#a=Dataplane()
+#a.checkstatus(a.sourcelink)
 #a.getIntelligent()
 #temp=''
 

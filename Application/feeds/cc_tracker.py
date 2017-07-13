@@ -76,7 +76,7 @@ class Cc_tracker(FeederParent):
         return "%s  %s  %s " % (self.name, self.type, self.by)
 
 
-a=Cc_tracker()
-print(a.checkstatus(a.sourcelink))
-a.getIntelligent()
-a.insertdb()
+#a=Cc_tracker()
+#print(a.checkstatus(a.sourcelink))
+#a.getIntelligent()
+#a.insertdb()

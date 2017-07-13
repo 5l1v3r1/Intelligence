@@ -1,7 +1,7 @@
 import pymongo as mongo
 from constants.values import  *
 from constants.settings import  DBPATH
-import traceback
+from core.common import getStackdata
 from pymongo.errors import BulkWriteError
 
 description = """
@@ -29,7 +29,7 @@ class DbClient(object):
         try:
             self.client = mongo.MongoClient(DBPATH)
             info=self.client.server_info()
-            self.log.info("Connected MongoDB ")
+            self.log.info("Connected MongoDB "+ '[ '+getStackdata()+' ] ')
             return True
         except  mongo.errors.ServerSelectionTimeoutError as err:
             self.log.error(repr(err))
@@ -83,7 +83,7 @@ class DbClient(object):
             collection=self.getCollection()
             r=collection.insert_one(item)
 
-            self.log.info("Inserted Succesfully:"+str(r.inserted_id))
+            self.log.info("Inserted Succesfully: %d "%str(r.inserted_id)+'[ '+getStackdata()+' ] ')
         except mongo.errors.DuplicateKeyError as  e:
             self.log.error(repr(e))
             self.update(item)
@@ -94,14 +94,14 @@ class DbClient(object):
         try:
             collection = self.getCollection()
             r = collection.insert_many(items,False)
-            self.log.info("Inserted Succesfully %d items"%len(r.inserted_ids))
+            self.log.info("Inserted Succesfully %d items from "%len(r.inserted_ids)+'[ '+getStackdata()+' ] ')
         except BulkWriteError as bwe:
             werrors = bwe.details['writeErrors']
             updatelist=[]
             for err_item in werrors:
                 if err_item['code']==11000:
                     updatelist.append(items[err_item['index']])
-            self.log.info(str(len(updatelist))+" number items duplicated,so trying update  theses")
+            self.log.info(str(len(updatelist))+" number items duplicated,so trying update  theses "+'[ '+getStackdata()+' ] ')
             self.updatemany(updatelist)
         except Exception as  e:
             self.log.error(repr(e))

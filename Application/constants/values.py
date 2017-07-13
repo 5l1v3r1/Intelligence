@@ -149,7 +149,7 @@ class Feeders:
 
 def getlog():
     logFormatter = logging.Formatter(
-        "%(asctime)s [%(filename)s  %(funcName)s %(lineno)s] [%(levelname)-5.5s]  %(message)s")
+        "%(asctime)s [%(filename)s  %(funcName)s %(lineno)s  %(threadName)s ] [%(levelname)-5.5s]  %(message)s")
     rootLogger = logging.getLogger()
 
     if (len(rootLogger.handlers) > 0):

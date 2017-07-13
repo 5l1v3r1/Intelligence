@@ -23,8 +23,8 @@ def url_ok( url):
     r = requests.head(url,headers=HEADERS,timeout=TIMEOUT)
     return r.status_code == 200
 
-def getStackdata():
-    stackframe = inspect.stack()[2]
+def getStackdata(number=2):
+    stackframe = inspect.stack()[number]
     return  ' ' + stackframe[3] + ' ' + str(stackframe[2]) + ' line ' + stackframe[1].split('/')[-1]
 
 
