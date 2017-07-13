@@ -37,7 +37,7 @@ class Dataplane(FeederParent):
         self.updateinterval=updateinterval
         self.log=getlog()                           #this comming from constans
 
-    def checkstatus(self,urls=Feeders.bruteforclocker.s_link):
+    def checkstatus(self,urls=Feeders.datapalane.s_link):
         for item in urls:
             temp=request.checkstatus(item)
             self.log.info("Source Available-> "+str(item)+" :"+str(temp))
@@ -68,7 +68,7 @@ class Dataplane(FeederParent):
                 'category':item[3],
                 'description': category[item[3]][0],
                 'by': self.by,
-                'risk': category[item[3]][0],
+                'risk': category[item[3]][1],
                 "Intelligence":
                     [{
                         "lastDate": parser.parse(item[2]),
@@ -77,7 +77,7 @@ class Dataplane(FeederParent):
                         'networkname': item[0],
                         'description': category[item[3]][0],
                         'by': self.by,
-                        'risk': category[item[3]][0],
+                        'risk': category[item[3]][1],
                     }]
 
             }
@@ -108,15 +108,10 @@ class Dataplane(FeederParent):
 
 a=Dataplane()
 a.checkstatus(a.sourcelink)
-a.getIntelligent()
-temp=''
-for item in a.intelligence:
-   if temp==item[3]:
-       continue
-   print(item[1], ' -> ', item[3])
-   temp = item[3]
+#a.getIntelligent()
+#temp=''
 
-a.insertdb()
+#a.insertdb()
 
 
 

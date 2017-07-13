@@ -94,7 +94,7 @@ class DbClient(object):
         try:
             collection = self.getCollection()
             r = collection.insert_many(items,False)
-            self.log.info("Inserted Succesfully:" + str(r.inserted_ids))
+            self.log.info("Inserted Succesfully %d items"%len(r.inserted_ids))
         except BulkWriteError as bwe:
             werrors = bwe.details['writeErrors']
             updatelist=[]
@@ -136,7 +136,7 @@ class DbClient(object):
                          }
              }
             );
-            print(result)
+            #print(result)
 
         except Exception as  e:
             self.log.error(repr(e))

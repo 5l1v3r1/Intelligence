@@ -84,7 +84,13 @@ class Feeders:
                     "https://dataplane.org/sipinvitation.txt", "https://dataplane.org/sipquery.txt", "https://dataplane.org/sipregistration.txt",
                     "https://dataplane.org/sshclient.txt", "https://dataplane.org/sshpwauth.txt", "https://dataplane.org/vncrfb.txt"]
         def returnObject(self):
-            return None
+            return import_module("feeds.dataplane").Dataplane()
+
+    class cc_tracker:
+        s_link = 'http://osint.bambenekconsulting.com/feeds/c2-ipmasterlist.txt'
+        u_interval = 10  # minute interval
+        def returnObject(self):
+            return import_module("feeds.cc_tracker").Cc_tracker()
 
     class openphish:
         s_link   = 'https://openphish.com/feed.txt'

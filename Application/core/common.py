@@ -1,11 +1,15 @@
 import requests
+
 import traceback
-import constants.values as C
-from constants.settings import *
+from constants.values import Feeders,getlog
+from constants.settings import HEADERS,TIMEOUT
 from io import StringIO
 import inspect
 
-_log=C.getlog()
+_log=getlog()
+_allfeeders_=[]
+
+
 
 def checkstatus(url):
     try:
@@ -43,3 +47,17 @@ def getPage(url,parameter=None):
 
 
 
+def loadfeeders():
+    global _allfeeders_
+    method_list = [func for func in dir(Feeders) if callable(getattr(Feeders, func)) and not func.startswith("__")]
+    templist=[]
+    for item in method_list:
+        temp=getattr(Feeders,item)
+        obje=temp().returnObject()
+        if obje is None:
+            continue
+        templist.append([temp.u_interval,temp().returnObject()])
+        obje.checkstatus()                      #todo if not available resource don't add list
+
+    _allfeeders_=sorted(templist, key=lambda x: x[0])
+    print(_allfeeders_)

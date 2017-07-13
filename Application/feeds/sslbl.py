@@ -87,10 +87,10 @@ class Sslbl(FeederParent):
 
 
 
-a=Sslbl()
-print(a.checkstatus(a.sourcelink))
-a.getIntelligent()
-a.insertdb()
+#a=Sslbl()
+#print(a.checkstatus(a.sourcelink))
+#a.getIntelligent()
+#a.insertdb()
 
 
 

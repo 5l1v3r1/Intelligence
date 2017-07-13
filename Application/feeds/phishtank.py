@@ -4,7 +4,7 @@ import requests
 import json
 import csv
 
-
+from dateutil import parser
 from constants.values import *
 import core.common as request
 from feeds.feedparent import FeederParent
@@ -85,12 +85,6 @@ class Phistank(FeederParent):
         d = json.loads(response.text)
         return d
 
-
-
-
-
-
-
     def insertdb(self):
         client = DbClient()
         client.setdatabase('intelligence')
@@ -105,7 +99,7 @@ class Phistank(FeederParent):
         client.insert(
             {
                 "_id": item[1],
-                "lastDate": item[3],
+                "lastDate": parser.parse(item[3]),
                 "type": getType(self.type),
                 "description": item[2],
                 "by": self.by,
