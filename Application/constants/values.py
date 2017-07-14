@@ -68,9 +68,16 @@ class Feeders:
 
     class autoshun:
         s_link   = 'https://www.autoshun.org/download/?api_key=eb4c31917acb6afb8838ceab70a8309&format=csv'
-        u_interval=30        #minute interval
+        u_interval=60        #minute interval
         def returnObject(self):
             return  import_module("feeds.autoshun").Autoshun()
+
+    class greensnow:
+        s_link = ['http://blocklist.greensnow.co/greensnow.txt','http://blocklist.greensnow.co/']
+        u_interval = 120  # minute interval
+
+        def returnObject(self):
+            return import_module("feeds.greensnow").Grensnow()
 
 
     class malwr:
@@ -88,19 +95,19 @@ class Feeders:
 
     class cc_tracker:
         s_link = 'http://osint.bambenekconsulting.com/feeds/c2-ipmasterlist.txt'
-        u_interval = 10  # minute interval
+        u_interval = 40  # minute interval
         def returnObject(self):
             return import_module("feeds.cc_tracker").Cc_tracker()
 
     class openphish:
         s_link   = 'https://openphish.com/feed.txt'
-        u_interval = 20  # minute interval
+        u_interval = 60  # minute interval
         def returnObject(self):
             return import_module("feeds.openphish").Openphish()
 
     class bruteforclocker:
         s_link   = 'http://danger.rulez.sk/projects/bruteforceblocker/blist.php'
-        u_interval = 20  # minute interval
+        u_interval = 40  # minute interval
         def returnObject(self):
             return import_module("feeds.sslbl").Sslbl()
 
@@ -113,13 +120,13 @@ class Feeders:
 
     class ransomware:
         s_link   = 'http://ransomwaretracker.abuse.ch/blocklist/'
-        u_interval = 20  # minute interval
+        u_interval = 30  # minute interval
         def returnObject(self):
             return import_module("feeds.ransomwaretracker").Ransomware()
 
     class malwaredomains_dns:
         s_link = "https://www.malwaredomainlist.com/hostslist/hosts.txt"
-        u_interval = 10  # minute interval
+        u_interval = 60  # minute interval
         def returnObject(self):
             return import_module("feeds.malwaredomains_dns").Md_dns()
 
