@@ -277,3 +277,95 @@
 2017-07-14 15:37:30,852 [greensnow.py  extract 65  MainThread ] [INFO ]  Date information is not availabe
 2017-07-14 15:37:31,358 [dbmanagment.py  conectdb 32  MainThread ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
 2017-07-14 15:37:35,060 [dbmanagment.py  insertmany 97  MainThread ] [INFO ]  Inserted Succesfully 1418 items from [  insertdb 86 line greensnow.py ] 
+2017-07-14 16:10:31,766 [updatedb.py  <module> 34  MainThread ] [INFO ]  Started thread feeders
+2017-07-14 16:10:34,650 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsrd.txt :True
+2017-07-14 16:10:35,375 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsrdany.txt :True
+2017-07-14 16:10:36,098 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsversion.txt :True
+2017-07-14 16:10:36,819 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipinvitation.txt :True
+2017-07-14 16:10:37,544 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipquery.txt :True
+2017-07-14 16:10:50,229 [updatedb.py  <module> 34  MainThread ] [INFO ]  Started thread feeders
+2017-07-14 16:10:52,267 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsrd.txt :True
+2017-07-14 16:10:52,991 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsrdany.txt :True
+2017-07-14 16:10:53,710 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsversion.txt :True
+2017-07-14 16:10:54,469 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipinvitation.txt :True
+2017-07-14 16:10:55,191 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipquery.txt :True
+2017-07-14 16:10:55,929 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipregistration.txt :True
+2017-07-14 16:10:57,169 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sshclient.txt :True
+2017-07-14 16:10:58,393 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sshpwauth.txt :True
+2017-07-14 16:10:59,119 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/vncrfb.txt :True
+2017-07-14 16:11:01,540 [updatedb.py  run 25  RamsomwareTracker ] [INFO ]  Thread started 0 times : RamsomwareTracker 
+2017-07-14 16:11:01,544 [updatedb.py  run 25  SSL Blacklist ] [INFO ]  Thread started 0 times : SSL Blacklist 
+2017-07-14 16:11:01,545 [updatedb.py  run 25  cc_tracker ] [INFO ]  Thread started 0 times : cc_tracker 
+2017-07-14 16:11:01,545 [updatedb.py  run 25  autoshun_feeds ] [INFO ]  Thread started 0 times : autoshun_feeds 
+2017-07-14 16:11:01,547 [updatedb.py  run 25  malwaredomainlist_dns ] [INFO ]  Thread started 0 times : malwaredomainlist_dns 
+2017-07-14 16:11:01,548 [updatedb.py  run 25  malwaredomainlist_domains ] [INFO ]  Thread started 0 times : malwaredomainlist_domains 
+2017-07-14 16:11:01,550 [updatedb.py  run 25  Openphish feeds ] [INFO ]  Thread started 0 times : Openphish feeds 
+2017-07-14 16:11:01,550 [updatedb.py  run 25  BruteForceBlocker ] [INFO ]  Thread started 0 times : BruteForceBlocker 
+2017-07-14 16:11:01,551 [updatedb.py  run 25  PhishTank ] [INFO ]  Thread started 0 times : PhishTank 
+2017-07-14 16:11:01,552 [updatedb.py  run 25  DataPlane ] [INFO ]  Thread started 0 times : DataPlane 
+2017-07-14 16:11:01,552 [updatedb.py  run 25  GreenSnow ] [INFO ]  Thread started 0 times : GreenSnow 
+2017-07-14 16:11:01,553 [updatedb.py  run 25  malwaredomainlist_ip ] [INFO ]  Thread started 0 times : malwaredomainlist_ip 
+2017-07-14 16:11:01,599 [common.py  getPage 34  GreenSnow ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line greensnow.py ] 
+2017-07-14 16:11:01,599 [common.py  getPage 34  autoshun_feeds ] [INFO ]  Trying  to  connect page  [  getIntelligent 41 line autoshun.py ] 
+2017-07-14 16:11:01,600 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 16:11:01,600 [common.py  getPage 34  PhishTank ] [INFO ]  Trying  to  connect page  [  getIntelligent 43 line phishtank.py ] 
+2017-07-14 16:11:01,600 [common.py  getPage 34  cc_tracker ] [INFO ]  Trying  to  connect page  [  getIntelligent 26 line cc_tracker.py ] 
+2017-07-14 16:11:01,600 [common.py  getPage 34  SSL Blacklist ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sslbl.py ] 
+2017-07-14 16:11:01,600 [common.py  getPage 34  Openphish feeds ] [INFO ]  Trying  to  connect page  [  getIntelligent 35 line openphish.py ] 
+2017-07-14 16:11:01,601 [common.py  getPage 34  malwaredomainlist_dns ] [INFO ]  Trying  to  connect page  [  getIntelligent 30 line malwaredomains_dns.py ] 
+2017-07-14 16:11:01,602 [common.py  getPage 34  malwaredomainlist_domains ] [INFO ]  Trying  to  connect page  [  getIntelligent 26 line malwaredomains_domains.py ] 
+2017-07-14 16:11:01,604 [common.py  getPage 34  malwaredomainlist_ip ] [INFO ]  Trying  to  connect page  [  getIntelligent 27 line malwaredomains_ip.py ] 
+2017-07-14 16:11:01,606 [common.py  getPage 34  BruteForceBlocker ] [INFO ]  Trying  to  connect page  [  getIntelligent 31 line bruteforcelocker.py ] 
+2017-07-14 16:11:01,919 [common.py  getPage 38  malwaredomainlist_ip ] [INFO ]  Page retrieved   [  getIntelligent 27 line malwaredomains_ip.py ] 
+2017-07-14 16:11:02,164 [common.py  getPage 38  Openphish feeds ] [INFO ]  Page retrieved   [  getIntelligent 35 line openphish.py ] 
+2017-07-14 16:11:02,178 [common.py  getPage 38  SSL Blacklist ] [INFO ]  Page retrieved   [  getIntelligent 32 line sslbl.py ] 
+2017-07-14 16:11:02,419 [common.py  getPage 38  cc_tracker ] [INFO ]  Page retrieved   [  getIntelligent 26 line cc_tracker.py ] 
+2017-07-14 16:11:02,421 [common.py  getPage 38  PhishTank ] [INFO ]  Page retrieved   [  getIntelligent 43 line phishtank.py ] 
+2017-07-14 16:11:02,422 [dbmanagment.py  conectdb 32  RamsomwareTracker ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 16:11:02,422 [updatedb.py  run 29  RamsomwareTracker ] [INFO ]  Thread exited 0 times : RamsomwareTracker 
+2017-07-14 16:11:02,447 [common.py  getPage 38  BruteForceBlocker ] [INFO ]  Page retrieved   [  getIntelligent 31 line bruteforcelocker.py ] 
+2017-07-14 16:11:02,478 [common.py  getPage 38  malwaredomainlist_domains ] [INFO ]  Page retrieved   [  getIntelligent 26 line malwaredomains_domains.py ] 
+2017-07-14 16:11:02,489 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 16:11:02,503 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 16:11:02,505 [common.py  getPage 38  GreenSnow ] [INFO ]  Page retrieved   [  getIntelligent 34 line greensnow.py ] 
+2017-07-14 16:11:02,506 [common.py  getPage 34  GreenSnow ] [INFO ]  Trying  to  connect page  [  extract 62 line greensnow.py ] 
+2017-07-14 16:11:02,568 [common.py  getPage 38  malwaredomainlist_dns ] [INFO ]  Page retrieved   [  getIntelligent 30 line malwaredomains_dns.py ] 
+2017-07-14 16:11:02,741 [dbmanagment.py  conectdb 32  malwaredomainlist_ip ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 16:11:03,006 [common.py  getPage 38  autoshun_feeds ] [INFO ]  Page retrieved   [  getIntelligent 41 line autoshun.py ] 
+2017-07-14 16:11:03,624 [dbmanagment.py  conectdb 32  SSL Blacklist ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 16:11:03,688 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 16:11:03,690 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 16:11:03,785 [dbmanagment.py  conectdb 32  malwaredomainlist_domains ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 16:11:03,788 [dbmanagment.py  conectdb 32  PhishTank ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 16:11:03,825 [dbmanagment.py  insertmany 97  SSL Blacklist ] [INFO ]  Inserted Succesfully 55 items from [  insertdb 82 line sslbl.py ] 
+2017-07-14 16:11:03,825 [updatedb.py  run 29  SSL Blacklist ] [INFO ]  Thread exited 0 times : SSL Blacklist 
+2017-07-14 16:11:03,871 [dbmanagment.py  insertmany 97  malwaredomainlist_ip ] [INFO ]  Inserted Succesfully 1029 items from [  insertdb 87 line malwaredomains_ip.py ] 
+2017-07-14 16:11:03,872 [updatedb.py  run 29  malwaredomainlist_ip ] [INFO ]  Thread exited 0 times : malwaredomainlist_ip 
+2017-07-14 16:11:03,874 [dbmanagment.py  conectdb 32  malwaredomainlist_dns ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 16:11:03,892 [dbmanagment.py  insertmany 107  malwaredomainlist_dns ] [ERROR]  InvalidDocument('Cannot encode object: <dateutil.parser.parser object at 0x109e28be0>',)
+2017-07-14 16:11:03,897 [updatedb.py  run 29  malwaredomainlist_dns ] [INFO ]  Thread exited 0 times : malwaredomainlist_dns 
+2017-07-14 16:11:03,991 [dbmanagment.py  conectdb 32  autoshun_feeds ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 16:11:04,076 [common.py  getPage 38  GreenSnow ] [INFO ]  Page retrieved   [  extract 62 line greensnow.py ] 
+2017-07-14 16:11:04,076 [greensnow.py  extract 65  GreenSnow ] [INFO ]  Date information is not availabe
+2017-07-14 16:11:04,545 [dbmanagment.py  insertmany 97  autoshun_feeds ] [INFO ]  Inserted Succesfully 500 items from [  insertdb 89 line autoshun.py ] 
+2017-07-14 16:11:04,546 [updatedb.py  run 29  autoshun_feeds ] [INFO ]  Thread exited 0 times : autoshun_feeds 
+2017-07-14 16:11:04,842 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 16:11:04,843 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 16:11:04,881 [dbmanagment.py  conectdb 32  GreenSnow ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 16:11:05,182 [dbmanagment.py  insertmany 104  GreenSnow ] [INFO ]  20 number items duplicated,so trying update  theses [  insertdb 86 line greensnow.py ] 
+2017-07-14 16:11:05,585 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 16:11:05,586 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 16:11:06,338 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 16:11:06,339 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 16:11:07,071 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 16:11:07,072 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 16:11:07,196 [updatedb.py  run 29  GreenSnow ] [INFO ]  Thread exited 0 times : GreenSnow 
+2017-07-14 16:11:08,364 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 16:11:08,416 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 16:11:09,669 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 16:11:09,734 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 16:11:10,470 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 16:11:11,072 [dbmanagment.py  conectdb 32  DataPlane ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 16:11:14,890 [openphish.py  getTitleUrl 91  Openphish feeds ] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
+2017-07-14 16:11:22,721 [openphish.py  getTitleUrl 91  Openphish feeds ] [ERROR]  timeout('timed out',)
+2017-07-14 16:12:14,299 [openphish.py  getTitleUrl 91  Openphish feeds ] [ERROR]  timeout('timed out',)

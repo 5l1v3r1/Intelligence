@@ -68,7 +68,7 @@ class Grensnow(FeederParent):
             block = soup.find('div', class_='download')
             items = block.findAll('p', class_='information')
             date=parser.parser(items[4][14:])
-        
+
         self.intelligence.append(date)
         for line in content:
             if not line or line.startswith('#'):
@@ -92,10 +92,10 @@ class Grensnow(FeederParent):
 
 
 
-a=Grensnow()
-print(a.checkstatus())
-a.getIntelligent()
-a.insertdb()
+#a=Grensnow()
+#print(a.checkstatus())
+#a.getIntelligent()
+#a.insertdb()
 
 
 
