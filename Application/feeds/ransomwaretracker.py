@@ -7,7 +7,7 @@ from constants.settings import *
 import requests
 import core.common as request
 from feeds.feedparent import FeederParent
-
+from dateutil import parser
 from io import StringIO
 from bs4 import  BeautifulSoup
 
@@ -85,6 +85,7 @@ class Ransomware(FeederParent):
 
     def createDocument(self,data):
         date=data[0][0]
+        date = parser.parse(date)
         source=data[0][1]
         listdict = []
         for item in source:

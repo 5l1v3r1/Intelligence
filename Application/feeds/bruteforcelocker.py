@@ -3,9 +3,9 @@ from  dbmanagment.dbmanagment import DbClient
 
 
 from feeds.feedparent import FeederParent
-import core.common as request
+import core.common as core
 from constants.values import *
-from dateutil import parser
+
 
 
 
@@ -25,10 +25,10 @@ class Bruteforcelocker(FeederParent):
         self.log=getlog()                           #this comming from constans
 
     def checkstatus(self,url=Feeders.bruteforclocker.s_link):
-        return request.checkstatus(url)  #link is available
+        return core.checkstatus(url)  #link is available
 
     def getIntelligent(self):
-        content=request.getPage(self.sourcelink)
+        content=core.getPage(self.sourcelink)
         if content!=False:
             self.extract(content)
 
@@ -37,9 +37,10 @@ class Bruteforcelocker(FeederParent):
         documents = []
 
         for item in self.intelligence:
+            date = core.parser.parse(item[1])
             intelligence = {
                 '_id': item[0],
-                "lastDate": parser.parse(item[1]),
+                "lastDate": date,
                 'type':getType(self.type),
                 'description': __info__,
                 'by': self.by,
@@ -47,7 +48,7 @@ class Bruteforcelocker(FeederParent):
                 "Intelligence":
                     [{
                           "count":item[2],
-                          "lastDate": item[1],
+                          "lastDate": date,
                           'type':getType(self.type),
                           'description': __info__,
                           'by': self.by,

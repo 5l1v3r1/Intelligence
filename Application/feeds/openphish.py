@@ -40,17 +40,17 @@ class Openphish(FeederParent):              #todo this run very slowly therefore
 
     def getitemsindict(self,item):
         listdict = []
+        date=datetime.datetime.now().date().__str__()
         for i in self.intelligence:
             temp = {
-                "_id": i[0],
-                "lastDate":  datetime.datetime.utcnow(),
+                "_id": i[0].strip('\n'),
+                "lastDate":  date,
                 "type": getType(self.type),
-                "description": 'Not avvailable',
+                "description": i[1],
                 "by": self.by,
                 "Intelligence":
                     [{
-                        "phish_id":i[0],
-                        "lastDate": datetime.datetime.utcnow(),
+                        "lastDate": date,
                          "type": getType(self.type),
                          "description": i[1],
                          "by": self.by,
@@ -64,7 +64,7 @@ class Openphish(FeederParent):              #todo this run very slowly therefore
         return listdict
 
 
-    def extract(self,data,flag=False):
+    def extract(self,data,flag=True):
         for item in data:
             temp=None
             if flag:

@@ -43,14 +43,15 @@ class Sslbl(FeederParent):
                 '_id': item[0],
                 "lastDate": date,
                 'type':getType(self.type),
-                'scope': item[2],
+                'scope': item[2].strip('\n'),
                 'description': __info__,
                 'by': self.by,
                 'risk': 8,
                 "Intelligence":
                     [{
+                         "lastDate": date,
                           "port":item[1],
-                          "scope": item[1],
+                            'scope': item[2].strip('\n'),
                           'type':getType(self.type),
                           'description': __info__,
                           'by': self.by,

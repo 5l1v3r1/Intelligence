@@ -1,119 +1,279 @@
-2017-07-13 19:38:44,068 [updatedb.py  <module> 34  MainThread ] [INFO ]  Started thread feeders
-2017-07-13 19:38:46,323 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsrd.txt :True
-2017-07-13 19:38:46,965 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsrdany.txt :True
-2017-07-13 19:38:47,601 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsversion.txt :True
-2017-07-13 19:38:48,244 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipinvitation.txt :True
-2017-07-13 19:38:48,875 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipquery.txt :True
-2017-07-13 19:38:49,512 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipregistration.txt :True
-2017-07-13 19:38:50,501 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sshclient.txt :True
-2017-07-13 19:38:51,738 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sshpwauth.txt :True
-2017-07-13 19:38:52,397 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/vncrfb.txt :True
-2017-07-13 19:38:55,732 [updatedb.py  run 25  cc_tracker ] [INFO ]  Thread started 0 times : cc_tracker 
-2017-07-13 19:38:55,733 [updatedb.py  run 25  malwaredomainlist_dns ] [INFO ]  Thread started 0 times : malwaredomainlist_dns 
-2017-07-13 19:38:55,734 [updatedb.py  run 25  SSL Blacklist ] [INFO ]  Thread started 0 times : SSL Blacklist 
-2017-07-13 19:38:55,735 [updatedb.py  run 25  Openphish feeds ] [INFO ]  Thread started 0 times : Openphish feeds 
-2017-07-13 19:38:55,736 [updatedb.py  run 25  RamsomwareTracker ] [INFO ]  Thread started 0 times : RamsomwareTracker 
-2017-07-13 19:38:55,736 [updatedb.py  run 25  autoshun_feeds ] [INFO ]  Thread started 0 times : autoshun_feeds 
-2017-07-13 19:38:55,737 [updatedb.py  run 25  malwaredomainlist_domains ] [INFO ]  Thread started 0 times : malwaredomainlist_domains 
-2017-07-13 19:38:55,737 [updatedb.py  run 25  BruteForceBlocker ] [INFO ]  Thread started 0 times : BruteForceBlocker 
-2017-07-13 19:38:55,738 [updatedb.py  run 25  PhishTank ] [INFO ]  Thread started 0 times : PhishTank 
-2017-07-13 19:38:55,740 [updatedb.py  run 25  DataPlane ] [INFO ]  Thread started 0 times : DataPlane 
-2017-07-13 19:38:55,742 [updatedb.py  run 25  malwaredomainlist_ip ] [INFO ]  Thread started 0 times : malwaredomainlist_ip 
-2017-07-13 19:38:55,786 [common.py  getPage 34  cc_tracker ] [INFO ]  Trying  to  connect page  [  getIntelligent 26 line cc_tracker.py ] 
-2017-07-13 19:38:55,786 [common.py  getPage 34  malwaredomainlist_dns ] [INFO ]  Trying  to  connect page  [  getIntelligent 30 line malwaredomains_dns.py ] 
-2017-07-13 19:38:55,786 [common.py  getPage 34  malwaredomainlist_domains ] [INFO ]  Trying  to  connect page  [  getIntelligent 29 line malwaredomains_domains.py ] 
-2017-07-13 19:38:55,788 [common.py  getPage 34  BruteForceBlocker ] [INFO ]  Trying  to  connect page  [  getIntelligent 31 line bruteforcelocker.py ] 
-2017-07-13 19:38:55,788 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 19:38:55,788 [common.py  getPage 34  PhishTank ] [INFO ]  Trying  to  connect page  [  getIntelligent 43 line phishtank.py ] 
-2017-07-13 19:38:55,788 [common.py  getPage 34  SSL Blacklist ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sslbl.py ] 
-2017-07-13 19:38:55,789 [common.py  getPage 34  autoshun_feeds ] [INFO ]  Trying  to  connect page  [  getIntelligent 41 line autoshun.py ] 
-2017-07-13 19:38:55,790 [common.py  getPage 34  Openphish feeds ] [INFO ]  Trying  to  connect page  [  getIntelligent 35 line openphish.py ] 
-2017-07-13 19:38:55,805 [common.py  getPage 34  malwaredomainlist_ip ] [INFO ]  Trying  to  connect page  [  getIntelligent 27 line malwaredomains_ip.py ] 
-2017-07-13 19:38:56,063 [common.py  getPage 38  malwaredomainlist_ip ] [INFO ]  Page retrieved   [  getIntelligent 27 line malwaredomains_ip.py ] 
-2017-07-13 19:38:56,080 [common.py  getPage 38  cc_tracker ] [INFO ]  Page retrieved   [  getIntelligent 26 line cc_tracker.py ] 
-2017-07-13 19:38:56,114 [common.py  getPage 38  BruteForceBlocker ] [INFO ]  Page retrieved   [  getIntelligent 31 line bruteforcelocker.py ] 
-2017-07-13 19:38:56,386 [common.py  getPage 38  SSL Blacklist ] [INFO ]  Page retrieved   [  getIntelligent 32 line sslbl.py ] 
-2017-07-13 19:38:56,454 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 19:38:56,457 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 19:38:56,489 [common.py  getPage 38  Openphish feeds ] [INFO ]  Page retrieved   [  getIntelligent 35 line openphish.py ] 
-2017-07-13 19:38:56,575 [dbmanagment.py  conectdb 32  malwaredomainlist_ip ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
-2017-07-13 19:38:56,606 [dbmanagment.py  conectdb 32  BruteForceBlocker ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
-2017-07-13 19:38:56,626 [dbmanagment.py  conectdb 32  cc_tracker ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
-2017-07-13 19:38:56,637 [ransomwaretracker.py  getIntelligent 38  RamsomwareTracker ] [INFO ]  source link is available
-2017-07-13 19:38:56,777 [common.py  getPage 38  malwaredomainlist_dns ] [INFO ]  Page retrieved   [  getIntelligent 30 line malwaredomains_dns.py ] 
-2017-07-13 19:38:56,876 [common.py  getPage 41  autoshun_feeds ] [ERROR]  Eror on dowloading intelligent http:304 [  getIntelligent 41 line autoshun.py ] 
-2017-07-13 19:38:56,877 [autoshun.py  getIntelligent 45  autoshun_feeds ] [INFO ]  Content is empty.Failed retriveing intelligent
-2017-07-13 19:38:56,877 [autoshun.py  insertdb 84  autoshun_feeds ] [ERROR]  Intelligent data is empty
-2017-07-13 19:38:56,877 [updatedb.py  run 29  autoshun_feeds ] [INFO ]  Thread exited 0 times : autoshun_feeds 
-2017-07-13 19:38:57,242 [dbmanagment.py  conectdb 32  SSL Blacklist ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
-2017-07-13 19:38:57,357 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 19:38:57,358 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 19:38:57,599 [dbmanagment.py  conectdb 32  Openphish feeds ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
-2017-07-13 19:38:58,034 [dbmanagment.py  insertmany 104  cc_tracker ] [INFO ]  35 number items duplicated,so trying update  theses [  insertdb 71 line cc_tracker.py ] 
-2017-07-13 19:38:58,152 [dbmanagment.py  conectdb 32  malwaredomainlist_dns ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
-2017-07-13 19:38:58,327 [dbmanagment.py  insertmany 97  SSL Blacklist ] [INFO ]  Inserted Succesfully 55 items from [  insertdb 81 line sslbl.py ] 
-2017-07-13 19:38:58,327 [updatedb.py  run 29  SSL Blacklist ] [INFO ]  Thread exited 0 times : SSL Blacklist 
-2017-07-13 19:38:58,670 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 19:38:58,674 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 19:38:58,915 [common.py  getPage 38  malwaredomainlist_domains ] [INFO ]  Page retrieved   [  getIntelligent 29 line malwaredomains_domains.py ] 
-2017-07-13 19:38:59,293 [dbmanagment.py  insertmany 104  malwaredomainlist_ip ] [INFO ]  3 number items duplicated,so trying update  theses [  insertdb 85 line malwaredomains_ip.py ] 
-2017-07-13 19:38:59,473 [updatedb.py  run 29  malwaredomainlist_ip ] [INFO ]  Thread exited 0 times : malwaredomainlist_ip 
-2017-07-13 19:38:59,541 [dbmanagment.py  conectdb 32  malwaredomainlist_domains ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
-2017-07-13 19:39:00,146 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 19:39:00,147 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 19:39:00,785 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 19:39:00,788 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 19:39:01,437 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 19:39:01,438 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 19:39:01,927 [updatedb.py  run 29  cc_tracker ] [INFO ]  Thread exited 0 times : cc_tracker 
-2017-07-13 19:39:03,334 [ransomwaretracker.py  parsePage 78  RamsomwareTracker ] [ERROR]  Eror on gathering intelligent from:/downloads/CW_PS_DOMBL.txt
-2017-07-13 19:39:04,546 [ransomwaretracker.py  parsePage 78  RamsomwareTracker ] [ERROR]  Eror on gathering intelligent from:/downloads/CW_PS_IPBL.txt
-2017-07-13 19:39:04,793 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 19:39:04,858 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 19:39:06,168 [dbmanagment.py  insertmany 97  BruteForceBlocker ] [INFO ]  Inserted Succesfully 1178 items from [  insertdb 78 line bruteforcelocker.py ] 
-2017-07-13 19:39:06,169 [updatedb.py  run 29  BruteForceBlocker ] [INFO ]  Thread exited 0 times : BruteForceBlocker 
-2017-07-13 19:39:06,430 [common.py  getPage 38  PhishTank ] [INFO ]  Page retrieved   [  getIntelligent 43 line phishtank.py ] 
-2017-07-13 19:39:07,296 [dbmanagment.py  conectdb 32  PhishTank ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
-2017-07-13 19:39:07,880 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 19:39:07,949 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 19:39:08,043 [dbmanagment.py  insertmany 104  malwaredomainlist_dns ] [INFO ]  5 number items duplicated,so trying update  theses [  insertdb 90 line malwaredomains_dns.py ] 
-2017-07-13 19:39:08,522 [updatedb.py  run 29  malwaredomainlist_dns ] [INFO ]  Thread exited 0 times : malwaredomainlist_dns 
-2017-07-13 19:39:09,296 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
-2017-07-13 19:39:09,367 [ransomwaretracker.py  parsePage 78  RamsomwareTracker ] [ERROR]  Eror on gathering intelligent from:/downloads/TC_PS_IPBL.txt
-2017-07-13 19:39:09,801 [dbmanagment.py  conectdb 32  DataPlane ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
-2017-07-13 19:39:23,236 [ransomwaretracker.py  parsePage 78  RamsomwareTracker ] [ERROR]  Eror on gathering intelligent from:/downloads/TL_PS_IPBL.txt
-2017-07-13 19:39:23,848 [dbmanagment.py  conectdb 32  RamsomwareTracker ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
-2017-07-13 19:39:24,159 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 112 items from [  insertdb 152 line ransomwaretracker.py ] 
-2017-07-13 19:39:24,490 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  3 number items duplicated,so trying update  theses [  insertdb 152 line ransomwaretracker.py ] 
-2017-07-13 19:39:26,177 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 145 items from [  insertdb 152 line ransomwaretracker.py ] 
-2017-07-13 19:39:27,329 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  4 number items duplicated,so trying update  theses [  insertdb 152 line ransomwaretracker.py ] 
-2017-07-13 19:39:28,072 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 66 items from [  insertdb 152 line ransomwaretracker.py ] 
-2017-07-13 19:39:28,078 [dbmanagment.py  insertmany 104  Openphish feeds ] [INFO ]  100 number items duplicated,so trying update  theses [  insertdb 102 line openphish.py ] 
-2017-07-13 19:39:29,276 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 271 items from [  insertdb 152 line ransomwaretracker.py ] 
-2017-07-13 19:39:29,964 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 163 items from [  insertdb 152 line ransomwaretracker.py ] 
-2017-07-13 19:39:31,630 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  2 number items duplicated,so trying update  theses [  insertdb 152 line ransomwaretracker.py ] 
-2017-07-13 19:39:31,989 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  1 number items duplicated,so trying update  theses [  insertdb 152 line ransomwaretracker.py ] 
-2017-07-13 19:39:32,116 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 3 items from [  insertdb 152 line ransomwaretracker.py ] 
-2017-07-13 19:39:37,276 [updatedb.py  run 29  Openphish feeds ] [INFO ]  Thread exited 0 times : Openphish feeds 
-2017-07-13 19:41:09,870 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  390 number items duplicated,so trying update  theses [  insertdb 152 line ransomwaretracker.py ] 
-2017-07-13 19:41:40,362 [dbmanagment.py  insertmany 104  malwaredomainlist_domains ] [INFO ]  62 number items duplicated,so trying update  theses [  insertdb 89 line malwaredomains_domains.py ] 
-2017-07-13 19:41:43,841 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 33 items from [  insertdb 152 line ransomwaretracker.py ] 
-2017-07-13 19:41:43,990 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  1 number items duplicated,so trying update  theses [  insertdb 152 line ransomwaretracker.py ] 
-2017-07-13 19:41:44,407 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  6 number items duplicated,so trying update  theses [  insertdb 152 line ransomwaretracker.py ] 
-2017-07-13 19:41:44,885 [updatedb.py  run 29  RamsomwareTracker ] [INFO ]  Thread exited 0 times : RamsomwareTracker 
-2017-07-13 19:41:45,655 [updatedb.py  run 29  malwaredomainlist_domains ] [INFO ]  Thread exited 0 times : malwaredomainlist_domains 
-2017-07-13 19:42:35,668 [dbmanagment.py  insertmany 104  PhishTank ] [INFO ]  114 number items duplicated,so trying update  theses [  insertdb 92 line phishtank.py ] 
-2017-07-13 19:42:44,608 [updatedb.py  run 29  PhishTank ] [INFO ]  Thread exited 0 times : PhishTank 
-2017-07-13 19:43:07,216 [dbmanagment.py  insertmany 104  DataPlane ] [INFO ]  23202 number items duplicated,so trying update  theses [  insertdb 100 line dataplane.py ] 
-2017-07-13 19:49:01,959 [updatedb.py  run 25  cc_tracker ] [INFO ]  Thread started 1 times : cc_tracker 
-2017-07-13 19:49:01,960 [common.py  getPage 34  cc_tracker ] [INFO ]  Trying  to  connect page  [  getIntelligent 26 line cc_tracker.py ] 
-2017-07-13 19:49:02,525 [common.py  getPage 38  cc_tracker ] [INFO ]  Page retrieved   [  getIntelligent 26 line cc_tracker.py ] 
-2017-07-13 19:49:03,073 [dbmanagment.py  conectdb 32  cc_tracker ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
-2017-07-13 19:49:04,521 [dbmanagment.py  insertmany 104  cc_tracker ] [INFO ]  812 number items duplicated,so trying update  theses [  insertdb 71 line cc_tracker.py ] 
-2017-07-13 19:49:08,549 [updatedb.py  run 25  malwaredomainlist_dns ] [INFO ]  Thread started 1 times : malwaredomainlist_dns 
-2017-07-13 19:49:08,551 [common.py  getPage 34  malwaredomainlist_dns ] [INFO ]  Trying  to  connect page  [  getIntelligent 30 line malwaredomains_dns.py ] 
-2017-07-13 19:49:09,896 [common.py  getPage 38  malwaredomainlist_dns ] [INFO ]  Page retrieved   [  getIntelligent 30 line malwaredomains_dns.py ] 
-2017-07-13 19:49:10,426 [dbmanagment.py  conectdb 32  malwaredomainlist_dns ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
-2017-07-13 19:49:14,071 [dbmanagment.py  insertmany 104  malwaredomainlist_dns ] [INFO ]  2306 number items duplicated,so trying update  theses [  insertdb 90 line malwaredomains_dns.py ] 
-2017-07-13 19:49:56,844 [updatedb.py  run 29  cc_tracker ] [INFO ]  Thread exited 1 times : cc_tracker 
-2017-07-13 19:51:39,698 [updatedb.py  run 29  malwaredomainlist_dns ] [INFO ]  Thread exited 1 times : malwaredomainlist_dns 
+2017-07-14 01:59:58,861 [updatedb.py  <module> 34  MainThread ] [INFO ]  Started thread feeders
+2017-07-14 02:00:03,577 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsrd.txt :True
+2017-07-14 02:00:04,372 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsrdany.txt :True
+2017-07-14 02:00:05,175 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsversion.txt :True
+2017-07-14 02:00:05,958 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipinvitation.txt :True
+2017-07-14 02:00:06,745 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipquery.txt :True
+2017-07-14 02:00:07,509 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipregistration.txt :True
+2017-07-14 02:00:08,600 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sshclient.txt :True
+2017-07-14 02:00:09,769 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sshpwauth.txt :True
+2017-07-14 02:00:10,577 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/vncrfb.txt :True
+2017-07-14 12:05:22,029 [updatedb.py  <module> 34  MainThread ] [INFO ]  Started thread feeders
+2017-07-14 12:05:26,534 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsrd.txt :True
+2017-07-14 12:05:27,163 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsrdany.txt :True
+2017-07-14 12:05:27,800 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsversion.txt :True
+2017-07-14 12:05:28,431 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipinvitation.txt :True
+2017-07-14 12:05:29,074 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipquery.txt :True
+2017-07-14 12:05:29,712 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipregistration.txt :True
+2017-07-14 12:05:30,814 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sshclient.txt :True
+2017-07-14 12:05:31,736 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sshpwauth.txt :True
+2017-07-14 12:05:32,368 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/vncrfb.txt :True
+2017-07-14 12:05:37,797 [updatedb.py  run 25  RamsomwareTracker ] [INFO ]  Thread started 0 times : RamsomwareTracker 
+2017-07-14 12:05:37,799 [updatedb.py  run 25  SSL Blacklist ] [INFO ]  Thread started 0 times : SSL Blacklist 
+2017-07-14 12:05:37,799 [updatedb.py  run 25  cc_tracker ] [INFO ]  Thread started 0 times : cc_tracker 
+2017-07-14 12:05:37,802 [updatedb.py  run 25  autoshun_feeds ] [INFO ]  Thread started 0 times : autoshun_feeds 
+2017-07-14 12:05:37,803 [updatedb.py  run 25  malwaredomainlist_dns ] [INFO ]  Thread started 0 times : malwaredomainlist_dns 
+2017-07-14 12:05:37,803 [updatedb.py  run 25  malwaredomainlist_domains ] [INFO ]  Thread started 0 times : malwaredomainlist_domains 
+2017-07-14 12:05:37,804 [updatedb.py  run 25  Openphish feeds ] [INFO ]  Thread started 0 times : Openphish feeds 
+2017-07-14 12:05:37,805 [updatedb.py  run 25  BruteForceBlocker ] [INFO ]  Thread started 0 times : BruteForceBlocker 
+2017-07-14 12:05:37,806 [updatedb.py  run 25  PhishTank ] [INFO ]  Thread started 0 times : PhishTank 
+2017-07-14 12:05:37,807 [updatedb.py  run 25  DataPlane ] [INFO ]  Thread started 0 times : DataPlane 
+2017-07-14 12:05:37,807 [updatedb.py  run 25  malwaredomainlist_ip ] [INFO ]  Thread started 0 times : malwaredomainlist_ip 
+2017-07-14 12:05:37,855 [common.py  getPage 34  malwaredomainlist_ip ] [INFO ]  Trying  to  connect page  [  getIntelligent 27 line malwaredomains_ip.py ] 
+2017-07-14 12:05:37,855 [common.py  getPage 34  BruteForceBlocker ] [INFO ]  Trying  to  connect page  [  getIntelligent 31 line bruteforcelocker.py ] 
+2017-07-14 12:05:37,855 [common.py  getPage 34  malwaredomainlist_dns ] [INFO ]  Trying  to  connect page  [  getIntelligent 30 line malwaredomains_dns.py ] 
+2017-07-14 12:05:37,855 [common.py  getPage 34  Openphish feeds ] [INFO ]  Trying  to  connect page  [  getIntelligent 35 line openphish.py ] 
+2017-07-14 12:05:37,855 [common.py  getPage 34  autoshun_feeds ] [INFO ]  Trying  to  connect page  [  getIntelligent 41 line autoshun.py ] 
+2017-07-14 12:05:37,856 [common.py  getPage 34  malwaredomainlist_domains ] [INFO ]  Trying  to  connect page  [  getIntelligent 26 line malwaredomains_domains.py ] 
+2017-07-14 12:05:37,856 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:05:37,857 [common.py  getPage 34  SSL Blacklist ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sslbl.py ] 
+2017-07-14 12:05:37,857 [common.py  getPage 34  cc_tracker ] [INFO ]  Trying  to  connect page  [  getIntelligent 26 line cc_tracker.py ] 
+2017-07-14 12:05:37,857 [common.py  getPage 34  PhishTank ] [INFO ]  Trying  to  connect page  [  getIntelligent 43 line phishtank.py ] 
+2017-07-14 12:05:38,121 [common.py  getPage 38  malwaredomainlist_ip ] [INFO ]  Page retrieved   [  getIntelligent 27 line malwaredomains_ip.py ] 
+2017-07-14 12:05:38,158 [common.py  getPage 38  cc_tracker ] [INFO ]  Page retrieved   [  getIntelligent 26 line cc_tracker.py ] 
+2017-07-14 12:05:38,189 [common.py  getPage 38  BruteForceBlocker ] [INFO ]  Page retrieved   [  getIntelligent 31 line bruteforcelocker.py ] 
+2017-07-14 12:05:38,385 [common.py  getPage 38  Openphish feeds ] [INFO ]  Page retrieved   [  getIntelligent 35 line openphish.py ] 
+2017-07-14 12:05:38,473 [common.py  getPage 38  SSL Blacklist ] [INFO ]  Page retrieved   [  getIntelligent 32 line sslbl.py ] 
+2017-07-14 12:05:38,550 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:05:38,552 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:05:38,609 [ransomwaretracker.py  getIntelligent 38  RamsomwareTracker ] [INFO ]  source link is available
+2017-07-14 12:05:38,671 [dbmanagment.py  conectdb 32  malwaredomainlist_ip ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 12:05:38,693 [dbmanagment.py  conectdb 32  cc_tracker ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 12:05:38,703 [dbmanagment.py  conectdb 32  BruteForceBlocker ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 12:05:38,849 [common.py  getPage 38  malwaredomainlist_dns ] [INFO ]  Page retrieved   [  getIntelligent 30 line malwaredomains_dns.py ] 
+2017-07-14 12:05:38,959 [dbmanagment.py  conectdb 32  Openphish feeds ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 12:05:39,236 [common.py  getPage 38  autoshun_feeds ] [INFO ]  Page retrieved   [  getIntelligent 41 line autoshun.py ] 
+2017-07-14 12:05:39,333 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:05:39,335 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:05:39,349 [dbmanagment.py  conectdb 32  SSL Blacklist ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 12:05:40,184 [common.py  getPage 38  malwaredomainlist_domains ] [INFO ]  Page retrieved   [  getIntelligent 26 line malwaredomains_domains.py ] 
+2017-07-14 12:05:40,358 [dbmanagment.py  conectdb 32  malwaredomainlist_dns ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 12:05:40,373 [dbmanagment.py  insertmany 107  malwaredomainlist_dns ] [ERROR]  InvalidDocument('Cannot encode object: <dateutil.parser.parser object at 0x1106d7a20>',)
+2017-07-14 12:05:40,375 [updatedb.py  run 29  malwaredomainlist_dns ] [INFO ]  Thread exited 0 times : malwaredomainlist_dns 
+2017-07-14 12:05:40,626 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:05:40,627 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:05:40,705 [dbmanagment.py  insertmany 97  SSL Blacklist ] [INFO ]  Inserted Succesfully 55 items from [  insertdb 81 line sslbl.py ] 
+2017-07-14 12:05:40,705 [updatedb.py  run 29  SSL Blacklist ] [INFO ]  Thread exited 0 times : SSL Blacklist 
+2017-07-14 12:05:40,893 [dbmanagment.py  insertmany 104  cc_tracker ] [INFO ]  35 number items duplicated,so trying update  theses [  insertdb 71 line cc_tracker.py ] 
+2017-07-14 12:05:41,025 [dbmanagment.py  conectdb 32  malwaredomainlist_domains ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 12:05:41,342 [dbmanagment.py  insertmany 107  malwaredomainlist_domains ] [ERROR]  InvalidDocument('Cannot encode object: <dateutil.parser.parser object at 0x1113a1978>',)
+2017-07-14 12:05:41,363 [updatedb.py  run 29  malwaredomainlist_domains ] [INFO ]  Thread exited 0 times : malwaredomainlist_domains 
+2017-07-14 12:05:41,367 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:05:41,368 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:05:42,026 [dbmanagment.py  conectdb 32  autoshun_feeds ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 12:05:42,053 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:05:42,055 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:05:42,527 [dbmanagment.py  insertmany 104  malwaredomainlist_ip ] [INFO ]  3 number items duplicated,so trying update  theses [  insertdb 87 line malwaredomains_ip.py ] 
+2017-07-14 12:05:42,727 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:05:42,728 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:05:42,738 [updatedb.py  run 29  malwaredomainlist_ip ] [INFO ]  Thread exited 0 times : malwaredomainlist_ip 
+2017-07-14 12:05:43,486 [ransomwaretracker.py  parsePage 78  RamsomwareTracker ] [ERROR]  Eror on gathering intelligent from:/downloads/CW_PS_DOMBL.txt
+2017-07-14 12:05:43,950 [updatedb.py  run 29  cc_tracker ] [INFO ]  Thread exited 0 times : cc_tracker 
+2017-07-14 12:05:44,181 [common.py  getPage 38  PhishTank ] [INFO ]  Page retrieved   [  getIntelligent 43 line phishtank.py ] 
+2017-07-14 12:05:44,383 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:05:44,443 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:05:44,664 [ransomwaretracker.py  parsePage 78  RamsomwareTracker ] [ERROR]  Eror on gathering intelligent from:/downloads/CW_PS_IPBL.txt
+2017-07-14 12:05:44,863 [dbmanagment.py  conectdb 32  PhishTank ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 12:05:45,982 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:05:46,030 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:05:46,159 [dbmanagment.py  insertmany 104  autoshun_feeds ] [INFO ]  4 number items duplicated,so trying update  theses [  insertdb 89 line autoshun.py ] 
+2017-07-14 12:05:46,407 [updatedb.py  run 29  autoshun_feeds ] [INFO ]  Thread exited 0 times : autoshun_feeds 
+2017-07-14 12:05:46,759 [dbmanagment.py  insertmany 97  BruteForceBlocker ] [INFO ]  Inserted Succesfully 1161 items from [  insertdb 79 line bruteforcelocker.py ] 
+2017-07-14 12:05:46,760 [updatedb.py  run 29  BruteForceBlocker ] [INFO ]  Thread exited 0 times : BruteForceBlocker 
+2017-07-14 12:05:47,161 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:05:47,717 [dbmanagment.py  conectdb 32  DataPlane ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 12:05:49,320 [ransomwaretracker.py  parsePage 78  RamsomwareTracker ] [ERROR]  Eror on gathering intelligent from:/downloads/TC_PS_IPBL.txt
+2017-07-14 12:05:58,706 [dbmanagment.py  insertmany 104  Openphish feeds ] [INFO ]  235 number items duplicated,so trying update  theses [  insertdb 102 line openphish.py ] 
+2017-07-14 12:06:03,755 [ransomwaretracker.py  parsePage 78  RamsomwareTracker ] [ERROR]  Eror on gathering intelligent from:/downloads/TL_PS_IPBL.txt
+2017-07-14 12:06:04,516 [dbmanagment.py  conectdb 32  RamsomwareTracker ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 12:06:04,993 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 112 items from [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:06:05,463 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  3 number items duplicated,so trying update  theses [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:06:06,358 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 145 items from [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:06:06,962 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  2 number items duplicated,so trying update  theses [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:06:07,417 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 66 items from [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:06:08,685 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 271 items from [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:06:09,317 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 163 items from [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:06:10,342 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  2 number items duplicated,so trying update  theses [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:06:10,627 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  1 number items duplicated,so trying update  theses [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:06:10,798 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 3 items from [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:06:15,257 [updatedb.py  run 29  Openphish feeds ] [INFO ]  Thread exited 0 times : Openphish feeds 
+2017-07-14 12:07:34,362 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  390 number items duplicated,so trying update  theses [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:08:06,538 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 33 items from [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:08:06,634 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  1 number items duplicated,so trying update  theses [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:08:07,249 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 67 items from [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:08:07,249 [updatedb.py  run 29  RamsomwareTracker ] [INFO ]  Thread exited 0 times : RamsomwareTracker 
+2017-07-14 12:08:26,118 [dbmanagment.py  insertmany 104  PhishTank ] [INFO ]  452 number items duplicated,so trying update  theses [  insertdb 92 line phishtank.py ] 
+2017-07-14 12:08:59,391 [updatedb.py  run 29  PhishTank ] [INFO ]  Thread exited 0 times : PhishTank 
+2017-07-14 12:09:48,515 [updatedb.py  <module> 34  MainThread ] [INFO ]  Started thread feeders
+2017-07-14 12:09:50,956 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsrd.txt :True
+2017-07-14 12:09:51,602 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsrdany.txt :True
+2017-07-14 12:09:52,240 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsversion.txt :True
+2017-07-14 12:09:52,874 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipinvitation.txt :True
+2017-07-14 12:09:53,513 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipquery.txt :True
+2017-07-14 12:09:54,176 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipregistration.txt :True
+2017-07-14 12:09:55,109 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sshclient.txt :True
+2017-07-14 12:09:56,029 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sshpwauth.txt :True
+2017-07-14 12:09:56,674 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/vncrfb.txt :True
+2017-07-14 12:10:00,129 [updatedb.py  run 25  RamsomwareTracker ] [INFO ]  Thread started 0 times : RamsomwareTracker 
+2017-07-14 12:10:00,131 [updatedb.py  run 25  SSL Blacklist ] [INFO ]  Thread started 0 times : SSL Blacklist 
+2017-07-14 12:10:00,132 [updatedb.py  run 25  cc_tracker ] [INFO ]  Thread started 0 times : cc_tracker 
+2017-07-14 12:10:00,133 [updatedb.py  run 25  autoshun_feeds ] [INFO ]  Thread started 0 times : autoshun_feeds 
+2017-07-14 12:10:00,134 [updatedb.py  run 25  malwaredomainlist_dns ] [INFO ]  Thread started 0 times : malwaredomainlist_dns 
+2017-07-14 12:10:00,136 [updatedb.py  run 25  malwaredomainlist_domains ] [INFO ]  Thread started 0 times : malwaredomainlist_domains 
+2017-07-14 12:10:00,136 [updatedb.py  run 25  Openphish feeds ] [INFO ]  Thread started 0 times : Openphish feeds 
+2017-07-14 12:10:00,137 [updatedb.py  run 25  BruteForceBlocker ] [INFO ]  Thread started 0 times : BruteForceBlocker 
+2017-07-14 12:10:00,138 [updatedb.py  run 25  PhishTank ] [INFO ]  Thread started 0 times : PhishTank 
+2017-07-14 12:10:00,139 [updatedb.py  run 25  DataPlane ] [INFO ]  Thread started 0 times : DataPlane 
+2017-07-14 12:10:00,140 [updatedb.py  run 25  malwaredomainlist_ip ] [INFO ]  Thread started 0 times : malwaredomainlist_ip 
+2017-07-14 12:10:00,184 [common.py  getPage 34  malwaredomainlist_dns ] [INFO ]  Trying  to  connect page  [  getIntelligent 30 line malwaredomains_dns.py ] 
+2017-07-14 12:10:00,184 [common.py  getPage 34  malwaredomainlist_ip ] [INFO ]  Trying  to  connect page  [  getIntelligent 27 line malwaredomains_ip.py ] 
+2017-07-14 12:10:00,184 [common.py  getPage 34  cc_tracker ] [INFO ]  Trying  to  connect page  [  getIntelligent 26 line cc_tracker.py ] 
+2017-07-14 12:10:00,185 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:10:00,185 [common.py  getPage 34  SSL Blacklist ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sslbl.py ] 
+2017-07-14 12:10:00,185 [common.py  getPage 34  Openphish feeds ] [INFO ]  Trying  to  connect page  [  getIntelligent 35 line openphish.py ] 
+2017-07-14 12:10:00,185 [common.py  getPage 34  BruteForceBlocker ] [INFO ]  Trying  to  connect page  [  getIntelligent 31 line bruteforcelocker.py ] 
+2017-07-14 12:10:00,188 [common.py  getPage 34  autoshun_feeds ] [INFO ]  Trying  to  connect page  [  getIntelligent 41 line autoshun.py ] 
+2017-07-14 12:10:00,190 [common.py  getPage 34  PhishTank ] [INFO ]  Trying  to  connect page  [  getIntelligent 43 line phishtank.py ] 
+2017-07-14 12:10:00,191 [common.py  getPage 34  malwaredomainlist_domains ] [INFO ]  Trying  to  connect page  [  getIntelligent 26 line malwaredomains_domains.py ] 
+2017-07-14 12:10:00,440 [common.py  getPage 38  malwaredomainlist_ip ] [INFO ]  Page retrieved   [  getIntelligent 27 line malwaredomains_ip.py ] 
+2017-07-14 12:10:00,477 [common.py  getPage 38  cc_tracker ] [INFO ]  Page retrieved   [  getIntelligent 26 line cc_tracker.py ] 
+2017-07-14 12:10:00,521 [common.py  getPage 38  BruteForceBlocker ] [INFO ]  Page retrieved   [  getIntelligent 31 line bruteforcelocker.py ] 
+2017-07-14 12:10:00,776 [common.py  getPage 38  SSL Blacklist ] [INFO ]  Page retrieved   [  getIntelligent 32 line sslbl.py ] 
+2017-07-14 12:10:00,778 [common.py  getPage 38  Openphish feeds ] [INFO ]  Page retrieved   [  getIntelligent 35 line openphish.py ] 
+2017-07-14 12:10:00,922 [dbmanagment.py  conectdb 32  malwaredomainlist_ip ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 12:10:00,970 [dbmanagment.py  conectdb 32  cc_tracker ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 12:10:01,000 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:10:01,004 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:10:01,048 [ransomwaretracker.py  getIntelligent 38  RamsomwareTracker ] [INFO ]  source link is available
+2017-07-14 12:10:01,050 [dbmanagment.py  conectdb 32  BruteForceBlocker ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 12:10:01,165 [common.py  getPage 38  malwaredomainlist_dns ] [INFO ]  Page retrieved   [  getIntelligent 30 line malwaredomains_dns.py ] 
+2017-07-14 12:10:01,413 [dbmanagment.py  conectdb 32  SSL Blacklist ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 12:10:01,425 [common.py  getPage 41  autoshun_feeds ] [ERROR]  Eror on dowloading intelligent http:304 [  getIntelligent 41 line autoshun.py ] 
+2017-07-14 12:10:01,426 [autoshun.py  getIntelligent 45  autoshun_feeds ] [INFO ]  Content is empty.Failed retriveing intelligent
+2017-07-14 12:10:01,426 [autoshun.py  insertdb 84  autoshun_feeds ] [ERROR]  Intelligent data is empty
+2017-07-14 12:10:01,426 [updatedb.py  run 29  autoshun_feeds ] [INFO ]  Thread exited 0 times : autoshun_feeds 
+2017-07-14 12:10:01,472 [dbmanagment.py  conectdb 32  Openphish feeds ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 12:10:01,948 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:10:01,949 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:10:02,290 [dbmanagment.py  insertmany 97  SSL Blacklist ] [INFO ]  Inserted Succesfully 55 items from [  insertdb 82 line sslbl.py ] 
+2017-07-14 12:10:02,291 [updatedb.py  run 29  SSL Blacklist ] [INFO ]  Thread exited 0 times : SSL Blacklist 
+2017-07-14 12:10:02,455 [common.py  getPage 38  malwaredomainlist_domains ] [INFO ]  Page retrieved   [  getIntelligent 26 line malwaredomains_domains.py ] 
+2017-07-14 12:10:02,653 [dbmanagment.py  conectdb 32  malwaredomainlist_dns ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 12:10:02,667 [dbmanagment.py  insertmany 107  malwaredomainlist_dns ] [ERROR]  InvalidDocument('Cannot encode object: <dateutil.parser.parser object at 0x1114b5fd0>',)
+2017-07-14 12:10:02,667 [updatedb.py  run 29  malwaredomainlist_dns ] [INFO ]  Thread exited 0 times : malwaredomainlist_dns 
+2017-07-14 12:10:03,267 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:10:03,268 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:10:03,584 [dbmanagment.py  conectdb 32  malwaredomainlist_domains ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 12:10:03,878 [dbmanagment.py  insertmany 107  malwaredomainlist_domains ] [ERROR]  InvalidDocument('Cannot encode object: <dateutil.parser.parser object at 0x10f9109e8>',)
+2017-07-14 12:10:03,899 [updatedb.py  run 29  malwaredomainlist_domains ] [INFO ]  Thread exited 0 times : malwaredomainlist_domains 
+2017-07-14 12:10:03,899 [dbmanagment.py  insertmany 97  malwaredomainlist_ip ] [INFO ]  Inserted Succesfully 1029 items from [  insertdb 87 line malwaredomains_ip.py ] 
+2017-07-14 12:10:03,900 [updatedb.py  run 29  malwaredomainlist_ip ] [INFO ]  Thread exited 0 times : malwaredomainlist_ip 
+2017-07-14 12:10:04,644 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:10:04,645 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:10:04,949 [dbmanagment.py  insertmany 104  cc_tracker ] [INFO ]  38 number items duplicated,so trying update  theses [  insertdb 71 line cc_tracker.py ] 
+2017-07-14 12:10:05,340 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:10:05,342 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:10:06,551 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:10:06,552 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:10:07,359 [dbmanagment.py  insertmany 97  BruteForceBlocker ] [INFO ]  Inserted Succesfully 1161 items from [  insertdb 79 line bruteforcelocker.py ] 
+2017-07-14 12:10:07,360 [updatedb.py  run 29  BruteForceBlocker ] [INFO ]  Thread exited 0 times : BruteForceBlocker 
+2017-07-14 12:10:07,409 [common.py  getPage 38  PhishTank ] [INFO ]  Page retrieved   [  getIntelligent 43 line phishtank.py ] 
+2017-07-14 12:10:08,063 [updatedb.py  run 29  cc_tracker ] [INFO ]  Thread exited 0 times : cc_tracker 
+2017-07-14 12:10:08,144 [dbmanagment.py  conectdb 32  PhishTank ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 12:10:08,347 [ransomwaretracker.py  parsePage 78  RamsomwareTracker ] [ERROR]  Eror on gathering intelligent from:/downloads/CW_PS_DOMBL.txt
+2017-07-14 12:10:08,380 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:10:08,625 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:10:09,690 [ransomwaretracker.py  parsePage 78  RamsomwareTracker ] [ERROR]  Eror on gathering intelligent from:/downloads/CW_PS_IPBL.txt
+2017-07-14 12:10:10,315 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:10:10,400 [common.py  getPage 34  DataPlane ] [INFO ]  Trying  to  connect page  [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:10:11,068 [common.py  getPage 38  DataPlane ] [INFO ]  Page retrieved   [  getIntelligent 49 line dataplane.py ] 
+2017-07-14 12:10:11,578 [dbmanagment.py  conectdb 32  DataPlane ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 12:10:15,104 [ransomwaretracker.py  parsePage 78  RamsomwareTracker ] [ERROR]  Eror on gathering intelligent from:/downloads/TC_PS_IPBL.txt
+2017-07-14 12:10:17,287 [dbmanagment.py  insertmany 104  Openphish feeds ] [INFO ]  180 number items duplicated,so trying update  theses [  insertdb 102 line openphish.py ] 
+2017-07-14 12:10:30,399 [ransomwaretracker.py  parsePage 78  RamsomwareTracker ] [ERROR]  Eror on gathering intelligent from:/downloads/TL_PS_IPBL.txt
+2017-07-14 12:10:30,918 [dbmanagment.py  conectdb 32  RamsomwareTracker ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 12:10:31,231 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 112 items from [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:10:31,482 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  3 number items duplicated,so trying update  theses [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:10:31,881 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 145 items from [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:10:31,936 [updatedb.py  run 29  Openphish feeds ] [INFO ]  Thread exited 0 times : Openphish feeds 
+2017-07-14 12:10:32,178 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  2 number items duplicated,so trying update  theses [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:10:32,551 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 66 items from [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:10:33,529 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 271 items from [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:10:33,995 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 163 items from [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:10:34,431 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  2 number items duplicated,so trying update  theses [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:10:34,786 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  1 number items duplicated,so trying update  theses [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:10:34,914 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 3 items from [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:11:24,476 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  390 number items duplicated,so trying update  theses [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:11:56,569 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 33 items from [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:11:56,649 [dbmanagment.py  insertmany 104  RamsomwareTracker ] [INFO ]  1 number items duplicated,so trying update  theses [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:11:56,873 [dbmanagment.py  insertmany 97  RamsomwareTracker ] [INFO ]  Inserted Succesfully 67 items from [  insertdb 153 line ransomwaretracker.py ] 
+2017-07-14 12:11:56,874 [updatedb.py  run 29  RamsomwareTracker ] [INFO ]  Thread exited 0 times : RamsomwareTracker 
+2017-07-14 12:12:45,643 [dbmanagment.py  insertmany 104  PhishTank ] [INFO ]  507 number items duplicated,so trying update  theses [  insertdb 92 line phishtank.py ] 
+2017-07-14 12:13:23,499 [updatedb.py  run 29  PhishTank ] [INFO ]  Thread exited 0 times : PhishTank 
+2017-07-14 12:13:28,124 [dbmanagment.py  insertmany 104  DataPlane ] [INFO ]  23317 number items duplicated,so trying update  theses [  insertdb 100 line dataplane.py ] 
+2017-07-14 14:50:05,460 [updatedb.py  <module> 34  MainThread ] [INFO ]  Started thread feeders
+2017-07-14 14:50:25,432 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line greensnow.py ] 
+2017-07-14 14:50:27,839 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line greensnow.py ] 
+2017-07-14 14:51:18,595 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line greensnow.py ] 
+2017-07-14 14:52:20,384 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line greensnow.py ] 
+2017-07-14 14:52:35,569 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line greensnow.py ] 
+2017-07-14 14:52:36,180 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line greensnow.py ] 
+2017-07-14 14:52:53,845 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line greensnow.py ] 
+2017-07-14 14:52:54,452 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line greensnow.py ] 
+2017-07-14 14:53:32,624 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line greensnow.py ] 
+2017-07-14 14:53:33,256 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line greensnow.py ] 
+2017-07-14 14:54:47,199 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line greensnow.py ] 
+2017-07-14 14:54:47,872 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line greensnow.py ] 
+2017-07-14 14:55:22,064 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line greensnow.py ] 
+2017-07-14 14:55:22,756 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line greensnow.py ] 
+2017-07-14 15:23:18,627 [common.py  checkstatus 18  MainThread ] [ERROR]  InvalidSchema("No connection adapters were found for '['http://blocklist.greensnow.co/greensnow.txt', 'http://blocklist.greensnow.co/']'",)
+2017-07-14 15:23:21,873 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line greensnow.py ] 
+2017-07-14 15:23:21,879 [common.py  getPage 44  MainThread ] [ERROR]  InvalidSchema("No connection adapters were found for '['http://blocklist.greensnow.co/greensnow.txt', 'http://blocklist.greensnow.co/']'",)
+2017-07-14 15:23:35,111 [common.py  checkstatus 18  MainThread ] [ERROR]  InvalidSchema("No connection adapters were found for '['http://blocklist.greensnow.co/greensnow.txt', 'http://blocklist.greensnow.co/']'",)
+2017-07-14 15:23:35,136 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line greensnow.py ] 
+2017-07-14 15:23:35,768 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line greensnow.py ] 
+2017-07-14 15:23:35,769 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  extract 67 line greensnow.py ] 
+2017-07-14 15:23:35,774 [common.py  getPage 44  MainThread ] [ERROR]  InvalidSchema("No connection adapters were found for '['http://blocklist.greensnow.co/greensnow.txt', 'http://blocklist.greensnow.co/']'",)
+2017-07-14 15:26:00,116 [common.py  checkstatus 18  MainThread ] [ERROR]  MissingSchema("Invalid URL 'h': No schema supplied. Perhaps you meant http://h?",)
+2017-07-14 15:26:32,641 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line greensnow.py ] 
+2017-07-14 15:26:32,947 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line greensnow.py ] 
+2017-07-14 15:26:37,097 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  extract 67 line greensnow.py ] 
+2017-07-14 15:26:37,101 [common.py  getPage 44  MainThread ] [ERROR]  InvalidSchema("No connection adapters were found for '['http://blocklist.greensnow.co/greensnow.txt', 'http://blocklist.greensnow.co/']'",)
+2017-07-14 15:27:02,175 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line greensnow.py ] 
+2017-07-14 15:27:04,525 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line greensnow.py ] 
+2017-07-14 15:27:42,273 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line greensnow.py ] 
+2017-07-14 15:27:42,612 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line greensnow.py ] 
+2017-07-14 15:27:42,613 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  extract 67 line greensnow.py ] 
+2017-07-14 15:27:44,059 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  extract 67 line greensnow.py ] 
+2017-07-14 15:27:57,857 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line greensnow.py ] 
+2017-07-14 15:27:58,136 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line greensnow.py ] 
+2017-07-14 15:27:58,136 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  extract 67 line greensnow.py ] 
+2017-07-14 15:27:59,312 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  extract 67 line greensnow.py ] 
+2017-07-14 15:27:59,312 [greensnow.py  extract 70  MainThread ] [INFO ]  Date information is not availabe
+2017-07-14 15:34:22,468 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line greensnow.py ] 
+2017-07-14 15:34:22,748 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line greensnow.py ] 
+2017-07-14 15:34:22,749 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  extract 62 line greensnow.py ] 
+2017-07-14 15:34:24,384 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  extract 62 line greensnow.py ] 
+2017-07-14 15:34:24,384 [greensnow.py  extract 65  MainThread ] [INFO ]  Date information is not availabe
+2017-07-14 15:37:10,784 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line greensnow.py ] 
+2017-07-14 15:37:11,086 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line greensnow.py ] 
+2017-07-14 15:37:11,086 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  extract 62 line greensnow.py ] 
+2017-07-14 15:37:12,238 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  extract 62 line greensnow.py ] 
+2017-07-14 15:37:12,238 [greensnow.py  extract 65  MainThread ] [INFO ]  Date information is not availabe
+2017-07-14 15:37:29,310 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line greensnow.py ] 
+2017-07-14 15:37:29,596 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line greensnow.py ] 
+2017-07-14 15:37:29,597 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  extract 62 line greensnow.py ] 
+2017-07-14 15:37:30,852 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  extract 62 line greensnow.py ] 
+2017-07-14 15:37:30,852 [greensnow.py  extract 65  MainThread ] [INFO ]  Date information is not availabe
+2017-07-14 15:37:31,358 [dbmanagment.py  conectdb 32  MainThread ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-14 15:37:35,060 [dbmanagment.py  insertmany 97  MainThread ] [INFO ]  Inserted Succesfully 1418 items from [  insertdb 86 line greensnow.py ] 
