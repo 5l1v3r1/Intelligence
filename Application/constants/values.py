@@ -66,6 +66,19 @@ class Apis:
 
 class Feeders:
 
+    class maxmind:
+        s_link = 'https://www.maxmind.com/en/high-risk-ip-sample-list'
+        u_interval = 60*24*5  # minute interval
+
+        def returnObject(self):
+            return import_module("feeds.cybercrimetracker").Cybercrimetracker()
+    class cybercrime:
+        s_link = 'http://cybercrime-tracker.net/all.php'
+        u_interval = 180  # minute interval
+
+        def returnObject(self):
+            return import_module("feeds.cybercrimetracker").Cybercrimetracker()
+
     class autoshun:
         s_link   = 'https://www.autoshun.org/download/?api_key=eb4c31917acb6afb8838ceab70a8309&format=csv'
         u_interval=60        #minute interval
@@ -113,20 +126,20 @@ class Feeders:
 
     class sslbl:
         s_link = 'https://sslbl.abuse.ch/blacklist/sslipblacklist.csv'
-        u_interval = 60  # minute interval
+        u_interval = 62  # minute interval
 
         def returnObject(self):
             return import_module("feeds.bruteforcelocker").Bruteforcelocker()
 
     class ransomware:
         s_link   = 'http://ransomwaretracker.abuse.ch/blocklist/'
-        u_interval = 30  # minute interval
+        u_interval = 58  # minute interval
         def returnObject(self):
             return import_module("feeds.ransomwaretracker").Ransomware()
 
     class malwaredomains_dns:
         s_link = "https://www.malwaredomainlist.com/hostslist/hosts.txt"
-        u_interval = 60  # minute interval
+        u_interval = 64  # minute interval
         def returnObject(self):
             return import_module("feeds.malwaredomains_dns").Md_dns()
 
