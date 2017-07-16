@@ -101,7 +101,7 @@ class DbClient(object):
             for err_item in werrors:
                 if err_item['code']==11000:
                     updatelist.append(items[err_item['index']])
-            self.log.info(str(len(updatelist))+" number items duplicated,so trying update  theses "+'[ '+getStackdata()+' ] ')
+            self.log.info("Inserted Succesfully %d items " %str((len(items)-len(updatelist)))+ "and"+str(len(updatelist))+" number items duplicated,so trying update  theses "+'[ '+getStackdata()+' ] ')
             self.updatemany(updatelist)
         except Exception as  e:
             self.log.error(repr(e))

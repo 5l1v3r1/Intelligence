@@ -36,6 +36,7 @@ def getPage(url,parameter=None):
         if r.status_code == 200:
             
             _log.info("Page retrieved  " +' [ '+getStackdata()+' ] ')
+            #a=r.headers['content-disposition'] #atachmetn tipini soyler
             return StringIO(str(r.content, 'utf-8'))
         else:
             _log.error('Eror on dowloading intelligent http:' + str(r.status_code)+' [ '+getStackdata()+' ] ')

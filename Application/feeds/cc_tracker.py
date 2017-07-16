@@ -30,6 +30,7 @@ class Cc_tracker(FeederParent):
 
     def createDocuments(self):
         documents = []
+
         for item in self.intelligence[1:]:
             intelligence = {
                 '_id': item[0],

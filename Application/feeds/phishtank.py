@@ -4,11 +4,11 @@ import requests
 import json
 import csv
 
-from dateutil import parser
+
 from constants.values import *
 import core.common as request
 from feeds.feedparent import FeederParent
-
+from dateutil import parser
 
 description = """
     phishTank feeds,
@@ -47,17 +47,17 @@ class Phistank(FeederParent):
 
     def getitemsindict(self,):
         listdict = []
-        for i in self.intelligence:
+        for i in self.intelligence[1:]:
             temp = {
                 "_id": i[1],
-                "lastDate": i[3],
+                "lastDate": parser.parse(i[3]),
                 "type": getType(self.type),
                 "description": i[2],
                 "by": self.by,
                 "Intelligence":
                     [{
                         "phish_id":i[0],
-                        "lastDate": i[3],
+                        "lastDate": parser.parse(i[3]),
                          "type": getType(self.type),
                          "description": i[2],
                          "by": self.by,
@@ -69,6 +69,7 @@ class Phistank(FeederParent):
                     }]
             }
             listdict.append(temp)
+            print(temp)
         return listdict
 
 
@@ -77,6 +78,7 @@ class Phistank(FeederParent):
         readCSV = csv.reader(data, delimiter=',')
         for item in readCSV:
                 self.intelligence.append(item)
+
 
 
     def validateUrl(self,url):
@@ -106,7 +108,7 @@ class Phistank(FeederParent):
                 "Intelligence":
                     [{
                         "phish_id":item[0],
-                        "lastDate": item[3],
+                        "lastDate": parser.parse(item[3]),
                          "type": getType(self.type),
                          "description": item[2],
                          "by": self.by,
@@ -124,11 +126,11 @@ class Phistank(FeederParent):
 
 
 
-#a=Phistank(Type.Phisingurl,"Phishing  Url","PhishTank",)
+a=Phistank(Type.Phisingurl,"Phishing  Url","PhishTank",)
 #a.validateUrl('http://checkfb-login404inc.esy.es/recovery-chekpoint-login.html')
-#print(a.checkstatus())
-#a.getIntelligent()
-#a.insertdb()
+print(a.checkstatus())
+a.getIntelligent()
+a.insertdb()
 
 
 
