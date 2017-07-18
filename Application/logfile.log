@@ -425,3 +425,124 @@
 2017-07-16 21:33:44,866 [dbmanagment.py  conectdb 32  MainThread ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
 2017-07-16 21:50:27,435 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line maxmind.py ] 
 2017-07-16 21:50:30,596 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 32 line maxmind.py ] 
+2017-07-18 23:23:33,332 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Low.txt :True
+2017-07-18 23:23:34,041 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt :True
+2017-07-18 23:23:34,790 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_High.txt :True
+2017-07-18 23:23:52,893 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:23:54,391 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:26:14,718 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Low.txt :True
+2017-07-18 23:26:16,833 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt :True
+2017-07-18 23:26:18,303 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_High.txt :True
+2017-07-18 23:26:18,439 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:26:23,019 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:30:02,013 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Low.txt :True
+2017-07-18 23:30:02,967 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt :True
+2017-07-18 23:30:03,964 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_High.txt :True
+2017-07-18 23:30:04,095 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:30:05,468 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:34:00,697 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Low.txt :True
+2017-07-18 23:34:03,436 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt :True
+2017-07-18 23:34:04,329 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_High.txt :True
+2017-07-18 23:34:04,452 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:34:07,417 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:35:56,975 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Low.txt :True
+2017-07-18 23:35:59,203 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt :True
+2017-07-18 23:36:00,013 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_High.txt :True
+2017-07-18 23:36:00,132 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:36:01,308 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:36:14,921 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Low.txt :True
+2017-07-18 23:36:16,323 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt :True
+2017-07-18 23:36:17,216 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_High.txt :True
+2017-07-18 23:36:17,329 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:36:18,262 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:37:13,657 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Low.txt :True
+2017-07-18 23:37:14,412 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt :True
+2017-07-18 23:37:16,063 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_High.txt :True
+2017-07-18 23:37:16,087 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:37:17,073 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:37:17,077 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:37:18,080 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:37:18,084 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:37:18,870 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:37:19,721 [dbmanagment.py  conectdb 32  MainThread ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-18 23:37:28,069 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Low.txt :True
+2017-07-18 23:37:29,040 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt :True
+2017-07-18 23:37:29,912 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_High.txt :True
+2017-07-18 23:37:29,948 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:37:30,894 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:37:30,898 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:37:31,931 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:37:31,939 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:37:32,740 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:37:33,488 [dbmanagment.py  conectdb 32  MainThread ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-18 23:37:38,447 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Low.txt :True
+2017-07-18 23:37:39,184 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt :True
+2017-07-18 23:37:39,951 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_High.txt :True
+2017-07-18 23:37:40,075 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:37:40,968 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:38:09,854 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:38:10,938 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:38:10,962 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:38:12,007 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:38:29,736 [dbmanagment.py  conectdb 32  MainThread ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-18 23:42:02,702 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Low.txt :True
+2017-07-18 23:42:03,467 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt :True
+2017-07-18 23:42:04,208 [sans_domains.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_High.txt :True
+2017-07-18 23:42:04,328 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:42:05,270 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:42:05,276 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:42:06,152 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:42:06,157 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:42:06,983 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 32 line sans_domains.py ] 
+2017-07-18 23:42:07,721 [dbmanagment.py  conectdb 32  MainThread ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-18 23:44:06,314 [sans_domains.py  checkstatus 28  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Low.txt :True
+2017-07-18 23:44:07,311 [sans_domains.py  checkstatus 28  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt :True
+2017-07-18 23:44:08,158 [sans_domains.py  checkstatus 28  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_High.txt :True
+2017-07-18 23:44:08,308 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:44:09,403 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:44:09,410 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:44:10,762 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:44:10,767 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:44:11,581 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:44:12,353 [dbmanagment.py  conectdb 32  MainThread ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-18 23:44:49,391 [sans_domains.py  checkstatus 28  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Low.txt :True
+2017-07-18 23:44:51,202 [sans_domains.py  checkstatus 28  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt :True
+2017-07-18 23:44:51,915 [sans_domains.py  checkstatus 28  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_High.txt :True
+2017-07-18 23:44:52,045 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:44:52,984 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:44:52,989 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:44:53,940 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:44:53,949 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:44:54,677 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:44:59,138 [dbmanagment.py  conectdb 32  MainThread ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-18 23:45:30,856 [sans_domains.py  checkstatus 28  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Low.txt :True
+2017-07-18 23:45:33,664 [sans_domains.py  checkstatus 28  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt :True
+2017-07-18 23:45:36,504 [sans_domains.py  checkstatus 28  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_High.txt :True
+2017-07-18 23:45:36,618 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:45:39,752 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:45:39,758 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:45:43,471 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:45:43,479 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:45:49,016 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:45:52,545 [dbmanagment.py  conectdb 32  MainThread ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-18 23:53:47,743 [sans_domains.py  checkstatus 28  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Low.txt :True
+2017-07-18 23:53:49,709 [sans_domains.py  checkstatus 28  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt :True
+2017-07-18 23:53:52,632 [sans_domains.py  checkstatus 28  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_High.txt :True
+2017-07-18 23:53:52,754 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:53:58,621 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:53:58,626 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:54:03,024 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:54:03,029 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:54:07,543 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line sans_domains.py ] 
+2017-07-18 23:54:15,632 [dbmanagment.py  conectdb 32  MainThread ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-19 00:21:18,714 [sans_domains.py  checkstatus 28  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Low.txt :True
+2017-07-19 00:21:19,497 [sans_domains.py  checkstatus 28  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt :True
+2017-07-19 00:21:20,193 [sans_domains.py  checkstatus 28  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_High.txt :True
+2017-07-19 00:21:20,219 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line sans_domains.py ] 
+2017-07-19 00:21:21,115 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line sans_domains.py ] 
+2017-07-19 00:21:21,118 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line sans_domains.py ] 
+2017-07-19 00:21:22,041 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line sans_domains.py ] 
+2017-07-19 00:21:22,044 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line sans_domains.py ] 
+2017-07-19 00:21:22,757 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line sans_domains.py ] 
+2017-07-19 00:21:23,465 [dbmanagment.py  conectdb 32  MainThread ] [INFO ]  Connected MongoDB [  __init__ 26 line dbmanagment.py ] 
+2017-07-19 00:21:52,232 [dbmanagment.py  insertmany 104  MainThread ] [INFO ]  Inserted Succesfully 2877 items and2655 number items duplicated,so trying update  theses [  insertdb 90 line sans_domains.py ] 

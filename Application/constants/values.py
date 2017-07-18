@@ -65,6 +65,14 @@ class Apis:
 
 
 class Feeders:
+    class sans_domains:
+        s_link = ['https://isc.sans.edu/feeds/suspiciousdomains_Low.txt',
+                  'https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt',
+                  'https://isc.sans.edu/feeds/suspiciousdomains_High.txt']
+        u_interval = 30  # bakılacak kaç dakika olduğuna
+
+        def returnObject(self):
+            return import_module("feeds.sans_domains").Sans_domains()
 
     class maxmind:
         s_link = 'https://www.maxmind.com/en/high-risk-ip-sample-list'
