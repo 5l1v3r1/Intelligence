@@ -72,7 +72,7 @@ class Feeders:
         u_interval = 30  # bakılacak kaç dakika olduğuna
 
         def returnObject(self):
-            return import_module("feeds.sans_domains").Sans_domains()
+            return import_module("feeds.sans_domains").Sansdomain()
 
     class maxmind:
         s_link = 'https://www.maxmind.com/en/high-risk-ip-sample-list'

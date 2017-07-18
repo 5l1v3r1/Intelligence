@@ -12,7 +12,7 @@ __info__ = "blacklist domain feeder"
 __collection__="domain"
 
 
-class Sans_domain(FeederParent):
+class Sansdomain(FeederParent):
     __type__ = Type.Domain
 
     def __init__(self,type=__type__, name=_name_,by=__by__,sourcelink=Feeders.sans_domains.s_link,updateinterval=Feeders.sans_domains.u_interval):
