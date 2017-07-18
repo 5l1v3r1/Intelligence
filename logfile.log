@@ -1,9 +1,0 @@
-2017-07-10 20:06:57,378 [common.py  getPage 26] [INFO ]  Trying  to  connect page 
-2017-07-10 20:06:58,512 [common.py  getPage 32] [ERROR]  Eror on dowloading intelligent http:304
-2017-07-10 20:06:58,513 [autoshun.py  getIntelligent 46] [INFO ]  Content is empty.Failed retriveing intelligent
-2017-07-10 20:06:58,513 [autoshun.py  insertdb 85] [ERROR]  Intelligent data is empty
-2017-07-13 18:34:17,527 [updatedb.py  <module> 28] [INFO ]  Started thread feeders
-2017-07-13 18:34:21,921 [common.py  getPage 34] [INFO ]  Trying  to  connect page  [  getIntelligent 26 line cc_tracker.py ] 
-2017-07-13 18:34:22,132 [common.py  getPage 38] [INFO ]  Page retrieved   [  getIntelligent 26 line cc_tracker.py ] 
-2017-07-13 18:34:22,809 [dbmanagment.py  conectdb 32] [INFO ]  Connected MongoDB 
-2017-07-13 18:34:23,661 [dbmanagment.py  insertmany 104] [INFO ]  395 number items duplicated,so trying update  theses
