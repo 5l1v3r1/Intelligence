@@ -94,7 +94,7 @@ class Sansdomain(FeederParent):
     def __str__(self):
         return "%s  %s  %s " % (self.name, self.type, self.by)
 
-a = Sans_domain()
-print(a.checkstatus(a.sourcelink))
-a.getIntelligent()
-a.insertdb()
+#a = Sansdomain()
+#print(a.checkstatus(a.sourcelink))
+#a.getIntelligent()
+#a.insertdb()

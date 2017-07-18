@@ -69,7 +69,7 @@ class Phistank(FeederParent):
                     }]
             }
             listdict.append(temp)
-            print(temp)
+
         return listdict
 
 
@@ -126,11 +126,11 @@ class Phistank(FeederParent):
 
 
 
-a=Phistank(Type.Phisingurl,"Phishing  Url","PhishTank",)
+#a=Phistank(Type.Phisingurl,"Phishing  Url","PhishTank",)
 #a.validateUrl('http://checkfb-login404inc.esy.es/recovery-chekpoint-login.html')
-print(a.checkstatus())
-a.getIntelligent()
-a.insertdb()
+#print(a.checkstatus())
+#a.getIntelligent()
+#a.insertdb()
 
 
 
