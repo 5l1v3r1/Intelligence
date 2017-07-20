@@ -43,12 +43,12 @@ class Cc_tracker(FeederParent):
                 "Intelligence":
                     [{
                          "lastDate": item[2],
-                         "datachunk":item[3:],
+                         "datachunk":[item[2:]],  #//todo tekrar elden gececek
                          'type':item[1],
                          'description': __info__,
-                        'source': item[3],
+                         'source': item[3],
                          'by': self.by,
-                          'risk': "No info",
+                         'risk': "No info",
                     }]
 
             }
@@ -67,9 +67,9 @@ class Cc_tracker(FeederParent):
     def insertdb(self):
         if len(self.intelligence)>1:
             client = DbClient()
-            client.setdatabase('intelligence')
-            client.setcollection(__collection__)
-            client.insertmany(self.createDocuments())
+            client.set_database('intelligence')
+            client.set_collection(__collection__)
+            client.insert_many(self.createDocuments())
         else:
             self.log.info("Intelligece empty")
 

@@ -1,13 +1,9 @@
+import datetime
 from  dbmanagment.dbmanagment import DbClient
-
-
-
 from feeds.feedparent import FeederParent
 import core.common as request
 from constants.values import *
 from dateutil import parser
-import datetime
-
 from bs4 import  BeautifulSoup
 
 
@@ -15,7 +11,6 @@ _name_ = "GreenSnow"
 __by__ = "GreenSnow.co"
 __info__ = "GreenSnow is comparable with SpamHaus.org for attacks of any kind except for spam. Our list is updated automatically and you can withdraw at any time your IP address if it has been listed"
 __collection__="ip"
-
 
 class Grensnow(FeederParent):
     __type__ = Type.Ip
@@ -42,13 +37,15 @@ class Grensnow(FeederParent):
             intelligence = {
                 '_id': item,
                 "lastDate": date,
+
                 'type':getType(self.type),
                 'description': __info__,
                 'by': self.by,
                 'risk': 9,
                 "Intelligence":
                     [{
-                         "lastDate": date,
+                          "lastDate": date,
+                          "datechunk": [date],
                           'type':getType(self.type),
                           'description': __info__,
                           'by': self.by,
@@ -76,36 +73,21 @@ class Grensnow(FeederParent):
             else:
                 self.intelligence.append(line.strip("\n"))
 
-
-
     def insertdb(self):
         if len(self.intelligence)>1:
             client = DbClient()
-            client.setdatabase('intelligence')
-            client.setcollection(__collection__)
-            client.insertmany(self.createDocuments())
+            client.set_database('intelligence')
+            client.set_collection(__collection__)
+            client.insert_many(self.createDocuments())
         else:
             self.log.info("Intelligece empty")
 
     def __str__(self):
         return "%s  %s  %s " % (self.name, self.type, self.by)
 
-
-
 #a=Grensnow()
 #print(a.checkstatus())
 #a.getIntelligent()
 #a.insertdb()
-
-
-
-
-
-
-
-
-
-
-
 
 

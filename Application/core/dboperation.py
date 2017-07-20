@@ -1,13 +1,11 @@
-from constants.values import *
-from  dbmanagment.dbmanagment import DbClient
+from constants.values import getlog,getCollectName
+from dbmanagment.dbmanagment import DbClient
 
-_log=getlog()
-
+_log = getlog()
 
 def insertmanydb(self,dbname='intelligence',):
     client = DbClient()
-    client.setdatabase('intelligence')
+    client.setdatabase(dbname)
     for intel in self.intelligence:
         client.setcollection(getCollectName(self.getType(intel['collection'])))
         client.insertmany(intel['doc'])
-

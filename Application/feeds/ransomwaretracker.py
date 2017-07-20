@@ -1,10 +1,8 @@
-from  dbmanagment.dbmanagment import DbClient
-
-import traceback
-
-from constants.values import *
-from constants.settings import *
 import requests
+import traceback
+from constants.settings import HEADERS, RISK
+from dbmanagment.dbmanagment import DbClient
+from constants.values import *
 import core.common as request
 from feeds.feedparent import FeederParent
 from dateutil import parser
@@ -12,17 +10,15 @@ from io import StringIO
 from bs4 import  BeautifulSoup
 
 
-
 _name_ = "RamsomwareTracker"
 __by__ = "RamsomwareTracker"
 __info__ = "RamsomwareTracker ensure  url,domain and ip of  various malwares"
 
 
-
 class Ransomware(FeederParent):
     __type__ = Type.Ransomware
-    def __init__(self, type=__type__, name=_name_,by=__by__,description=__info__,sourcelink=Feeders.ransomware.s_link,updateinterval=Feeders.ransomware.u_interval):
-        FeederParent.__init__(self,type,name,by)
+    def __init__(self, type=__type__, name=_name_, by=__by__, description=__info__, sourcelink=Feeders.ransomware.s_link, updateinterval=Feeders.ransomware.u_interval):
+        FeederParent.__init__(self, type, name, by)
         self.description=description
         self.intelligence=[]
         self.sourcelink=sourcelink
@@ -31,6 +27,8 @@ class Ransomware(FeederParent):
 
     def checkstatus(self, url=Feeders.ransomware.s_link):
         return request.checkstatus(url)  # link is available
+
+
 
     def getIntelligent(self):
 
@@ -47,7 +45,6 @@ class Ransomware(FeederParent):
                 traceback.print_exc()
                 return False
 
-
     def getType(self,name):
         if "ip" in name.lower():
             return Type.Malware_ip
@@ -55,8 +52,8 @@ class Ransomware(FeederParent):
             return Type.Malware_domain
         elif "url" in name.lower():
             return Type.Malware_url
-    def parsePage(self,data):
 
+    def parsePage(self,data):
         soup = BeautifulSoup(data, 'html.parser')
         name_box = soup.find_all('table', attrs={'class': 'tableblocklist'})
         #print(name_box[1])
@@ -82,10 +79,8 @@ class Ransomware(FeederParent):
 
         #print(document)
 
-
     def createDocument(self,data):
-        date=data[0][0]
-        date = parser.parse(date)
+        date = parser.parse('2017-07-19 22:28:23.772')
         source=data[0][1]
         listdict = []
         for item in source:
@@ -96,23 +91,22 @@ class Ransomware(FeederParent):
                 'type': getType(self.getType(data[3])),
                 'description': data[2],
                 'by': self.by,
-                'risk': data[4],
+                'risk': RISK[data[4].lower()],
                 "Intelligence":
                     [{
                         "malware_name": data[1],
                         "lastDate": date,
+                        "datechunk":[date],
                         'scope': data[2],
                         'type': getType(self.getType(data[3])),
                         'description': data[2],
                         "by": self.by,
-                        'risk': data[4]
+                        'risk': RISK[data[4].lower()]
                     }]
 
             }
             listdict.append(intelligence)
         return listdict
-
-
 
     def extract(self,url):
         url='http://ransomwaretracker.abuse.ch'+url
@@ -143,34 +137,18 @@ class Ransomware(FeederParent):
                 self.log.error(repr(e))
                 return -1
 
-
-
     def insertdb(self):
         client = DbClient()
-        client.setdatabase('intelligence')
+        client.set_database('intelligence')
         for intel in self.intelligence:
-            client.setcollection(getCollectName(self.getType(intel['collection'])))
-            client.insertmany(intel['doc'])
+            client.set_collection(getCollectName(self.getType(intel['collection'])))
+            client.insert_many(intel['doc'])
 
 
     def __str__(self):
         return "%s  %s  %s " % (self.name, self.type, self.by)
 
-
-
-#a=Ransomware(Type.Ransomware,"Ransomware  Malware","RamsomwareTracker",)
-#print(a.checkstatus(a.sourcelink))
-#a.getIntelligent()
-#a.insertdb()
-
-
-
-
-
-
-
-
-
-
-
-
+a=Ransomware(Type.Ransomware,"Ransomware  Malware","RamsomwareTracker",)
+print(a.checkstatus(a.sourcelink))
+a.getIntelligent()
+a.insertdb()

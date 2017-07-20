@@ -1,5 +1,6 @@
 from dbmanagment.dbmanagment import DbClient
 from constants.values import *
+from constants.settings import  RISK
 from feeds.feedparent import FeederParent
 import core.common as request
 import csv
@@ -15,8 +16,8 @@ __collection__="domain"
 class Sansdomain(FeederParent):
     __type__ = Type.Domain
 
-    def __init__(self,type=__type__, name=_name_,by=__by__,sourcelink=Feeders.sans_domains.s_link,updateinterval=Feeders.sans_domains.u_interval):
-        FeederParent.__init__(self,type,name,by)
+    def __init__(self,type=__type__, name=_name_, by=__by__, sourcelink=Feeders.sans_domains.s_link, updateinterval=Feeders.sans_domains.u_interval):
+        FeederParent.__init__(self, type, name, by)
         self.intelligence=[]
         self.sourcelink=sourcelink
         self.updateinterval=updateinterval
@@ -28,14 +29,13 @@ class Sansdomain(FeederParent):
             self.log.info("Source Available-> "+str(item)+" :"+str(temp))
 
     def getIntelligent(self):
-        if type(self.sourcelink)==type([]):
+        if type(self.sourcelink) == type([]):
             for index,item in enumerate(self.sourcelink):
                 content = request.getPage(item)
                 if content != False:
                     self.extract(content,index)
                 else:
                     self.log.info("Page not available-> "+item)
-
         else:
             content=request.getPage(self.sourcelink)
             if content!=False:
@@ -43,7 +43,6 @@ class Sansdomain(FeederParent):
 
 
     def createDocuments(self):
-        risk={0:3,1:6,2:10}
         documents=[]
         for index,item in enumerate(self.intelligence):
             time = item['time']
@@ -55,15 +54,16 @@ class Sansdomain(FeederParent):
                     'type': getType(self.type),
                     'description': __info__,
                     'by': self.by,
-                    'risk': risk[index],
+                    'risk': RISK[index],
                     "Intelligence":
                         [{
                             "lastDate": date,
+                            "datechunk": [date],
                             'type': getType(self.type),
                             'description': __info__,
                             'source': _name_,
                             'by': self.by,
-                            'risk': risk[index]
+                            'risk': RISK[index]
                         }]
                 }
                 documents.append(intelligence)
@@ -85,9 +85,9 @@ class Sansdomain(FeederParent):
     def insertdb(self):
         if len(self.intelligence) > 1:
             client = DbClient()
-            client.setdatabase('intelligence')
-            client.setcollection(__collection__)
-            client.insertmany(self.createDocuments())
+            client.set_database('intelligence')
+            client.set_collection(__collection__)
+            client.insert_many(self.createDocuments())
         else:
             self.log.info("Intelligece empty")
 

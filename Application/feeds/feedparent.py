@@ -18,4 +18,3 @@ class FeederParent(ABC):
     @abstractmethod
     def checkstatus(self):
         pass
-

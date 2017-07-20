@@ -47,6 +47,7 @@ class Maxmind(FeederParent):
                 "Intelligence":
                     [{
                         "lastDate": date,
+                        "datechunk": [date],
                         'type': getType(self.type),
                         'description': __info__,
                         'by': self.by,
@@ -64,9 +65,9 @@ class Maxmind(FeederParent):
     def insertdb(self):
         if len(self.intelligence)>1:
             client = DbClient()
-            client.setdatabase('intelligence')
-            client.setcollection(__collection__)
-            client.insertmany(self.createDocuments())
+            client.set_database('intelligence')
+            client.set_collection(__collection__)
+            client.insert_many(self.createDocuments())
         else:
             self.log.info("Intelligece empty")
 

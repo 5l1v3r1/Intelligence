@@ -50,8 +50,9 @@ class Sslbl(FeederParent):
                 "Intelligence":
                     [{
                          "lastDate": date,
+                         "datechunk": [date],
                           "port":item[1],
-                            'scope': item[2].strip('\n'),
+                          'scope': item[2].strip('\n'),
                           'type':getType(self.type),
                           'description': __info__,
                           'by': self.by,

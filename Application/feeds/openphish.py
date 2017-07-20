@@ -27,7 +27,6 @@ class Openphish(FeederParent):              #todo this run very slowly therefore
         self.log=getlog()
 
 
-
     def checkstatus(self,url=Feeders.openphish.s_link):
         return request.checkstatus(url)  #link is available
 
@@ -36,9 +35,7 @@ class Openphish(FeederParent):              #todo this run very slowly therefore
         if content!=False:
             self.extract(content)
 
-
-
-    def getitemsindict(self,item):
+    def get_itemsindict(self,item):
         listdict = []
         date=datetime.datetime.now().date().__str__()
         for i in self.intelligence:
@@ -50,7 +47,8 @@ class Openphish(FeederParent):              #todo this run very slowly therefore
                 "by": self.by,
                 "Intelligence":
                     [{
-                        "lastDate": date,
+                         "lastDate": date,
+                         "datechunk": [date],
                          "type": getType(self.type),
                          "description": i[1],
                          "by": self.by,
@@ -68,7 +66,7 @@ class Openphish(FeederParent):              #todo this run very slowly therefore
         for item in data:
             temp=None
             if flag:
-                r1 = self.getTitleUrl(item)
+                r1 = self.get_title_url(item)
                 temp = [item, r1[0], r1[1]]
             else:
                 temp = [item, 'No info','No info']
@@ -77,7 +75,7 @@ class Openphish(FeederParent):              #todo this run very slowly therefore
             self.intelligence.append(temp)
         print("Total intelligence %d"%len(self.intelligence))
 
-    def getTitleUrl(self,url):
+    def get_title_url(self,url):
         result=[]         #[title,availeble]
         try:
             page = urllib.request.urlopen(url,timeout=3)
@@ -93,40 +91,11 @@ class Openphish(FeederParent):              #todo this run very slowly therefore
         return result
 
 
-
-
     def insertdb(self):
         client = DbClient()
-        client.setdatabase('intelligence')
-        client.setcollection('url')
-        client.insertmany(self.getitemsindict(self.intelligence))
-
-    def insertonedb(self,item):
-        client = DbClient()
-        client.setdatabase('intelligence')
-        client.setcollection('url')
-        client.getdocuments()
-        client.insert(
-            {
-                "_id": item[0],
-                "lastDate": datetime.datetime.utcnow(),
-                "type": getType(self.type),
-                "description": 'Not avvailable',
-                "by": self.by,
-                "Intelligence":
-                    [{
-                        "phish_id": item[0],
-                        "lastDate": datetime.datetime.utcnow(),
-                        "type": getType(self.type),
-                        "description": item[1],
-                        "by": self.by,
-                        "online": item[2],
-                        "target": item[1],
-                        "verified": 'Yes',
-                        "levelofrisk": "Hight"
-                    }]
-            }
-        )
+        client.set_database('intelligence')
+        client.set_collection('url')
+        client.insert_many(self.get_itemsindict(self.intelligence))
 
     def __str__(self):
         return "%s  %s  %s " % (self.name, self.type, self.by)
@@ -134,20 +103,7 @@ class Openphish(FeederParent):              #todo this run very slowly therefore
 
 
 #a=Openphish(Type.Phisingurl,"Phishing  Url","OpenPhish",)
-
 #print(a.checkstatus())
 #a.getIntelligent()
-#a.insertmanydb()
-
-
-
-
+#a.insertdb()
 #curl -d "url=http://checkfb-login404inc.esy.es/recovery-chekpoint-login.html&format=json&app_key=9c6f6c909a9df44bae577bcdf35d97ff87a4d07ef4243db534c8775be81cdc31" http://checkurl.phishtank.com/checkurl/
-
-
-
-
-
-
-
-

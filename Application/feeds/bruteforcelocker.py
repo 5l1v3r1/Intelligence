@@ -1,12 +1,7 @@
 from  dbmanagment.dbmanagment import DbClient
-
-
-
 from feeds.feedparent import FeederParent
 import core.common as core
 from constants.values import *
-
-
 
 
 _name_ = "BruteForceBlocker"
@@ -49,6 +44,7 @@ class Bruteforcelocker(FeederParent):
                     [{
                           "count":item[2],
                           "lastDate": date,
+                          "datachunk": [date],
                           'type':getType(self.type),
                           'description': __info__,
                           'by': self.by,
@@ -60,9 +56,6 @@ class Bruteforcelocker(FeederParent):
         return documents
 
     def extract(self,content):
-
-
-
         for line in content:
 
             if not line or line.startswith('#'):
@@ -74,9 +67,9 @@ class Bruteforcelocker(FeederParent):
     def insertdb(self):
         if len(self.intelligence)>1:
             client = DbClient()
-            client.setdatabase('intelligence')
-            client.setcollection(__collection__)
-            client.insertmany(self.createDocuments())
+            client.set_database('intelligence')
+            client.set_collection(__collection__)
+            client.insert_many(self.createDocuments())
         else:
             self.log.info("Intelligece empty")
 
@@ -84,14 +77,10 @@ class Bruteforcelocker(FeederParent):
         return "%s  %s  %s " % (self.name, self.type, self.by)
 
 
-
 #a=Bruteforcelocker()
 #print(a.checkstatus(a.sourcelink))
 #a.getIntelligent()
 #a.insertdb()
-
-
-
 
 
 

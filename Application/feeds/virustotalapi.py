@@ -1,6 +1,5 @@
 
 import requests
-import os
 
 
 from feeds.feedparent import FeederParent
@@ -30,7 +29,7 @@ class PublicApi(FeederParent):
 
     def __init__(self,type,name,by, proxies=None):
 
-        Feeder.__init__(self, type, name, by)
+        FeederParent.__init__(self, type, name, by)
         self.description = description
         self.log = getlog()
         self.api_key = Apis.virustotal.api_key

@@ -46,11 +46,12 @@ class Cybercrimetracker(FeederParent):
                 'risk': 9,
                 "Intelligence":
                     [{
-                         "lastDate": date,
+                          "lastDate": date,
+                           "datechunk": [date],
                           'type':getType(self.type),
                           'description': __info__,
                           'by': self.by,
-                         'risk': 9,
+                          'risk': 9,
                     }]
 
             }
@@ -65,30 +66,22 @@ class Cybercrimetracker(FeederParent):
             else:
                 self.intelligence.append(line.strip('\n'))
 
-
     def insertdb(self):
         if len(self.intelligence)>1:
             client = DbClient()
-            client.setdatabase('intelligence')
-            client.setcollection(__collection__)
-            client.insertmany(self.createDocuments())
+            client.set_database('intelligence')
+            client.set_collection(__collection__)
+            client.insert_many(self.createDocuments())
         else:
             self.log.info("Intelligece empty")
 
     def __str__(self):
         return "%s  %s  %s " % (self.name, self.type, self.by)
 
-
-
-a=Cybercrimetracker()
-print(a.checkstatus(a.sourcelink))
-a.getIntelligent()
-a.insertdb()
-
-
-
-
-
+#a=Cybercrimetracker()
+#print(a.checkstatus(a.sourcelink))
+#a.getIntelligent()
+#a.insertdb()
 
 
 

@@ -72,6 +72,7 @@ class Dataplane(FeederParent):
                 "Intelligence":
                     [{
                         "lastDate": parser.parse(item[2]),
+                         "datechunk": [parser.parse(item[2])],
                         'type': getType(self.type),
                         'category': item[3],
                         'networkname': item[0],
@@ -95,16 +96,14 @@ class Dataplane(FeederParent):
     def insertdb(self):
         if len(self.intelligence)>1:
             client = DbClient()
-            client.setdatabase('intelligence')
-            client.setcollection(__collection__)
-            client.insertmany(self.createDocuments())
+            client.set_database('intelligence')
+            client.set_collection(__collection__)
+            client.insert_many(self.createDocuments())
         else:
             self.log.info("Intelligece empty")
 
     def __str__(self):
         return "%s  %s  %s " % (self.name, self.type, self.by)
-
-
 
 #a=Dataplane()
 #a.checkstatus(a.sourcelink)
@@ -112,14 +111,4 @@ class Dataplane(FeederParent):
 #temp=''
 
 #a.insertdb()
-
-
-
-
-
-
-
-
-
-
 
