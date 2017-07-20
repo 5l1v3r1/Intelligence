@@ -34,7 +34,7 @@ _log_.info("Started thread feeders")
 start = datetime.now()
 if len(common._allfeeders_) == 0:
     common.loadfeeders()
-print(common._allfeeders_)
+#print(common._allfeeders_)
 counter=0
 
 for item in common._allfeeders_:
@@ -45,7 +45,7 @@ for item in common._allfeeders_:
 
 
 
-print(_threadlist_)
+#print(_threadlist_)
 
 for x in _threadlist_:
     x.join()

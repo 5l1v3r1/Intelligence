@@ -26,7 +26,6 @@ class Openphish(FeederParent):              #todo this run very slowly therefore
         self.updateinterval=updateinterval
         self.log=getlog()
 
-
     def checkstatus(self,url=Feeders.openphish.s_link):
         return request.checkstatus(url)  #link is available
 
@@ -61,7 +60,6 @@ class Openphish(FeederParent):              #todo this run very slowly therefore
             listdict.append(temp)
         return listdict
 
-
     def extract(self,data,flag=True):
         for item in data:
             temp=None
@@ -90,7 +88,6 @@ class Openphish(FeederParent):              #todo this run very slowly therefore
             result = ['Not found', 'yes']
         return result
 
-
     def insertdb(self):
         client = DbClient()
         client.set_database('intelligence')
@@ -99,8 +96,6 @@ class Openphish(FeederParent):              #todo this run very slowly therefore
 
     def __str__(self):
         return "%s  %s  %s " % (self.name, self.type, self.by)
-
-
 
 #a=Openphish(Type.Phisingurl,"Phishing  Url","OpenPhish",)
 #print(a.checkstatus())

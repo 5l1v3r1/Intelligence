@@ -45,7 +45,7 @@ class Autoshun(FeederParent):
                 "Intelligence":
                     [{
                         "lastDate": i[1],
-                        "datachunk": [i[1]],
+                        "datechunk": [i[1]],
                         "type": getType(self.type),
                         "description": i[2],
                         "by": self.by,

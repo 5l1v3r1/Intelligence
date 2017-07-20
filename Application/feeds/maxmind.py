@@ -76,10 +76,10 @@ class Maxmind(FeederParent):
 
 
 
-a=Maxmind()
-print(a.checkstatus(a.sourcelink))
-a.getIntelligent()
-a.insertdb()
+#a=Maxmind()
+#print(a.checkstatus(a.sourcelink))
+#a.getIntelligent()
+#a.insertdb()
 
 
 

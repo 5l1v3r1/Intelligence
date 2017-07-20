@@ -148,7 +148,7 @@ class Ransomware(FeederParent):
     def __str__(self):
         return "%s  %s  %s " % (self.name, self.type, self.by)
 
-a=Ransomware(Type.Ransomware,"Ransomware  Malware","RamsomwareTracker",)
-print(a.checkstatus(a.sourcelink))
-a.getIntelligent()
-a.insertdb()
+#a=Ransomware(Type.Ransomware,"Ransomware  Malware","RamsomwareTracker",)
+#print(a.checkstatus(a.sourcelink))
+#a.getIntelligent()
+#a.insertdb()

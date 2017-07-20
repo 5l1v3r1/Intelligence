@@ -9,7 +9,7 @@ __by__ = "BruteForceBlocker"
 __info__ = "Its main purpose is to block SSH bruteforce attacks via firewall.count show number of atttemps "
 __collection__="ip"
 __reference__ = "rulez.sk"
-
+maxcount = 0
 class Bruteforcelocker(FeederParent):
     __type__ = Type.Ip
     def __init__(self, type=__type__, name=_name_,by=__by__,sourcelink=Feeders.bruteforclocker.s_link,updateinterval=30):
@@ -39,16 +39,16 @@ class Bruteforcelocker(FeederParent):
                 'type':getType(self.type),
                 'description': __info__,
                 'by': self.by,
-                'risk': "No info",
+                'risk': self.get_risk(int(item[2])),
                 "Intelligence":
                     [{
-                          "count":item[2],
                           "lastDate": date,
-                          "datachunk": [date],
+                          "datechunk": [date],
+                           "count": item[2],
                           'type':getType(self.type),
                           'description': __info__,
                           'by': self.by,
-                         'risk': "No info",
+                          'risk': self.get_risk(int(item[2])),
                     }]
 
             }
@@ -72,6 +72,16 @@ class Bruteforcelocker(FeederParent):
             client.insert_many(self.createDocuments())
         else:
             self.log.info("Intelligece empty")
+
+
+    def get_risk(self,count):
+        global maxcount
+        if maxcount <= count:
+            maxcount = count
+        risk = (int(count*(10/maxcount))+3)
+        if risk>10:
+            return 10
+        return risk
 
     def __str__(self):
         return "%s  %s  %s " % (self.name, self.type, self.by)

@@ -79,7 +79,7 @@ class DbClient(object):
         except Exception as  exp:
             self.log.error(repr(exp))
 
-    def insert_many(self, items):
+    def insert_many(self, items,flag=True):
         try:
             collection = self.get_collection()
             self.collectiondb = collection
@@ -92,13 +92,13 @@ class DbClient(object):
                 if err_item['code'] == 11000:
                     updatelist.append(items[err_item['index']])
             self.log.info("Inserted Succesfully %d items " %(len(items)-len(updatelist))+ "and "+str(len(updatelist))+" number items duplicated,so trying update  theses "+'[ '+getStackdata()+' ] ')
-            self.update_many(updatelist)
+            self.update_many(updatelist,flag)
         except Exception as  e:
             self.log.error(repr(e))
 
-    def update_many(self, items):
+    def update_many(self, items,flag=True):
         for item in items:
-            self.update(item)
+            self.update(item,flag)
 
     def delete(self, parameter={'name': 'fatih'}):
         try:
@@ -111,12 +111,12 @@ class DbClient(object):
         except Exception as  e:
             self.log.error(repr(e))
 
-    def update(self, item):
+    def update(self, item,flag=True):
         check = None
         try:
             check = self.check_last_intelligence(item)
             #print(set(check))
-            if check == False or check == None:
+            if (check == False or check == None) and flag:
                 result = self.collectiondb.update(
                     {"_id": item['_id']},
                     {

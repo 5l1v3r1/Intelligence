@@ -1,13 +1,8 @@
 from  dbmanagment.dbmanagment import DbClient
-
-
-
 from feeds.feedparent import FeederParent
 import core.common as request
 from constants.values import *
 from dateutil import parser
-
-
 
 _name_ = "SSL Blacklist"
 __by__ = "sslbl"
@@ -65,7 +60,6 @@ class Sslbl(FeederParent):
 
     def extract(self,content):
         for line in content:
-
             if line.startswith('#') or not line:
                 if line.startswith('# Last'):
                     date=line.split('updated:')[1][:-2]
@@ -78,9 +72,9 @@ class Sslbl(FeederParent):
     def insertdb(self):
         if len(self.intelligence)>1:
             client = DbClient()
-            client.setdatabase('intelligence')
-            client.setcollection(__collection__)
-            client.insertmany(self.createDocuments())
+            client.set_database('intelligence')
+            client.set_collection(__collection__)
+            client.insert_many(self.createDocuments())
         else:
             self.log.info("Intelligece empty")
 
@@ -93,16 +87,3 @@ class Sslbl(FeederParent):
 #print(a.checkstatus(a.sourcelink))
 #a.getIntelligent()
 #a.insertdb()
-
-
-
-
-
-
-
-
-
-
-
-
-

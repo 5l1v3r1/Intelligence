@@ -14,10 +14,10 @@ class Cc_tracker(FeederParent):
 
     def __init__(self, type=__type__, name=_name_,by=__by__,sourcelink=Feeders.cc_tracker.s_link,updateinterval=Feeders.cc_tracker.u_interval):
         FeederParent.__init__(self,type,name,by)
-        self.intelligence=[]
-        self.sourcelink=sourcelink
-        self.updateinterval=updateinterval
-        self.log=getlog()
+        self.intelligence = []
+        self.sourcelink = sourcelink
+        self.updateinterval = updateinterval
+        self.log = getlog()
 
     def checkstatus(self,url=Feeders.cc_tracker.s_link):
         return request.checkstatus(url)  #link is available
@@ -43,7 +43,7 @@ class Cc_tracker(FeederParent):
                 "Intelligence":
                     [{
                          "lastDate": item[2],
-                         "datachunk":[item[2:]],  #//todo tekrar elden gececek
+                         "datechunk":[item[2]],  #//todo tekrar elden gececek
                          'type':item[1],
                          'description': __info__,
                          'source': item[3],

@@ -7,10 +7,6 @@ from importlib import import_module
 
 
 
-
-
-
-
 class Type(Enum):
     Ip=1
     Domain=2
@@ -18,7 +14,6 @@ class Type(Enum):
     Mail=4
     Malware_url=5
     Malware_ip = 6
-
     Malware_domain = 7
     Phisingurl=8
     Ransomware = 9
@@ -65,14 +60,27 @@ class Apis:
 
 
 class Feeders:
+
+    class urlvir:
+        s_link = ['http://www.urlvir.com/export-ip-addresses/','http://www.urlvir.com/export-hosts/']
+        u_interval = 300
+
+        def returnObject(self):
+            return import_module("feeds.urlvir").Urlvir()
+
     class sans_domains:
         s_link = ['https://isc.sans.edu/feeds/suspiciousdomains_Low.txt',
                   'https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt',
                   'https://isc.sans.edu/feeds/suspiciousdomains_High.txt']
-        u_interval = 30  # bakılacak kaç dakika olduğuna
+        u_interval = 60  # bakılacak kaç dakika olduğuna #todo bak ozmn kardeş
 
         def returnObject(self):
             return import_module("feeds.sans_domains").Sansdomain()
+    class malwr:
+        s_link   = 'https://malwr.com'
+        def returnObject(self):
+            return None
+
 
     class maxmind:
         s_link = 'https://www.maxmind.com/en/high-risk-ip-sample-list'
@@ -99,7 +107,6 @@ class Feeders:
 
         def returnObject(self):
             return import_module("feeds.greensnow").Grensnow()
-
 
     class malwr:
         s_link   = 'https://malwr.com'
