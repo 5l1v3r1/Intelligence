@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac35a8e1-98de-4e12-a0ce-2f0e70ddeab6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/feeds/urlvir.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logfile.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/constants/updatedb.py" afterPath="$PROJECT_DIR$/constants/updatedb.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/constants/values.py" afterPath="$PROJECT_DIR$/constants/values.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbmanagment/dbmanagment.py" afterPath="$PROJECT_DIR$/dbmanagment/dbmanagment.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feeds/autoshun.py" afterPath="$PROJECT_DIR$/feeds/autoshun.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feeds/bruteforcelocker.py" afterPath="$PROJECT_DIR$/feeds/bruteforcelocker.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feeds/cc_tracker.py" afterPath="$PROJECT_DIR$/feeds/cc_tracker.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feeds/malwaredomains_domains.py" afterPath="$PROJECT_DIR$/feeds/malwaredomains_domains.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feeds/malwaredomains_ip.py" afterPath="$PROJECT_DIR$/feeds/malwaredomains_ip.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feeds/maxmind.py" afterPath="$PROJECT_DIR$/feeds/maxmind.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feeds/openphish.py" afterPath="$PROJECT_DIR$/feeds/openphish.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feeds/ransomwaretracker.py" afterPath="$PROJECT_DIR$/feeds/ransomwaretracker.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feeds/sslbl.py" afterPath="$PROJECT_DIR$/feeds/sslbl.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
