@@ -7,8 +7,8 @@ def get_iplist(addr):
     if cidr==32:
         return ip
     host_bits = 32 - cidr
-    i = struct.unpack('>I', socket.inet_aton(ip))[0]  # note the endianness
-    start = (i >> host_bits) << host_bits  # clear the host bits
+    i = struct.unpack('>I', socket.inet_aton(ip))[0]
+    start = (i >> host_bits) << host_bits
     end = i | ((1 << host_bits) - 1)
     list=[]
     for i in range(start, end):

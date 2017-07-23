@@ -61,6 +61,13 @@ class Apis:
 
 class Feeders:
 
+    class sblam:
+        s_link = 'https://sblam.com/blacklist.txt'
+        u_interval = 160
+
+        def returnObject(self):
+            return import_module("feeds.sblam").Urlvir()
+
     class vxvault:
         s_link = 'http://vxvault.net/URL_List.php'
         u_interval = 180
