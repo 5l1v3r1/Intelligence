@@ -31,6 +31,8 @@ class Vx_fault(FeederParent):
             self.extract(content)
 
     def createDocuments(self):
+
+
         documents = []
         date = parser.parse(datetime.datetime.now().date().__str__())
         for item in self.intelligence:

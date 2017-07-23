@@ -32,9 +32,10 @@ class Voipbl(FeederParent):
             self.extract(content)
 
     def createDocuments(self):
+        uniqelist = set(self.intelligence)  #todo belki tekrara edenler için farkli bişey yapilabilir
         documents = []
         date = parser.parse(datetime.datetime.now().date().__str__())
-        for item in self.intelligence:
+        for item in uniqelist:
             intelligence = {
                 '_id': item,
                 "lastDate": date,
