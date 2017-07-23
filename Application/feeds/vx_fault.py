@@ -1,4 +1,4 @@
-import datetime
+
 from  dbmanagment.dbmanagment import DbClient
 from feeds.feedparent import FeederParent
 import core.common as request
@@ -31,11 +31,9 @@ class Vx_fault(FeederParent):
             self.extract(content)
 
     def createDocuments(self):
-
-
         documents = []
-        date = parser.parse(datetime.datetime.now().date().__str__())
-        for item in self.intelligence:
+        date = self.intelligence[0]
+        for item in self.intelligence[1:]:
             intelligence = {
                 '_id': item,
                 "lastDate": date,
@@ -67,7 +65,7 @@ class Vx_fault(FeederParent):
                     pass
 
             else:
-                self.intelligence.append(line.strip('\n'))
+                self.intelligence.append(line.strip('\r\n'))
 
 
     def insertdb(self):
