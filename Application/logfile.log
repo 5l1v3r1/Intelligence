@@ -1,0 +1,49 @@
+2017-07-20 23:38:52,844 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line openphish.py ] 
+2017-07-20 23:39:03,401 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line openphish.py ] 
+2017-07-20 23:39:10,371 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line openphish.py ] 
+2017-07-20 23:39:17,217 [openphish.py  get_title_url 87  MainThread ] [ERROR]  timeout('timed out',)
+2017-07-20 23:39:24,069 [openphish.py  get_title_url 87  MainThread ] [ERROR]  timeout('timed out',)
+2017-07-20 23:39:44,866 [openphish.py  get_title_url 87  MainThread ] [ERROR]  timeout('timed out',)
+2017-07-20 23:41:28,516 [openphish.py  get_title_url 87  MainThread ] [ERROR]  timeout('timed out',)
+2017-07-20 23:42:09,934 [openphish.py  get_title_url 87  MainThread ] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
+2017-07-20 23:42:42,474 [openphish.py  get_title_url 87  MainThread ] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
+2017-07-20 23:42:45,697 [openphish.py  get_title_url 87  MainThread ] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
+2017-07-20 23:42:46,366 [openphish.py  get_title_url 87  MainThread ] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
+2017-07-20 23:42:48,244 [openphish.py  get_title_url 87  MainThread ] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
+2017-07-20 23:43:27,831 [dammit.py  __init__ 381  MainThread ] [WARNI]  Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2017-07-20 23:45:36,040 [openphish.py  get_title_url 87  MainThread ] [ERROR]  timeout('timed out',)
+2017-07-20 23:46:18,083 [openphish.py  get_title_url 87  MainThread ] [ERROR]  timeout('timed out',)
+2017-07-20 23:46:21,589 [openphish.py  get_title_url 87  MainThread ] [ERROR]  timeout('timed out',)
+2017-07-20 23:47:16,157 [openphish.py  get_title_url 87  MainThread ] [ERROR]  AttributeError("'NoneType' object has no attribute 'text'",)
+2017-07-20 23:48:06,877 [openphish.py  get_title_url 87  MainThread ] [ERROR]  timeout('timed out',)
+2017-07-20 23:48:09,989 [openphish.py  get_title_url 87  MainThread ] [ERROR]  timeout('timed out',)
+2017-07-20 23:48:18,571 [openphish.py  get_title_url 87  MainThread ] [ERROR]  timeout('timed out',)
+2017-07-20 23:48:24,506 [openphish.py  get_title_url 87  MainThread ] [ERROR]  timeout('timed out',)
+2017-07-20 23:50:43,279 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line openphish.py ] 
+2017-07-20 23:50:44,472 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line openphish.py ] 
+2017-07-20 23:50:49,808 [openphish.py  get_title_url 87  MainThread ] [ERROR]  timeout('timed out',)
+2017-07-20 23:51:20,080 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line openphish.py ] 
+2017-07-20 23:51:21,048 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line openphish.py ] 
+2017-07-20 23:51:41,220 [dbmanagment.py  conectdb 28  MainThread ] [INFO ]  Connected MongoDB [  __init__ 22 line dbmanagment.py ] 
+2017-07-20 23:52:28,490 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line openphish.py ] 
+2017-07-20 23:52:33,966 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line openphish.py ] 
+2017-07-20 23:52:36,888 [dbmanagment.py  conectdb 28  MainThread ] [INFO ]  Connected MongoDB [  __init__ 22 line dbmanagment.py ] 
+2017-07-20 23:54:04,251 [dbmanagment.py  insert_many 94  MainThread ] [INFO ]  Inserted Succesfully 146 items and 4176 number items duplicated,so trying update  theses [  insertdb 96 line openphish.py ] 
+2017-07-21 00:10:48,323 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line openphish.py ] 
+2017-07-21 00:10:51,138 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line openphish.py ] 
+2017-07-21 00:10:55,535 [dbmanagment.py  conectdb 28  MainThread ] [INFO ]  Connected MongoDB [  __init__ 22 line dbmanagment.py ] 
+2017-07-21 00:14:48,878 [dbmanagment.py  insert_many 97  MainThread ] [ERROR]  AutoReconnect('connection closed',)
+2017-07-23 16:16:43,905 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line openphish.py ] 
+2017-07-23 16:16:46,495 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line openphish.py ] 
+2017-07-23 16:16:47,168 [dbmanagment.py  conectdb 28  MainThread ] [INFO ]  Connected MongoDB [  __init__ 22 line dbmanagment.py ] 
+2017-07-23 16:17:16,188 [dbmanagment.py  insert_many 94  MainThread ] [INFO ]  Inserted Succesfully 1819 items and 2573 number items duplicated,so trying update  theses [  insertdb 96 line openphish.py ] 
+2017-07-23 16:25:47,206 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 29 line voipbl.py ] 
+2017-07-23 16:25:47,548 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 29 line voipbl.py ] 
+2017-07-23 16:26:29,941 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 29 line voipbl.py ] 
+2017-07-23 16:26:30,288 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 29 line voipbl.py ] 
+2017-07-23 16:27:07,107 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 29 line voipbl.py ] 
+2017-07-23 16:27:07,473 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 29 line voipbl.py ] 
+2017-07-23 16:33:13,242 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 29 line voipbl.py ] 
+2017-07-23 16:33:14,612 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 29 line voipbl.py ] 
+2017-07-23 16:33:15,357 [dbmanagment.py  conectdb 28  MainThread ] [INFO ]  Connected MongoDB [  __init__ 22 line dbmanagment.py ] 
+2017-07-23 16:33:35,756 [dbmanagment.py  insert_many 87  MainThread ] [INFO ]  Inserted Succesfully 1772 items from [  insertdb 70 line voipbl.py ] 

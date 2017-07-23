@@ -61,6 +61,13 @@ class Apis:
 
 class Feeders:
 
+    class voipbl:
+        s_link = 'http://www.voipbl.org/update/'
+        u_interval = 180
+
+        def returnObject(self):
+            return import_module("feeds.urlvir").Urlvir()
+
     class urlvir:
         s_link = ['http://www.urlvir.com/export-ip-addresses/','http://www.urlvir.com/export-hosts/']
         u_interval = 300
