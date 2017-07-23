@@ -61,12 +61,20 @@ class Apis:
 
 class Feeders:
 
+    class vxvault:
+        s_link = 'http://vxvault.net/URL_List.php'
+        u_interval = 180
+
+        def returnObject(self):
+            return import_module("feeds.vx_fault").Urlvir()
+
     class voipbl:
         s_link = 'http://www.voipbl.org/update/'
         u_interval = 180
 
         def returnObject(self):
-            return import_module("feeds.urlvir").Urlvir()
+            return import_module("feeds.voipbl").Voipbl()
+
 
     class urlvir:
         s_link = ['http://www.urlvir.com/export-ip-addresses/','http://www.urlvir.com/export-hosts/']

@@ -2,20 +2,19 @@ import datetime
 from  dbmanagment.dbmanagment import DbClient
 from feeds.feedparent import FeederParent
 import core.common as request
-from core.addroperation import get_iplist
 from constants.values import *
 from dateutil import parser
 
 
 
-_name_ = "VoIP"
-__by__ = "voipbl.org"
-__info__ = "VoIP blacklist that is aimed to protects against VoIP Fraud "
-__collection__="ip"
+_name_ = "Vx_fault"
+__by__ = "vxvault.net"
+__info__ = "Malware url"
+__collection__="url"
 
-class Voipbl(FeederParent):
+class Vx_fault(FeederParent):
     __type__ = Type.Ip
-    def __init__(self, type=__type__, name=_name_,by=__by__,sourcelink=Feeders.voipbl.s_link,updateinterval=Feeders.voipbl.u_interval):
+    def __init__(self, type=__type__, name=_name_,by=__by__,sourcelink=Feeders.vxvault.s_link,updateinterval=Feeders.vxvault.u_interval):
         FeederParent.__init__(self, type, name,by)
         self.intelligence = []
         self.sourcelink = sourcelink
@@ -23,7 +22,7 @@ class Voipbl(FeederParent):
         self.updateinterval = updateinterval
         self.log = getlog()                           #this comming from constans
 
-    def checkstatus(self,url=Feeders.voipbl.s_link):
+    def checkstatus(self,url=Feeders.vxvault.s_link):
         return request.checkstatus(url)  #link is available
 
     def getIntelligent(self):
@@ -56,16 +55,17 @@ class Voipbl(FeederParent):
         return documents
 
     def extract(self,content):
+
         for line in content:
-            if line.startswith('#') or not line:
-                pass
+            if not line.startswith('http') or not line:
+                try:
+                    temp=parser.parse(line)
+                    self.intelligence.append(temp)
+                except ValueError:
+                    pass
+
             else:
-                ip=get_iplist(line.strip('\n'))
-                if type(ip) == type([]):
-                    for i in ip:
-                        self.intelligence.append(i)
-                else:
-                    self.intelligence.append(ip)
+                self.intelligence.append(line.strip('\n'))
 
 
     def insertdb(self):
@@ -80,7 +80,7 @@ class Voipbl(FeederParent):
     def __str__(self):
         return "%s  %s  %s " % (self.name, self.type, self.by)
 
-a=Voipbl()
+a=Vx_fault()
 print(a.checkstatus())
 a.getIntelligent()
 a.insertdb()
