@@ -80,9 +80,9 @@ class Vx_fault(FeederParent):
     def __str__(self):
         return "%s  %s  %s " % (self.name, self.type, self.by)
 
-a=Vx_fault()
-print(a.checkstatus())
-a.getIntelligent()
-a.insertdb()
+#a=Vx_fault()
+#print(a.checkstatus())
+#a.getIntelligent()
+#a.insertdb()
 
 

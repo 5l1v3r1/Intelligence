@@ -77,9 +77,9 @@ class Sblam(FeederParent):
     def __str__(self):
         return "%s  %s  %s " % (self.name, self.type, self.by)
 
-a=Sblam()
-print(a.checkstatus())
-a.getIntelligent()
-a.insertdb()
+#a=Sblam()
+#print(a.checkstatus())
+#a.getIntelligent()
+#a.insertdb()
 
 

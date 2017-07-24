@@ -35,3 +35,85 @@
 2017-07-23 18:42:04,710 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 29 line sblam.py ] 
 2017-07-23 18:42:05,410 [dbmanagment.py  conectdb 28  MainThread ] [INFO ]  Connected MongoDB [  __init__ 22 line dbmanagment.py ] 
 2017-07-23 18:44:02,451 [dbmanagment.py  insert_many 87  MainThread ] [INFO ]  Inserted Succesfully 21884 items from [  insertdb 73 line sblam.py ] 
+2017-07-24 14:28:47,458 [sans_domains.py  checkstatus 29  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Low.txt :True
+2017-07-24 14:28:48,133 [sans_domains.py  checkstatus 29  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt :True
+2017-07-24 14:28:48,822 [sans_domains.py  checkstatus 29  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_High.txt :True
+2017-07-24 14:28:56,348 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:28:57,321 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:29:00,515 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:29:01,345 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:29:03,511 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:29:04,189 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:29:10,900 [dbmanagment.py  conectdb 28  MainThread ] [INFO ]  Connected MongoDB [  __init__ 22 line dbmanagment.py ] 
+2017-07-24 14:29:22,816 [dbmanagment.py  insert_many 94  MainThread ] [INFO ]  Inserted Succesfully 0 items and 5581 number items duplicated,so trying update  theses [  insertdb 90 line sans_domains.py ] 
+2017-07-24 14:30:46,181 [sans_domains.py  checkstatus 29  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Low.txt :True
+2017-07-24 14:30:46,802 [sans_domains.py  checkstatus 29  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt :True
+2017-07-24 14:30:47,403 [sans_domains.py  checkstatus 29  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_High.txt :True
+2017-07-24 14:30:47,430 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:30:48,230 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:30:48,234 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:30:49,038 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:30:49,041 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:30:49,679 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:30:50,194 [dbmanagment.py  conectdb 28  MainThread ] [INFO ]  Connected MongoDB [  __init__ 22 line dbmanagment.py ] 
+2017-07-24 14:30:59,398 [dbmanagment.py  insert_many 94  MainThread ] [INFO ]  Inserted Succesfully 2919 items and 2662 number items duplicated,so trying update  theses [  insertdb 90 line sans_domains.py ] 
+2017-07-24 14:41:07,116 [sans_domains.py  checkstatus 29  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Low.txt :True
+2017-07-24 14:41:08,353 [sans_domains.py  checkstatus 29  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt :True
+2017-07-24 14:41:09,036 [sans_domains.py  checkstatus 29  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_High.txt :True
+2017-07-24 14:41:09,150 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:41:10,041 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:41:10,046 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:41:11,314 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:41:11,319 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:41:12,076 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:41:12,561 [dbmanagment.py  conectdb 28  MainThread ] [INFO ]  Connected MongoDB [  __init__ 22 line dbmanagment.py ] 
+2017-07-24 14:42:51,481 [sans_domains.py  checkstatus 29  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Low.txt :True
+2017-07-24 14:42:52,157 [sans_domains.py  checkstatus 29  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt :True
+2017-07-24 14:42:52,800 [sans_domains.py  checkstatus 29  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_High.txt :True
+2017-07-24 14:42:52,917 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:42:53,765 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:42:53,771 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:42:54,624 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:42:54,629 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:42:55,317 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 14:42:55,879 [dbmanagment.py  conectdb 28  MainThread ] [INFO ]  Connected MongoDB [  __init__ 22 line dbmanagment.py ] 
+2017-07-24 14:43:07,373 [dbmanagment.py  insert_many 94  MainThread ] [INFO ]  Inserted Succesfully 0 items and 5581 number items duplicated,so trying update  theses [  insertdb 90 line sans_domains.py ] 
+2017-07-24 15:12:05,209 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  <module> 5 line deneme.py ] 
+2017-07-24 15:12:06,580 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  <module> 5 line deneme.py ] 
+2017-07-24 15:14:01,883 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  <module> 5 line deneme.py ] 
+2017-07-24 15:14:03,056 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  <module> 5 line deneme.py ] 
+2017-07-24 15:14:55,285 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  <module> 5 line deneme.py ] 
+2017-07-24 15:14:56,483 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  <module> 5 line deneme.py ] 
+2017-07-24 15:15:28,009 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  <module> 5 line deneme.py ] 
+2017-07-24 15:15:29,195 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  <module> 5 line deneme.py ] 
+2017-07-24 15:16:11,825 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  <module> 5 line deneme.py ] 
+2017-07-24 15:16:12,989 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  <module> 5 line deneme.py ] 
+2017-07-24 15:16:42,909 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  <module> 5 line deneme.py ] 
+2017-07-24 15:16:44,033 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  <module> 5 line deneme.py ] 
+2017-07-24 16:08:11,720 [updatedb.py  <module> 34  MainThread ] [INFO ]  Started thread feeders
+2017-07-24 16:08:44,904 [common.py  checkstatus 18  MainThread ] [ERROR]  ConnectTimeout(MaxRetryError("HTTPConnectionPool(host='cybercrime-tracker.net', port=80): Max retries exceeded with url: /all.php (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x1025acf60>, 'Connection to cybercrime-tracker.net timed out. (connect timeout=30)'))",),)
+2017-07-24 16:08:46,167 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsrd.txt :True
+2017-07-24 16:08:46,809 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsrdany.txt :True
+2017-07-24 16:08:47,449 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/dnsversion.txt :True
+2017-07-24 16:08:48,091 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipinvitation.txt :True
+2017-07-24 16:08:48,743 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipquery.txt :True
+2017-07-24 16:08:49,383 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sipregistration.txt :True
+2017-07-24 16:08:50,263 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sshclient.txt :True
+2017-07-24 16:08:51,115 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/sshpwauth.txt :True
+2017-07-24 16:08:51,771 [dataplane.py  checkstatus 43  MainThread ] [INFO ]  Source Available-> https://dataplane.org/vncrfb.txt :True
+2017-07-24 16:09:30,498 [common.py  checkstatus 18  MainThread ] [ERROR]  ConnectTimeout(MaxRetryError("HTTPConnectionPool(host='cybercrime-tracker.net', port=80): Max retries exceeded with url: /all.php (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x102e82908>, 'Connection to cybercrime-tracker.net timed out. (connect timeout=30)'))",),)
+2017-07-24 16:09:30,537 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 33 line openphish.py ] 
+2017-07-24 16:09:31,429 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 33 line openphish.py ] 
+2017-07-24 16:09:31,973 [dbmanagment.py  conectdb 28  MainThread ] [INFO ]  Connected MongoDB [  __init__ 22 line dbmanagment.py ] 
+2017-07-24 16:09:38,591 [dbmanagment.py  insert_many 94  MainThread ] [INFO ]  Inserted Succesfully 4096 items and 118 number items duplicated,so trying update  theses [  insertdb 96 line openphish.py ] 
+2017-07-24 16:09:56,389 [sans_domains.py  checkstatus 29  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Low.txt :True
+2017-07-24 16:09:57,752 [sans_domains.py  checkstatus 29  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt :True
+2017-07-24 16:09:58,448 [sans_domains.py  checkstatus 29  MainThread ] [INFO ]  Source Available-> https://isc.sans.edu/feeds/suspiciousdomains_High.txt :True
+2017-07-24 16:09:58,457 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 16:09:59,285 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 16:09:59,312 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 16:10:00,109 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 16:10:00,117 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 16:10:00,796 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line sans_domains.py ] 
+2017-07-24 16:10:01,333 [dbmanagment.py  conectdb 28  MainThread ] [INFO ]  Connected MongoDB [  __init__ 22 line dbmanagment.py ] 
+2017-07-24 16:10:09,848 [dbmanagment.py  insert_many 94  MainThread ] [INFO ]  Inserted Succesfully 0 items and 5581 number items duplicated,so trying update  theses [  insertdb 90 line sans_domains.py ] 

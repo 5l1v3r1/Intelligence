@@ -23,6 +23,7 @@ class FeederThread(threading.Thread):
         while True:
             _log_.info("Thread started {tim} times : {name} ".format(tim=str(repeating), name=self.obje.name))
             print(self.obje.checkstatus)
+            self.obje.intelligence=[]
             self.obje.getIntelligent()
             self.obje.insertdb()
             _log_.info("Thread exited {tim} times : {name} ".format(tim=str(repeating), name=self.obje.name))

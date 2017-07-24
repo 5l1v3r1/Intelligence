@@ -98,8 +98,8 @@ class Openphish(FeederParent):              #todo this run very slowly therefore
     def __str__(self):
         return "%s  %s  %s " % (self.name, self.type, self.by)
 
-a=Openphish(Type.Phisingurl,"Phishing  Url","OpenPhish",)
+#a=Openphish(Type.Phisingurl,"Phishing  Url","OpenPhish",)
 #print(a.checkstatus())
-a.getIntelligent()
-a.insertdb()
+#a.getIntelligent()
+#a.insertdb()
 #curl -d "url=http://checkfb-login404inc.esy.es/recovery-chekpoint-login.html&format=json&app_key=9c6f6c909a9df44bae577bcdf35d97ff87a4d07ef4243db534c8775be81cdc31" http://checkurl.phishtank.com/checkurl/
