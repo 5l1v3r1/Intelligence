@@ -66,14 +66,14 @@ class Feeders:
         u_interval = 160
 
         def returnObject(self):
-            return import_module("feeds.sblam").Urlvir()
+            return import_module("feeds.sblam").Sblam()
 
     class vxvault:
         s_link = 'http://vxvault.net/URL_List.php'
         u_interval = 180
 
         def returnObject(self):
-            return import_module("feeds.vx_fault").Urlvir()
+            return import_module("feeds.vx_fault").Vx_fault()
 
     class voipbl:
         s_link = 'http://www.voipbl.org/update/'
