@@ -60,6 +60,15 @@ class Apis:
 
 
 class Feeders:
+    class nothink:
+        s_link = ['http://www.nothink.org/blacklist/blacklist_snmp_day.txt',
+                  'http://www.nothink.org/blacklist/blacklist_ssh_day.txt',
+                  'http://www.nothink.org/blacklist/blacklist_telnet_day.txt']
+        u_interval = 18*60  # bakılacak kaç dakika olduğuna #todo bak ozmn kardeş
+
+        def returnObject(self):
+            return import_module("feeds.nothink").Nothink()
+
     class winhelp:
         s_link = 'http://winhelp2002.mvps.org/hosts.txt'
         u_interval = 24*60
