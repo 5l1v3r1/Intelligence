@@ -52,7 +52,7 @@ class Winhelp(FeederParent):
                     'type': getType(self.type),
                     'description': __info__,
                     'by': self.by,
-                    'risk': "no info",
+                    'risk': 8,
                     "Intelligence":
                         [{
                             "lastDate": date,
@@ -61,7 +61,7 @@ class Winhelp(FeederParent):
                             'description': __info__,
                             'source': _name_,
                             'by': self.by,
-                            'risk': "no info"
+                            'risk': 8
                         }]
                 }
                 documents.append(intelligence)
