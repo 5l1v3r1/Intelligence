@@ -60,6 +60,19 @@ class Apis:
 
 
 class Feeders:
+    class winhelp:
+        s_link = 'http://winhelp2002.mvps.org/hosts.txt'
+        u_interval = 24*60
+
+        def returnObject(self):
+            return import_module("feeds.winhelp").Winhelp()
+
+    class packetmail:
+        s_link = 'https://www.packetmail.net/iprep_emerging_ips.txt'
+        u_interval = 120
+
+        def returnObject(self):
+            return import_module("feeds.packetmail").Packetmail()
 
     class sblam:
         s_link = 'https://sblam.com/blacklist.txt'
@@ -85,7 +98,7 @@ class Feeders:
 
     class urlvir:
         s_link = ['http://www.urlvir.com/export-ip-addresses/','http://www.urlvir.com/export-hosts/']
-        u_interval = 300
+        u_interval = 360
 
         def returnObject(self):
             return import_module("feeds.urlvir").Urlvir()

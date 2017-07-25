@@ -117,3 +117,30 @@
 2017-07-24 16:10:00,796 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 34 line sans_domains.py ] 
 2017-07-24 16:10:01,333 [dbmanagment.py  conectdb 28  MainThread ] [INFO ]  Connected MongoDB [  __init__ 22 line dbmanagment.py ] 
 2017-07-24 16:10:09,848 [dbmanagment.py  insert_many 94  MainThread ] [INFO ]  Inserted Succesfully 0 items and 5581 number items duplicated,so trying update  theses [  insertdb 90 line sans_domains.py ] 
+2017-07-24 18:44:19,448 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  <module> 5 line malwrapi.py ] 
+2017-07-24 18:44:19,620 [common.py  getPage 42  MainThread ] [ERROR]  Eror on dowloading intelligent http:403 [  <module> 5 line malwrapi.py ] 
+2017-07-24 18:44:33,841 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  <module> 5 line malwrapi.py ] 
+2017-07-25 12:59:36,030 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 25 line packetmail.py ] 
+2017-07-25 12:59:36,850 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 25 line packetmail.py ] 
+2017-07-25 12:59:49,472 [dbmanagment.py  conectdb 28  MainThread ] [INFO ]  Connected MongoDB [  __init__ 22 line dbmanagment.py ] 
+2017-07-25 13:04:06,293 [winhelp.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> http://winhelp2002.mvps.org/hosts.txt :True
+2017-07-25 13:04:06,406 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 38 line winhelp.py ] 
+2017-07-25 13:04:07,582 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 38 line winhelp.py ] 
+2017-07-25 13:04:40,250 [dbmanagment.py  conectdb 28  MainThread ] [INFO ]  Connected MongoDB [  __init__ 22 line dbmanagment.py ] 
+2017-07-25 13:04:57,783 [winhelp.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> http://winhelp2002.mvps.org/hosts.txt :True
+2017-07-25 13:04:57,905 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 38 line winhelp.py ] 
+2017-07-25 13:04:59,066 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 38 line winhelp.py ] 
+2017-07-25 13:04:59,584 [dbmanagment.py  conectdb 28  MainThread ] [INFO ]  Connected MongoDB [  __init__ 22 line dbmanagment.py ] 
+2017-07-25 13:07:04,222 [winhelp.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> http://winhelp2002.mvps.org/hosts.txt :True
+2017-07-25 13:07:04,249 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 38 line winhelp.py ] 
+2017-07-25 13:07:05,780 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 38 line winhelp.py ] 
+2017-07-25 13:07:06,309 [dbmanagment.py  conectdb 28  MainThread ] [INFO ]  Connected MongoDB [  __init__ 22 line dbmanagment.py ] 
+2017-07-25 13:07:26,291 [dbmanagment.py  insert_many 94  MainThread ] [INFO ]  Inserted Succesfully 13091 items and 1 number items duplicated,so trying update  theses [  insertdb 90 line winhelp.py ] 
+2017-07-25 13:11:03,835 [winhelp.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> http://winhelp2002.mvps.org/hosts.txt :True
+2017-07-25 13:11:03,947 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 38 line winhelp.py ] 
+2017-07-25 13:11:05,692 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 38 line winhelp.py ] 
+2017-07-25 13:12:44,715 [winhelp.py  checkstatus 27  MainThread ] [INFO ]  Source Available-> http://winhelp2002.mvps.org/hosts.txt :True
+2017-07-25 13:12:44,864 [common.py  getPage 34  MainThread ] [INFO ]  Trying  to  connect page  [  getIntelligent 38 line winhelp.py ] 
+2017-07-25 13:12:46,327 [common.py  getPage 38  MainThread ] [INFO ]  Page retrieved   [  getIntelligent 38 line winhelp.py ] 
+2017-07-25 13:12:47,054 [dbmanagment.py  conectdb 28  MainThread ] [INFO ]  Connected MongoDB [  __init__ 22 line dbmanagment.py ] 
+2017-07-25 13:13:08,489 [dbmanagment.py  insert_many 94  MainThread ] [INFO ]  Inserted Succesfully 0 items and 13091 number items duplicated,so trying update  theses [  insertdb 92 line winhelp.py ] 
