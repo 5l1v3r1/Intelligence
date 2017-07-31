@@ -49,7 +49,7 @@ class Nothink(FeederParent):
             info = item['info']
             for  i in item['data']:
                 intelligence = {
-                    '_id': i,
+                    '_id': i[:-1],
                     "lastDate": date,
                     'type': getType(self.type),
                     'description': info,
