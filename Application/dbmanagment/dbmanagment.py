@@ -55,12 +55,13 @@ class DbClient(object):
     def databases(self):
         return self.client.database_names()
 
+    def check_being(self,filter):
+        collection = self.get_collection()
+        return collection.find(filter).count()
+
     def get_documents(self, filter={'_id':0}):
         collection = self.get_collection()
-        cursor = collection.find(filter)
-        for document in cursor:
-           print(document)
-        return cursor
+        return collection.find(filter)
 
     def get_collection(self):
         if self.check_field() == False: return
@@ -92,7 +93,7 @@ class DbClient(object):
                 if err_item['code'] == 11000:
                     updatelist.append(items[err_item['index']])
             self.log.info("Inserted Succesfully %d items " %(len(items)-len(updatelist))+ "and "+str(len(updatelist))+" number items duplicated,so trying update  theses "+'[ '+getStackdata()+' ] ')
-            self.update_many(updatelist,flag)
+            #self.update_many(updatelist,flag)
         except Exception as  e:
             self.log.error(repr(e))
 
