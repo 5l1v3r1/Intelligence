@@ -1,6 +1,6 @@
 from enum import Enum
 import logging
-import os,sys
+from constants.settings import ROOTPATH
 from importlib import import_module
 
 
@@ -234,7 +234,7 @@ def getlog():
     if (len(rootLogger.handlers) > 0):
         return rootLogger
     rootLogger.setLevel(logging.INFO)
-    fileHandler = logging.FileHandler(os.getcwd()+'/../logfile.log')
+    fileHandler = logging.FileHandler(ROOTPATH+'/logfile.log')
     fileHandler.setFormatter(logFormatter)
     rootLogger.addHandler(fileHandler)
     consoleHandler = logging.StreamHandler()

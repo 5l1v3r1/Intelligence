@@ -29,18 +29,21 @@ def getStackdata(number=2):
 
 
 def getPage(url,parameter=None):
-
+    re=None
     try:
         _log.info("Trying  to  connect page "+' [ '+getStackdata()+' ] ')
-        r = requests.get(url,headers=HEADERS,timeout=TIMEOUT)
-        if r.status_code == 200:
+        re = requests.get(url,headers=HEADERS,timeout=TIMEOUT)
+        if re.status_code == 200:
             
             _log.info("Page retrieved  " +' [ '+getStackdata()+' ] ')
             #a=r.headers['content-disposition'] #atachmetn tipini soyler
-            return StringIO(str(r.content, 'utf-8'))
+            return StringIO(str(re.content, 'utf-8'))
         else:
-            _log.error('Eror on dowloading intelligent http:' + str(r.status_code)+' [ '+getStackdata()+' ] ')
+            _log.error('Eror on dowloading intelligent http:' + str(re.status_code)+' [ '+getStackdata()+' ] ')
 
+    except UnicodeDecodeError as e:
+        _log.error('Eror parsing to string: '+ ' [ ' + getStackdata() + ' ] ')        #if parsing is fail,return orginal responce object
+        return re
     except Exception as e:
         _log.error(repr(e))
         traceback.print_exc()
