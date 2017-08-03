@@ -29,7 +29,7 @@ class Maxmind(FeederParent):
         return request.checkstatus(url)  #link is available
 
     def getIntelligent(self):
-        content=request.getPage(self.sourcelink)
+        content=request.getPage(self.sourcelink,rtype=1)
         if content!=False:
             self.extract(content)
 
@@ -60,7 +60,7 @@ class Maxmind(FeederParent):
 
     def extract(self,content):
         for match in re.finditer(r"high-risk-ip-sample/([\d.]+)", content):
-            print(match.group(1))
+            self.intelligence.append(match.group(1))
 
     def insertdb(self):
         if len(self.intelligence)>1:
@@ -73,7 +73,6 @@ class Maxmind(FeederParent):
 
     def __str__(self):
         return "%s  %s  %s " % (self.name, self.type, self.by)
-
 
 
 #a=Maxmind()
