@@ -138,6 +138,15 @@ class Feeders:
 
         def returnObject(self):
             return import_module("feeds.maxmind").Maxmind()
+
+    class cybersweat:
+        s_link = 'http://cybersweat.shop/iprep/iprep.txt'
+        u_interval = 240  # minute interval
+
+        def returnObject(self):
+            return import_module("feeds.cybersweat").Cybersweat()
+
+
     class cybercrime:
         s_link = 'http://cybercrime-tracker.net/all.php'
         u_interval = 180  # minute interval
