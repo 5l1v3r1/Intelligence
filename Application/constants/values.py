@@ -125,13 +125,19 @@ class Feeders:
         def returnObject(self):
             return None
 
+    class botscout:
+        s_link = 'https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/botscout_1d.ipset'
+        u_interval = 30 # minute interval
+
+        def returnObject(self):
+            return import_module("feeds.botscout").Botscout()
 
     class maxmind:
         s_link = 'https://www.maxmind.com/en/high-risk-ip-sample-list'
-        u_interval = 60*24*5  # minute interval
+        u_interval = 60*24*15  # minute interval
 
         def returnObject(self):
-            return import_module("feeds.cybercrimetracker").Cybercrimetracker()
+            return import_module("feeds.maxmind").Maxmind()
     class cybercrime:
         s_link = 'http://cybercrime-tracker.net/all.php'
         u_interval = 180  # minute interval
