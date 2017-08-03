@@ -1,10 +1,7 @@
 from dbmanagment.dbmanagment import DbClient
 from constants.values import *
-from constants.settings import  RISK
 from feeds.feedparent import FeederParent
 import core.common as request
-
-
 from dateutil import parser
 
 _name_ = "nothink"
@@ -95,7 +92,7 @@ class Nothink(FeederParent):
     def __str__(self):
         return "%s  %s  %s " % (self.name, self.type, self.by)
 
-a = Nothink()
-print(a.checkstatus(a.sourcelink))
-a.getIntelligent()
-a.insertdb()
+#a = Nothink()
+#print(a.checkstatus(a.sourcelink))
+#a.getIntelligent()
+#a.insertdb()

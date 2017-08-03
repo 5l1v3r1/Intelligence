@@ -80,7 +80,7 @@ class DbClient(object):
         except Exception as  exp:
             self.log.error(repr(exp))
 
-    def insert_many(self, items,flag=True):
+    def insert_many(self, items,flag=True,type=0):
         try:
             collection = self.get_collection()
             self.collectiondb = collection
@@ -92,10 +92,38 @@ class DbClient(object):
             for err_item in werrors:
                 if err_item['code'] == 11000:
                     updatelist.append(items[err_item['index']])
+                    #print(items[err_item['index']])
             self.log.info("Inserted Succesfully %d items " %(len(items)-len(updatelist))+ "and "+str(len(updatelist))+" number items duplicated,so trying update  theses "+'[ '+getStackdata()+' ] ')
-            #self.update_many(updatelist,flag)
+            if type==0:
+                #self.update_many(updatelist,flag)
+                pass
+            else:
+                self.update_vulnerability(updatelist)
         except Exception as  e:
             self.log.error(repr(e))
+
+    def update_vulnerability(self,items):
+        count=0
+        for item in items:
+            try:
+                temp = self.collectiondb.find_one({"_id": item['_id']})
+
+                result = self.collectiondb.update(
+                    {"_id": item['_id']},
+                    {
+                        "$addToSet": {"security":  item['security'][0]},
+                        #"$addToSet": {"customer":  item['customer'][0]},
+                    }
+                )
+
+                if temp['parent'] != item['parent']:
+                   print(temp['parent'], " ---- ", item['parent'])
+
+                count=count+result['nModified']
+            except Exception as  e:
+                self.log.error(repr(e))
+
+        self.log.info("Updated succesfully %d items "%count + '[ ' + getStackdata() + ' ] ')
 
     def update_many(self, items,flag=True):
         for item in items:

@@ -73,7 +73,7 @@ class Packetmail(FeederParent):
         return "%s  %s  %s " % (self.name, self.type, self.by)
 
 
-a=Packetmail()
-print(a.checkstatus(a.sourcelink))
-a.getIntelligent()
-a.insertdb()
+#a=Packetmail()
+#print(a.checkstatus(a.sourcelink))
+#a.getIntelligent()
+#a.insertdb()

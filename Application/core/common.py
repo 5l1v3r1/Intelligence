@@ -28,7 +28,7 @@ def getStackdata(number=2):
     return  ' ' + stackframe[3] + ' ' + str(stackframe[2]) + ' line ' + stackframe[1].split('/')[-1]
 
 
-def getPage(url,parameter=None):
+def getPage(url,parameter=None,rtype=0):
     re=None
     try:
         _log.info("Trying  to  connect page "+' [ '+getStackdata()+' ] ')
@@ -36,8 +36,11 @@ def getPage(url,parameter=None):
         if re.status_code == 200:
             
             _log.info("Page retrieved  " +' [ '+getStackdata()+' ] ')
-            #a=r.headers['content-disposition'] #atachmetn tipini soyler
-            return StringIO(str(re.content, 'utf-8'))
+            #a=r.headers['content-disposition'] # atachmetn tipini soyler
+            if rtype==0:
+                return StringIO(str(re.content, 'utf-8'))
+            else:
+                return re.text
         else:
             _log.error('Eror on dowloading intelligent http:' + str(re.status_code)+' [ '+getStackdata()+' ] ')
 

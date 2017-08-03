@@ -96,7 +96,7 @@ class Winhelp(FeederParent):
     def __str__(self):
         return "%s  %s  %s " % (self.name, self.type, self.by)
 
-a = Winhelp()
-print(a.checkstatus(a.sourcelink))
-a.getIntelligent()
-a.insertdb()
+#a = Winhelp()
+#print(a.checkstatus(a.sourcelink))
+#a.getIntelligent()
+#a.insertdb()
