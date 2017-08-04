@@ -80,16 +80,3 @@ class Cybersweat(FeederParent):
 #a.checkstatus(a.sourcelink)
 #a.getIntelligent()
 #a.insertdb()
-
-
-
-
-
-
-
-
-
-
-
-
-

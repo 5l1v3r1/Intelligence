@@ -1,7 +1,4 @@
 from  dbmanagment.dbmanagment import DbClient
-
-
-
 from feeds.feedparent import FeederParent
 import core.common as request
 from constants.values import *
