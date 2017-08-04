@@ -83,6 +83,13 @@ class Feeders:
         def returnObject(self):
             return import_module("feeds.packetmail").Packetmail()
 
+    class myip:
+        s_link = 'https://myip.ms/files/blacklist/htaccess/latest_blacklist.txt'
+        u_interval = 24*10
+
+        def returnObject(self):
+            return import_module("feeds.myip").Myip()
+
     class sblam:
         s_link = 'https://sblam.com/blacklist.txt'
         u_interval = 160

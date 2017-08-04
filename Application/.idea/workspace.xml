@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac35a8e1-98de-4e12-a0ce-2f0e70ddeab6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feeds/cybercrimetracker.py" afterPath="$PROJECT_DIR$/feeds/cybercrimetracker.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feeds/cybersweat.py" afterPath="$PROJECT_DIR$/feeds/cybersweat.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feeds/malwaredomains_dns.py" afterPath="$PROJECT_DIR$/feeds/malwaredomains_dns.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feeds/malwaredomains_domains.py" afterPath="$PROJECT_DIR$/feeds/malwaredomains_domains.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feeds/malwaredomains_ip.py" afterPath="$PROJECT_DIR$/feeds/malwaredomains_ip.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/feeds/myip.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/constants/values.py" afterPath="$PROJECT_DIR$/constants/values.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logfile.log" afterPath="$PROJECT_DIR$/logfile.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,13 +33,14 @@
     <SUITE FILE_PATH="coverage/Application$vulnerability.coverage" NAME="vulnerability Coverage Results" MODIFIED="1501598670276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/feeds" />
     <SUITE FILE_PATH="coverage/Application$dbmanagment.coverage" NAME="dbmanagment Coverage Results" MODIFIED="1498228344888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Database" />
     <SUITE FILE_PATH="coverage/Application$sblam.coverage" NAME="sblam Coverage Results" MODIFIED="1500824523575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/feeds" />
-    <SUITE FILE_PATH="coverage/Application$malwaredomains_domains.coverage" NAME="malwaredomains_domains Coverage Results" MODIFIED="1501842129560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/feeds" />
+    <SUITE FILE_PATH="coverage/Application$malwaredomains_domains.coverage" NAME="malwaredomains_domains Coverage Results" MODIFIED="1501843289475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/feeds" />
     <SUITE FILE_PATH="coverage/Application$bruteforcelocker__1_.coverage" NAME="bruteforcelocker (1) Coverage Results" MODIFIED="1499692069700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/feeds" />
     <SUITE FILE_PATH="coverage/Application$winhelp.coverage" NAME="winhelp Coverage Results" MODIFIED="1500977563520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/feeds" />
     <SUITE FILE_PATH="coverage/Application$addroperation.coverage" NAME="addroperation Coverage Results" MODIFIED="1500821317867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
     <SUITE FILE_PATH="coverage/Application$sans_domains.coverage" NAME="sans_domains Coverage Results" MODIFIED="1500896569600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/feeds" />
     <SUITE FILE_PATH="coverage/Application$greensnow.coverage" NAME="greensnow Coverage Results" MODIFIED="1500035848643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/feeds" />
     <SUITE FILE_PATH="coverage/Application$vx_fault.coverage" NAME="vx_fault Coverage Results" MODIFIED="1500823328791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/feeds" />
+    <SUITE FILE_PATH="coverage/Application$myip.coverage" NAME="myip Coverage Results" MODIFIED="1501844138869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/feeds" />
     <SUITE FILE_PATH="coverage/Application$maxmind.coverage" NAME="maxmind Coverage Results" MODIFIED="1501763800858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/feeds" />
     <SUITE FILE_PATH="coverage/Application$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1499083285967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../test" />
     <SUITE FILE_PATH="coverage/Application$test__2_.coverage" NAME="test (2) Coverage Results" MODIFIED="1499171551560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Feeds" />
@@ -67,67 +66,13 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dbmanagment.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dbmanagment/dbmanagment.py">
+      <file leaf-file-name="myip.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/feeds/myip.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="119" column="37" lean-forward="false" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="37" />
-              <folding>
-                <element signature="e#251#274#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nvd.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vulnerability/feeds/nvd.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="89" column="65" lean-forward="false" selection-start-line="89" selection-start-column="53" selection-end-line="89" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="malwaredomains_domains.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/feeds/malwaredomains_domains.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+            <state relative-caret-position="165">
+              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cybersweat.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feeds/cybersweat.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="malwaredomains_ip.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feeds/malwaredomains_ip.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="malwaredomains_dns.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feeds/malwaredomains_dns.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -182,7 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/feeds/malwr/__init__.py" />
         <option value="$PROJECT_DIR$/feeds/bruteforcelocker/bruteforcelocker.py" />
         <option value="$PROJECT_DIR$/core/__init__.py" />
         <option value="$PROJECT_DIR$/feeds/feeder.py" />
@@ -227,12 +171,13 @@
         <option value="$PROJECT_DIR$/core/common.py" />
         <option value="$PROJECT_DIR$/feeds/nothink.py" />
         <option value="$PROJECT_DIR$/feeds/botscout.py" />
-        <option value="$PROJECT_DIR$/constants/values.py" />
         <option value="$PROJECT_DIR$/feeds/cybersweat.py" />
         <option value="$PROJECT_DIR$/feeds/malwaredomains_ip.py" />
         <option value="$PROJECT_DIR$/feeds/malwaredomains_dns.py" />
         <option value="$PROJECT_DIR$/feeds/cybercrimetracker.py" />
         <option value="$PROJECT_DIR$/feeds/malwaredomains_domains.py" />
+        <option value="$PROJECT_DIR$/constants/values.py" />
+        <option value="$PROJECT_DIR$/feeds/myip.py" />
       </list>
     </option>
   </component>
@@ -392,7 +337,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.malwaredomains_domains">
+  <component name="RunManager" selected="Python.myip">
     <configuration default="false" name="nvd" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -407,24 +352,6 @@
       <module name="Application" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vulnerability/feeds/nvd.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="updatedb" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/constants" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Application" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/constants/updatedb.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -479,6 +406,24 @@
       <module name="Application" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/feeds/malwaredomains_domains.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="myip" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/feeds" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Application" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/feeds/myip.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -710,18 +655,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.nvd" />
-      <item index="1" class="java.lang.String" itemvalue="Python.updatedb" />
-      <item index="2" class="java.lang.String" itemvalue="Python.botscout" />
-      <item index="3" class="java.lang.String" itemvalue="Python.cybersweat" />
-      <item index="4" class="java.lang.String" itemvalue="Python.malwaredomains_domains" />
+      <item index="1" class="java.lang.String" itemvalue="Python.botscout" />
+      <item index="2" class="java.lang.String" itemvalue="Python.cybersweat" />
+      <item index="3" class="java.lang.String" itemvalue="Python.malwaredomains_domains" />
+      <item index="4" class="java.lang.String" itemvalue="Python.myip" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.malwaredomains_domains" />
-        <item index="1" class="java.lang.String" itemvalue="Python.nvd" />
-        <item index="2" class="java.lang.String" itemvalue="Python.cybersweat" />
-        <item index="3" class="java.lang.String" itemvalue="Python.botscout" />
-        <item index="4" class="java.lang.String" itemvalue="Python.updatedb" />
+        <item index="0" class="java.lang.String" itemvalue="Python.myip" />
+        <item index="1" class="java.lang.String" itemvalue="Python.malwaredomains_domains" />
+        <item index="2" class="java.lang.String" itemvalue="Python.nvd" />
+        <item index="3" class="java.lang.String" itemvalue="Python.cybersweat" />
+        <item index="4" class="java.lang.String" itemvalue="Python.botscout" />
       </list>
     </recent_temporary>
   </component>
@@ -903,18 +848,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="342" />
+      <option name="time" value="349" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/lib/python3.6/site-packages/requests/sessions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="362" column="0" lean-forward="false" selection-start-line="362" selection-start-column="0" selection-end-line="362" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python3.6/site-packages/requests/api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
@@ -1118,14 +1056,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feeds/bruteforcelocker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="92" column="1" lean-forward="false" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feeds/cc_tracker.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="843">
@@ -1214,64 +1144,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feeds/botscout.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="82" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/constants/values.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="143" column="24" lean-forward="false" selection-start-line="143" selection-start-column="24" selection-end-line="143" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feeds/ransomwaretracker.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="153" column="1" lean-forward="false" selection-start-line="153" selection-start-column="1" selection-end-line="153" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbmanagment/dbmanagment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="119" column="37" lean-forward="false" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="37" />
-          <folding>
-            <element signature="e#251#274#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vulnerability/feeds/nvd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="89" column="65" lean-forward="false" selection-start-line="89" selection-start-column="53" selection-end-line="89" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feeds/malwaredomains_dns.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feeds/malwaredomains_ip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1284,18 +1160,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/feeds/malwaredomains_dns.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/constants/values.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="87" column="26" lean-forward="false" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vulnerability/feeds/nvd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="89" column="65" lean-forward="false" selection-start-line="89" selection-start-column="53" selection-end-line="89" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbmanagment/dbmanagment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#251#274#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/feeds/cybersweat.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="27" />
+          <caret line="4" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feeds/botscout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="82" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feeds/bruteforcelocker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="92" column="1" lean-forward="false" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feeds/malwaredomains_ip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/feeds/malwaredomains_domains.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+        <state relative-caret-position="195">
+          <caret line="13" column="100" lean-forward="false" selection-start-line="13" selection-start-column="79" selection-end-line="13" selection-end-column="100" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feeds/myip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
